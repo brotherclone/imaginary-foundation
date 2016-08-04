@@ -27,11 +27,11 @@ group :development, :test do
   gem 'table_print'
   gem 'erb2haml'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'kss-rails'
 end
 
 group :doc do
   gem 'sdoc'
-  gem 'kss-rails'
 end
 
 group :development do
