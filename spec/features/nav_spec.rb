@@ -11,4 +11,8 @@ describe 'Navigation functionality', :type => :feature do
     expect(page).to have_content('Projects')
   end
 
+  it 'checks the footer navigation', :js => true do
+  
+  end
+
 end
