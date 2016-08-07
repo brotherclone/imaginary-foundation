@@ -20,5 +20,8 @@ Rails.application.routes.draw do
   get 'resume' => 'resume#index'
   get 'home' => 'home#index'
   get 'about' => 'about#index'
+  get 'privacy' => 'privacy#index'
+  get 'contact' => 'contact#index'
+  get 'related_sites' => 'related_sites#index'
 
 end

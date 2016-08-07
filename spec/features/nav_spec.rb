@@ -12,7 +12,14 @@ describe 'Navigation functionality', :type => :feature do
   end
 
   it 'checks the footer navigation', :js => true do
-  
+    today =Date.today
+    this_year = today.strftime('%Y').to_s
+    visit root_path
+    expect(page).to have_css('.footer-navigation')
+    expect(page).to have_content('Privacy, Terms, Etc.')
+    expect(page).to have_content('Related Sites')
+    expect(page).to have_content('Contact Info')
+    expect(page).to have_content(this_year+' &copy;')
   end
 
 end
