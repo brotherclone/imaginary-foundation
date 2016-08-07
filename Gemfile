@@ -14,6 +14,7 @@ gem 'carrierwave'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'cloudinary'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
 group :development, :test do

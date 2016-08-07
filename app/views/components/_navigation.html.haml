@@ -1,11 +1,7 @@
-%nav
-  .navigation-container
-    %h1
-      %a{:href=>home_path} Imaginary Foundation
-    %ul
-      %li
-        %a{:href=>about_path} About
-      %li
-        %a{:href=>projects_path} Projects
-      %li
-        %a{:href=>essays_path} Essays
+%nav{:class=>'ui vertical masthead center aligned segment'}
+  .ui.container
+    .ui.four.item.menu
+      %a{:href=>home_path, :class=> 'item'} Imaginary Foundation
+      %a{:href=>about_path, :class=> 'item'} About
+      %a{:href=>projects_path, :class=> 'item'} Projects
+      %a{:href=>essays_path, :class=> 'item'} Essays

@@ -2,10 +2,13 @@
 %html
   %head
     %meta{:content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}/
-    %title ImaginaryFoundation
+    %title Imaginary Foundation
+    %script{ :type => 'text/javascript', :src => '//use.typekit.net/nrm1nne.js'}
+    %script{ :type => 'text/javascript'} try{Typekit.load();}catch(e){}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body
-    .main-wrap
-      = yield
+  %body{:class=>'pushable'}
+    = render :partial => 'components/navigation'
+    = yield
+    = render :partial => 'components/footer'

@@ -17,6 +17,13 @@ GIT
       sass-rails
       sprockets (< 4.1)
 
+GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: 17393aaee1f6c4cd7693abc79530597424e1046d
+  specs:
+    semantic-ui-sass (2.2.2.2)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -294,6 +301,7 @@ DEPENDENCIES
   sass-rails (~> 5.0.0)
   sdoc
   selenium-webdriver (~> 3.0.0.beta2.1)
+  semantic-ui-sass!
   shoulda-matchers (~> 3.1)
   spring
   table_print
