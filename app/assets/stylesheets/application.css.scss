@@ -1,5 +1,7 @@
+$font-name: "orpheuspro",sans-serif;
 @import 'semantic-ui';
 @import 'core/typography';
+@import 'core/palette';
 
 @import "components/navigation";
 @import "components/footer";
