@@ -15,7 +15,8 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'cloudinary'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-
+gem 'font-awesome-sass', '~> 4.5.0'
+gem 'livingstyleguide'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -24,11 +25,12 @@ group :development, :test do
   gem 'faker'
   gem 'database_cleaner'
   gem 'capybara'
-  gem 'selenium-webdriver', '~> 3.0.0.beta2.1'
+  gem 'selenium-webdriver'
   gem 'table_print'
-  gem 'erb2haml'
+  gem 'erb2haml' #rake haml:replace_erbs / rake haml:convert_erbs
+  gem 'rake'
+  gem 'chromedriver-helper'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'kss-rails'
 end
 
 group :doc do

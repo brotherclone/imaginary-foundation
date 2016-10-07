@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  mount Kss::Engine => '/kss' if Rails.env.development?
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   ActiveAdmin.routes(self)
