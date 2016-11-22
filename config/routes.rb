@@ -4,10 +4,6 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  resources :tags
-
-  resources :topics
-
   resources :images
 
   resources :projects

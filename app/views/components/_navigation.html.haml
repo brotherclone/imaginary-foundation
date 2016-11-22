@@ -1,5 +1,11 @@
-%nav{:class=>'ui attached fluid four item menu'}
-  %a{:href=>home_path, :class=> 'item'} Imaginary Foundation
-  %a{:href=>about_path, :class=> 'item'} About
-  %a{:href=>projects_path, :class=> 'item'} Projects
-  %a{:href=>essays_path, :class=> 'item'} Essays
+%nav{:class=>'nav nocollapse'}
+  .one.fourth
+  .three.fourths
+    %a{:href=>home_path}
+      %h1 Imaginary Foundation
+    %a{:href=>about_path}
+      %h1 About
+    %a{:href=>projects_path}
+      %h1 Projects
+    %a{:href=>essays_path}
+      %h1 Essays

@@ -1,5 +1,5 @@
 ruby '2.1.2'
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.1.9'
 gem 'pg'
@@ -14,9 +14,12 @@ gem 'carrierwave'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'cloudinary'
-gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-gem 'font-awesome-sass', '~> 4.5.0'
 gem 'livingstyleguide'
+gem 'autoprefixer-rails'
+gem 'compass-rails'
+gem 'groundworkcss'
+gem 'therubyracer', :platforms => :ruby
+
 
 group :development, :test do
   gem 'rspec-rails'

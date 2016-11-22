@@ -1,8 +1,7 @@
-%footer{:class=>'ui inverted vertical footer segment'}
-  .ui.center.aligned.container
-    .one.wide.column
-      .ui.inverted.link.list
-        %a{:href=> privacy_path, :class=>'item'} Privacy, Terms, Etc.
-        %a{:href=> related_sites_path, :class=>'item'} Related Sites
-        %a{:href => contact_path, :class=>'item'} Contact Info
-        %span{:class=>'item'}=this_year+' &copy;'
+%footer{:class=>'footer row'}
+  .one.fourth.triple-padded
+  .three.fourths.triple-padded
+    %a{:href=> privacy_path, :class=>'item'} Privacy, Terms, Etc.
+    %a{:href=> related_sites_path, :class=>'item'} Related Sites
+    %a{:href => contact_path, :class=>'item'} Contact Info
+    %span{:class=>'item'}=this_year
