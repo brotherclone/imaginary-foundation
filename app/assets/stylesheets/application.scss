@@ -2,8 +2,12 @@ $font-name: "orpheuspro",sans-serif;
 @import 'groundworkcss/settings-rails4';
 @import "groundworkcss/groundwork";
 @import 'groundwork_settings';
+
 @import 'core/typography';
 @import 'core/palette';
 @import 'core/layout';
+
 @import "components/navigation";
 @import "components/footer";
+
+@import "resume";

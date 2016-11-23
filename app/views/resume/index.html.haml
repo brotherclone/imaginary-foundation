@@ -4,287 +4,330 @@
 -else
   - cmonth = cur.month.to_s
 - @current = cur.year.to_s+'-'+cmonth+'-'+cur.day.to_s+'T'+cur.hour.to_s+':'+cur.min.to_s
-
-.resume.hold
-  %h1{:itemscope => true, :itemtype =>'http://schema.org/Person',:class => 'resume huge person'}
-    %span{:itemprop => 'givenName'}Gabriel
-    %span{:itemprop => 'familyName'}Walsh
-  %section{:id =>'Contact'}
-    .resume.contact{:itemprop =>'address', :itemscope => true, :itemtype =>'http://schema.org/PostalAddress'}
-      %span{:itemprop => 'streetAddress'}23700 Bennett Chase Dr
-      = succeed ',' do
-        %span{:itemprop =>'addressLocality'}Clarksburg
-      %span{:itemprop => 'addressRegion'}MD
-      %span{:itemprop => 'postalCode'}20871
-    .resume.contact.email
-      %span{:itemprop =>'email', :class=>'contact-link'}
-        %a{:href=>'mailto:brotherclone@gmail.com'}brotherclone@gmail.com
-      %span{:itemprop =>'telephone', :class=>'contact-link'}
-        %a{:href=>'tel:12408885105'}+1 240 888 5105
-  %section{:id => 'Profile'}
-    %h1{:class=>'resume heading'} Profile
-    .resume.overview
-      Digital media experience designer/ producer with a fifteen year track record of delivering innovative, effective projects. Special focus on education, creative direction, cross-media, game design, video for the web and concept development.
-    %h1{:class=>'resume heading'} Experience
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Senior UX Architect
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
-        %span{:itemprop => 'name'}
-          %a{:href => 'http://www.adobe.com', :itemprop => 'url'}
-            Adobe
-      %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-        %span{:itemprop => 'streetAddress'}7930 Jones Branch Dr,  5th Floor
-        = succeed ',' do
-          %span{:itemprop => 'addressLocality'}McLean
-        %span{:itemprop => 'addressRegion'}VA
-        %span{:itemprop => 'postalCode'}22102
-      %span{:class=> 'resume experience duration'}
-        %span{:content =>'2013-04-13T00:00'}2014
-        %span{:content => @current} Present
-      .resume.experience.description
-        Providing guidance and designs for clients and Adobe Partners executing projects in Adobe Marketing Cloud for federal, local, military and intelligence government agencies.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Adjunct Faculty
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype =>'http://schema.org/Organization', :class=> 'resume experience address'}
-        %span{:itemprop => 'name'}
-          %a{:href => 'http://advanced.jhu.edu/academics/graduate-degree-programs/communication/', :itemprop => 'url'}John Hopkins University
-      %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-        %span{:itemprop => 'streetAddress'}1717 Massachusetts Ave NW
-        = succeed ',' do
-          %span{:itemprop => 'addressLocality'}Washington
-        %span{:itemprop => 'addressRegion'}DC
-        %span{:itemprop => 'postalCode'}20036
-      %span{:class=> 'resume experience duration'}
-        %span{:content =>'2012-05-16T00:00'}2012
-        %span{:content => @current} Present
-      .resume.experience.description
-        Professor teaching Multi-media Authoring to graduate level Communication students.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} UX Lead
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
-        %span{:itemprop => 'name'}
-          %a{:href => 'http://www.hugeinc.com', :itemprop => 'url'}Huge
-      %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-        %span{:itemprop => 'streetAddress'}875 N Street, NW, Ste. 205
-        = succeed ',' do
-          %span{:itemprop => 'addressLocality'}Washington
-        %span{:itemprop => 'addressRegion'}DC
-        %span{:itemprop => 'postalCode'}20001
-      %span{:class=> 'resume experience duration'}
-        %span{:content =>'2013-04-13T00:00'}2013
-        %span{:content =>'2014-03-03T00:00'}2014
-      .resume.experience.description
-        Management of Interaction Designers, Cross department leadership, account lead on projects for
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+.row
+  .one.fifth
+  .three.fifths
+    .resume.hold
+      .row
+        .two.third
+          %h1{:itemscope => true, :itemtype =>'http://schema.org/Person',:class => 'resume huge person'}
+            %span{:itemprop => 'givenName'}Gabriel
+            %span{:itemprop => 'familyName'}Walsh
+        .one.thirds
+          %section{:id =>'Contact'}
+            .resume.contact{:itemprop =>'address', :itemscope => true, :itemtype =>'http://schema.org/PostalAddress'}
+              %span{:itemprop => 'streetAddress'}23700 Bennett Chase Dr
+              = succeed ',' do
+                %span{:itemprop =>'addressLocality'}Clarksburg
+              %span{:itemprop => 'addressRegion'}MD
+              %span{:itemprop => 'postalCode'}20871
+            .resume.contact.email
+              %span{:itemprop =>'email', :class=>'contact-link'}
+                %a{:href=>'mailto:brotherclone@gmail.com'}brotherclone@gmail.com
+              %span{:itemprop =>'telephone', :class=>'contact-link'}
+                %a{:href=>'tel:12408885105'}+1 240 888 5105
+    %section{:id => 'Profile'}
+      %h1{:class=>'resume heading'} Profile
+      .resume.overview
+        Digital media experience designer/ producer with a fifteen year track record of delivering innovative, effective projects. Special focus on education, creative direction, cross-media, game design, video for the web and concept development.
+      %h1{:class=>'resume heading'} Experience
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Senior UX Architect
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.adobe.com', :itemprop => 'url'}
+                    Adobe
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}7930 Jones Branch Dr,  5th Floor
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}McLean
+              %span{:itemprop => 'addressRegion'}VA
+              %span{:itemprop => 'postalCode'}22102
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content =>'2013-04-13T00:00'}2014
+              %span{:content => @current} Present
+        .resume.experience.description
+          Providing guidance and designs for clients and Adobe Partners executing projects in Adobe Marketing Cloud for federal, local, military and intelligence government agencies.
+      .resume.experience.position.row
+        %h2{:class=>'resume experience title'} Adjunct Faculty
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype =>'http://schema.org/Organization', :class=> 'resume experience address'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://advanced.jhu.edu/academics/graduate-degree-programs/communication/', :itemprop => 'url'}Johns Hopkins University
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}1717 Massachusetts Ave NW
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Washington
+              %span{:itemprop => 'addressRegion'}DC
+              %span{:itemprop => 'postalCode'}20036
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content =>'2012-05-16T00:00'}2012
+              %span{:content => '2016-08-28T00:00'}2016
+        .resume.experience.description
+          Professor teaching Multi-media Authoring to graduate level Communication students.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} UX Lead
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.hugeinc.com', :itemprop => 'url'}Huge
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}875 N Street, NW, Ste. 205
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Washington
+              %span{:itemprop => 'addressRegion'}DC
+              %span{:itemprop => 'postalCode'}20001
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content =>'2013-04-13T00:00'}2013
+              %span{:content =>'2014-03-03T00:00'}2014
+        .resume.experience.description
+          Management of Interaction Designers, Cross department leadership, account lead on projects for
+          %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+            %span{:itemprop => 'name'}
+              = succeed ',' do
+                %a{:href => 'http://www.energy.gov', :itemprop =>'url'}The Department of Energy
+          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+            %span{:itemprop => 'name'}
+              = succeed ',' do
+                %a{:href =>'http://www.stantec.com', :itemprop =>'url'}Stantec
+          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+            %span{:itemprop => 'name'}
+              = succeed ',' do
+                %a{:href => 'http://www.axa-equitable.com', :itemprop =>'url'}AXA-Equitable.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Senior UX Lead
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.threespot.com', :itemprop => 'url'}Threespot
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}3333 14th St. NW
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Washington
+              %span{:itemprop => 'addressRegion'}DC
+              %span{:itemprop => 'postalCode'}20010
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '2010-04-15T00:00'}2010
+              %span{:content => '2012-04-14T23:59'}2012
+        .resume.experience.description
+          User Experience Designer for large scale, non-profit web sites. Responsible for information architecture, online branding presence and strategy. Clients include:
           %span{:itemprop => 'name'}
             = succeed ',' do
-              %a{:href => 'http://www.energy.gov', :itemprop =>'url'}The Department of Energy
-        %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+              %a{:href => 'http://www.macfound.org', :itemprop => 'url'}MacArthur Foundation
           %span{:itemprop => 'name'}
             = succeed ',' do
-              %a{:href =>'http://www.stantec.com', :itemprop =>'url'}Stantec
-        %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
+              %a{:href => 'http://www.knightfoundation.org', :itemprop => 'url'}Knight Foundation
+          the
           %span{:itemprop => 'name'}
             = succeed ',' do
-              %a{:href => 'http://www.axa-equitable.com', :itemprop =>'url'}AXA-Equitable.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Senior UX Lead
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
-        %span{:itemprop => 'name'}
-          %a{:href => 'http://www.threespot.com', :itemprop => 'url'}Threespot
-      %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-        %span{:itemprop => 'streetAddress'}3333 14th St. NW
-        = succeed ',' do
-          %span{:itemprop => 'addressLocality'}Washington
-        %span{:itemprop => 'addressRegion'}DC
-        %span{:itemprop => 'postalCode'}20010
-      %span{:class=> 'resume experience duration'}
-        %span{:content => '2010-04-15T00:00'}2010
-        %span{:content => '2012-04-14T23:59'}2012
-      .resume.experience.description
-        User Experience Designer for large scale, non-profit web sites. Responsible for information architecture, online branding presence and strategy. Clients include:
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href => 'http://www.macfound.org', :itemprop => 'url'}MacArthur Foundation
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href => 'http://www.knightfoundation.org', :itemprop => 'url'}Knight Foundation
-        the
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href => 'http://www.nti.org', :itemprop => 'url'}Nuclear Threat Initiative
-        and the
-        %span{:itemprop => 'name'}
-          %a{:href => 'http://www.rwjf.org', :itemprop => 'url'}Robert Wood Johnson Foundation.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Experience Integration Architect
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+              %a{:href => 'http://www.nti.org', :itemprop => 'url'}Nuclear Threat Initiative
+          and the
           %span{:itemprop => 'name'}
-            %a{:href => 'http://www.lego.com', :itemprop => 'url'}LEGO
-          %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-            %span{:itemprop => 'streetAddress'}Åstvej 1
-            %span{:itemprop => 'addressLocality'} Billund
-            ,
-            %span{:itemprop =>'addressCountry'}Denmark
-      %span{:class=> 'resume experience duration'}
-        %span{:content => '2005-09-01T00:00'}2005
-        %span{:content => '2010-04-14T23:59'}2010
-      .resume.experience.description
-        Lead adviser on digital cross-platform integration products for LEGO, including the mass customization platform, the massively multiplayer game and the creative social network system. Experience design for innovative hybrid social media/gaming projects and platforms. Key role in creating LEGO’s digital strategy roadmap.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Brain For Hire
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+            %a{:href => 'http://www.rwjf.org', :itemprop => 'url'}Robert Wood Johnson Foundation.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Experience Integration Architect
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.lego.com', :itemprop => 'url'}LEGO
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}Åstvej 1
+              %span{:itemprop => 'addressLocality'} Billund
+              = succeed ',' do
+                %span{:itemprop =>'addressCountry'}Denmark
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '2005-09-01T00:00'}2005
+              %span{:content => '2010-04-14T23:59'}2010
+        .resume.experience.description
+          Lead adviser on digital cross-platform integration products for LEGO, including the mass customization platform, the massively multiplayer game and the creative social network system. Experience design for innovative hybrid social media/gaming projects and platforms. Key role in creating LEGO’s digital strategy roadmap.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Brain For Hire
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:itemprop => 'name'} Code Owl Productions
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop =>'streetAddress'}23700 Bennett Chase Dr.
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Clarksburg
+              %span{:itemprop => 'addressRegion'}MD
+              %span{:itemprop => 'postalCode'}20871
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '2005-09-01T00:00'}2005
+              %span{:content =>'2010-04-14T23:59'}2010
+        .resume.experience.description
+          Consultant and development on Web projects for companies ranging from 'big pharma' to indie comic publishers:
           %span{:itemprop => 'name'}
-            %a{:itemprop => 'name'} Code Owl Productions
-          %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-            %span{:itemprop =>'streetAddress'}23700 Bennett Chase Dr.
             = succeed ',' do
-              %span{:itemprop => 'addressLocality'}Clarksburg
-            %span{:itemprop => 'addressRegion'}MD
-            %span{:itemprop => 'postalCode'}20871
-      %span{:class=> 'resume experience duration'}
-        %span{:content => '2005-09-01T00:00'}2005
-        %span{:content =>'2010-04-14T23:59'}2010
-      .resume.experience.description
-        Consultant and development on Web projects for companies ranging from 'big pharma' to indie comic publishers:
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href =>'http://www.discovery.com', :itemprop => 'url'}Science Channel
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href =>'http://www.pearson.com', :itemprop =>'url'}Pearson
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href =>'http://www.pfizer.com', :itemprop =>'url'}Pfizer
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{ :href =>'http://www.nicktoons.com', :itemprop =>'url'}Nickelodeon
-        %span{:itemprop => 'name'}
-          = succeed ',' do
-            %a{:href =>'http://www.pbskids.org', :itemprop =>'url'}PBS Kids
-        %span{:itemprop => 'name'}
-          %a{ :href =>'http://www.moleskine.com', :itemprop =>'url'}Moleskine
-        and
-        %span{:itemprop => 'name'}
-          %a{ :href =>'http://www.drawnandquarterly.com', :itemprop =>'url'}Drawn &amp; Quarterly.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Senior Producer
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+              %a{:href =>'http://www.discovery.com', :itemprop => 'url'}Science Channel
           %span{:itemprop => 'name'}
-            %a{:href => 'http://www.lego.com', :itemprop =>'url'}LEGO Virtual
-          %span{:itemprop =>'address', :itemscope =>true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-            %span{:itemprop => 'streetAddress'}33 Bath Rd
             = succeed ',' do
-              %span{:itemprop => 'addressLocality'}Slough
-            %span{:itemprop => 'addressRegion'}Berkshire
-            %span{:itemprop => 'addressCountry'}United Kingdom
-            %span{:itemprop => 'postalCode'}SL1 3UF
-      %span{:class=> 'resume experience duration'}
-        %span{:content => '2000-04-01T00:00'}2000
-        %span{:content => '2005-08-31T23:59'}2005
-      .resume.experience.description
-        Development of innovative cross media activities and games that both promote LEGO’s products and expand post-sell play value. Provided strategy for Web integration into LEGO tech toys. Developed the first major children’s Alternate Reality Game. Worked with writers to create LEGO character-based story arcs which are developed and manifested in online, games, print and television formats.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Producer
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+              %a{:href =>'http://www.pearson.com', :itemprop =>'url'}Pearson
           %span{:itemprop => 'name'}
-            %a{:href => 'http://www.fox.com', :itemprop => 'url'}News Digital
-          %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-            %span{:itemprop => 'streetAddress'}1211 Ave. of Americas
             = succeed ',' do
-              %span{:itemprop => 'addressLocality'}New York
-            %span{:itemprop => 'addressRegion'}New York
-            %span{:itemprop => 'postalCode'}10036
-      %span{:class=> 'resume experience duration'}
-        %span{:content => '1998-06-01T00:00'}1998
-        %span{:content => '2000-03-31T23:59'}2000
-      .resume.experience.description
-        Development, production and design of FOX broadcast products using interactive video elements and immersive supplemental content.
-    .resume.experience.position
-      %h2{:class=>'resume experience title'} Associate Producer
-      %h3{:class=>'resume experience organization'}
-        %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+              %a{:href =>'http://www.pfizer.com', :itemprop =>'url'}Pfizer
           %span{:itemprop => 'name'}
-            %a{:href => 'http://www.psfp.com', :itemprop => 'url'}Pacific Street Films
-          %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
-            %span{:itemprop => 'streetAddress'}579 Broadway
             = succeed ',' do
-              %span{:itemprop => 'addressLocality'}Hastings on Hudson
-            %span{:itemprop => 'addressRegion'}New York
-            %span{:itemprop => 'postalCode'}10706
-      %span{:class=> 'resume experience duration'}
+              %a{ :href =>'http://www.nicktoons.com', :itemprop =>'url'}Nickelodeon
+          %span{:itemprop => 'name'}
+            = succeed ',' do
+              %a{:href =>'http://www.pbskids.org', :itemprop =>'url'}PBS Kids
+          %span{:itemprop => 'name'}
+            %a{ :href =>'http://www.moleskine.com', :itemprop =>'url'}Moleskine
+          and
+          %span{:itemprop => 'name'}
+            %a{ :href =>'http://www.drawnandquarterly.com', :itemprop =>'url'}Drawn &amp; Quarterly.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Senior Producer
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.lego.com', :itemprop =>'url'}LEGO Virtual
+          .two.fifths
+            %span{:itemprop =>'address', :itemscope =>true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}33 Bath Rd
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Slough
+              %span{:itemprop => 'addressRegion'}Berkshire
+              %span{:itemprop => 'addressCountry'}United Kingdom
+              %span{:itemprop => 'postalCode'}SL1 3UF
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '2000-04-01T00:00'}2000
+              %span{:content => '2005-08-31T23:59'}2005
+        .resume.experience.description
+          Development of innovative cross media activities and games that both promote LEGO’s products and expand post-sell play value. Provided strategy for Web integration into LEGO tech toys. Developed the first major children’s Alternate Reality Game. Worked with writers to create LEGO character-based story arcs which are developed and manifested in online, games, print and television formats.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Producer
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.fox.com', :itemprop => 'url'}News Digital
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}1211 Ave. of Americas
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}New York
+              %span{:itemprop => 'addressRegion'}New York
+              %span{:itemprop => 'postalCode'}10036
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '1998-06-01T00:00'}1998
+              %span{:content => '2000-03-31T23:59'}2000
+        .resume.experience.description
+          Development, production and design of FOX broadcast products using interactive video elements and immersive supplemental content.
+      .resume.experience.position
+        %h2{:class=>'resume experience title'} Associate Producer
+        .row
+          .two.fifths
+            %h3{:class=>'resume experience organization'}
+              %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
+                %span{:itemprop => 'name'}
+                  %a{:href => 'http://www.psfp.com', :itemprop => 'url'}Pacific Street Films
+          .two.fifths
+            %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'resume experience address'}
+              %span{:itemprop => 'streetAddress'}579 Broadway
+              = succeed ',' do
+                %span{:itemprop => 'addressLocality'}Hastings on Hudson
+              %span{:itemprop => 'addressRegion'}New York
+              %span{:itemprop => 'postalCode'}10706
+          .one.fifth
+            %span{:class=> 'resume experience duration'}
+              %span{:content => '1997-05-01T00:00'}1997
+              %span{:content => '1998-05-31T23:59'}1998
+        .resume.experience.description
+          Associate Producer for Lifetime’s Intimate Portraits series. Production on the History Channel’s Warrior Series
+    %section{:id =>'Education', :class=>'resume segment'}
+      %h1{:class=>'resume heading'} Education
+      .resume.education.institution
+        %span{:itemscope => true, :itemtype => 'http://schema.org/EducationalOrganization'}
+        %span{:itemprop => 'name'}
+          %a{:href => 'http://www.purchase.edu', :itemprop => 'url'}State University of New York at Purchase
+      .resume.education.degree
+        %span{:itemprop => 'department'}BFA, Film - Summa Cum Laude,
         %span{:content => '1997-05-01T00:00'}1997
-        %span{:content => '1998-05-31T23:59'}1998
-      .resume.experience.description
-        Associate Producer for Lifetime’s Intimate Portraits series. Production on the History Channel’s Warrior Series
-  %section{:id =>'Education', :class=>'resume segment'}
-    %h1{:class=>'resume heading'} Education
-    .resume.education.institution
-      %span{:itemscope => true, :itemtype => 'http://schema.org/EducationalOrganization'}
-      %span{:itemprop => 'name'}
-        %a{:href => 'http://www.purchase.edu', :itemprop => 'url'}State University of New York at Purchase
-    .resume.education.degree
-      %span{:itemprop => 'department'}BFA, Film - Summa Cum Laude,
-      %span{:content => '1997-05-01T00:00'}1997
-    .resume.education.honors
-      %h3 Awards
-    .resume.education.awards
-      %ul
-        %li King Scholarship for Film Studies
-        %li Tara Wyme Technicolor Award
-        %li Torrell Post-Production Award
-        %li Film Department Achievement Award
-  %section{:id => 'Skills', :class=>'resume segment'}
-    %h1{:class=>'resume heading'} Skills
-    %ul{:class => 'resume skills'}
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}HTML
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}CSS
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}Javascript /
-        %span{:itemprop => 'programmingLanguage'}jQuery
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}LESS
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}SASS
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}PHP
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}Ruby/Rails
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}MySQL
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}ActionScript
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}Node JS
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'programmingLanguage'}Angular
-      %li{:itemscope => 'http://schema.org/Code'}
-        %span{:itemprop => 'name'}Arduino
-        &amp;
-        %span{:itemscope => 'http://schema.org/Thing'}
-          %span{:itemprop => 'name'}Open-source Hardware
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}MAX/DSP
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}Motion
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}After Effects
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}Photoshop
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}Final Cut Pro
-      %li{:itemscope => 'http://schema.org/SoftwareApplication'}
-        %span{:itemprop => 'name'}Apple Logic
-      %li{:itemscope => 'http://schema.org/Movie'}
-        Traditional
-        %span{:itemprop => 'genre'}Animation
+      .resume.education.honors
+        %h3 Awards
+      .resume.education.awards
+        %ul
+          %li King Scholarship for Film Studies
+          %li Tara Wyme Technicolor Award
+          %li Torrell Post-Production Award
+          %li Film Department Achievement Award
+    %section{:id => 'Skills', :class=>'resume segment'}
+      %h1{:class=>'resume heading'} Skills
+      %ul{:class => 'resume skills'}
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}HTML
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}CSS
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}Javascript /
+          %span{:itemprop => 'programmingLanguage'}jQuery
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}LESS
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}SASS
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}PHP
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}Ruby/Rails
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}MySQL
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}ActionScript
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}Node JS
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}Angular
+        %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'name'}Arduino
+          &amp;
+          %span{:itemscope => 'http://schema.org/Thing'}
+            %span{:itemprop => 'name'}Open-source Hardware
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}MAX/DSP
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}Motion
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}After Effects
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}Photoshop
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}Final Cut Pro
+        %li{:itemscope => 'http://schema.org/SoftwareApplication'}
+          %span{:itemprop => 'name'}Apple Logic
+        %li{:itemscope => 'http://schema.org/Movie'}
+          Traditional
+          %span{:itemprop => 'genre'}Animation
+  .one.fifth
+
