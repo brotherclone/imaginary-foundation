@@ -3,8 +3,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '4.1.9'
 gem 'pg'
-gem 'sass-rails', '~> 5.0.0'
+gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -14,11 +15,15 @@ gem 'carrierwave'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'cloudinary'
-gem 'livingstyleguide'
 gem 'autoprefixer-rails'
 gem 'compass-rails'
-gem 'groundworkcss'
 gem 'therubyracer', :platforms => :ruby
+gem 'bourbon'
+gem 'neat'
+gem 'livingstyleguide'
+gem 'discogs-wrapper'
+
+
 
 
 group :development, :test do

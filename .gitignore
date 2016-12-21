@@ -121,3 +121,7 @@ bower.json
 .byebug_history
 imaginary-foundation/
 .sass-cache/
+
+/config/discogs.yml
+/config/secrets.yml
+/config/database.yml
