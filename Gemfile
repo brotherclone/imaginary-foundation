@@ -19,6 +19,7 @@ gem 'compass-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'bourbon'
 gem 'neat'
+gem 'bitters'
 gem 'livingstyleguide'
 gem 'discogs-wrapper'
 gem 'gon'

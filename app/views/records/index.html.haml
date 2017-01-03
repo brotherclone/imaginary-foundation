@@ -1,3 +1,16 @@
 = include_gon
+.records{ :ng => {:controller=>'recordCollectionCtrl', :init=>'init()'}}
+  .pages {{recordCollection[currentGroup].pagination.page}}/{{recordCollection[currentGroup].pagination.pages}}
+  .record-collection
+    .record{:ng=>{:repeat => 'release in recordCollection[currentGroup].releases'}}
+      %img{:ng=>{:src => '{{release.basic_information.thumb}}'}}
+      %span {{release.basic_information.title}}
+      %span {{release.basic_information.artists[0].name}}
 
+  .pagination
+    %ul
+      %li
+        %a{:ng=>{:click=> 'paginate(false)'}} Prev
+      %li
+        %a{:ng=>{:click=> 'paginate(true)'}} Next
 
