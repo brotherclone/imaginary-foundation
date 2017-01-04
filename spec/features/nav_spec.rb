@@ -17,7 +17,7 @@ describe 'Navigation functionality', :type => :feature do
     expect(page).to have_content('Privacy, Terms, Etc.')
     expect(page).to have_content('Related Sites')
     expect(page).to have_content('Contact Info')
-    expect(page).to have_content(this_year+' &copy;')
+    expect(page).to have_content(this_year)
   end
 
 end

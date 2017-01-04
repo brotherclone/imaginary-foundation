@@ -6,7 +6,7 @@ ImaginaryApplication.controller('recordCollectionCtrl', [ '$scope', function($sc
     };
     $scope.paginate = function(advance){
         if(advance){
-            if(($scope.currentGroup+1) < $scope.recordCollection.length-1){
+            if(($scope.currentGroup+1) <= $scope.recordCollection.length-1){
                 $scope.currentGroup++;
             }
         }else{

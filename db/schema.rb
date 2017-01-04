@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161221195348) do
+ActiveRecord::Schema.define(version: 20161222224450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,5 +48,36 @@ ActiveRecord::Schema.define(version: 20161221195348) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "essays", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "topic_id"
+    t.integer  "essays_id"
+    t.integer  "topics_id"
+    t.integer  "project_id"
+    t.integer  "essay_id"
+  end
+
+  add_index "tags", ["essay_id"], name: "index_tags_on_essay_id", using: :btree
+  add_index "tags", ["project_id"], name: "index_tags_on_project_id", using: :btree
+  add_index "tags", ["topic_id"], name: "index_tags_on_topic_id", using: :btree
+
+  create_table "topics", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

@@ -1,0 +1,7 @@
+.footer{
+  .copyright{
+    &:after{
+      content: ' &copy;'
+    }
+  }
+}

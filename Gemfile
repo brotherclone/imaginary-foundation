@@ -25,9 +25,6 @@ gem 'discogs-wrapper'
 gem 'gon'
 gem 'angularjs-rails'
 
-
-
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'thor'
@@ -41,6 +38,7 @@ group :development, :test do
   gem 'rake'
   gem 'chromedriver-helper'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'thin'
 end
 
 group :doc do

@@ -1,14 +1,16 @@
+
 $font-name: "orpheuspro",sans-serif;
 
 @import "bourbon";
 
-
-@import 'core/typography';
-@import 'core/palette';
 @import 'core/layout';
+@import 'core/palette';
+@import 'core/typography';
 
 @import "components/navigation";
 @import "components/footer";
 @import "components/pagination";
 
 @import "resume";
+
+

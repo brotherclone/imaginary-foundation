@@ -1,20 +1,16 @@
 Rails.application.routes.draw do
 
-  resources :records
+  resources :essays
+
+  resources :projects
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   ActiveAdmin.routes(self)
 
-  resources :images
-
-  resources :projects
-
-  resources :essays
-
   root 'home#index'
-
   get 'resume' => 'resume#index'
+  get 'records' => 'records#index'
   get 'home' => 'home#index'
   get 'about' => 'about#index'
   get 'privacy' => 'privacy#index'
