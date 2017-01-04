@@ -15,10 +15,9 @@ class RecordsController < InheritedResources::Base
   def getRecords(page)
     @recordCollection << @wrapper.get_user_folder_releases(DiscogsConfig.config[:username],0,{:page =>page})
   end
-
+  
   private
-
-  def record_params
-    params.require(:record).permit(:records,:page,:sort,:sort_order,:per_page)
-  end
+    def record_params
+      params.require(:record).permit(:records, :page,:sort,:sort_order,:per_page)
+    end
 end

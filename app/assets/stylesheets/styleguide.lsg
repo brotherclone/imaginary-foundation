@@ -1,0 +1,3 @@
+@scss application.scss
+@title Imaginary Foundation Style Guide
+@import **/*.lsg

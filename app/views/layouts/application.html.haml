@@ -8,7 +8,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+<<<<<<< Updated upstream
   %body{:ng =>{:app=>'ImaginaryApplication'}}
+=======
+  %body{:ng => {:app=>'ImaginaryApplication'}}
+>>>>>>> Stashed changes
     = render :partial => 'components/navigation'
     = yield
     = render :partial => 'components/footer'

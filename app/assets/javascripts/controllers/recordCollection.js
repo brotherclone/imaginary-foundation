@@ -1,5 +1,6 @@
 
 ImaginaryApplication.controller('recordCollectionCtrl', [ '$scope', function($scope){
+<<<<<<< Updated upstream
     $scope.init = function(){
         $scope.currentGroup = gon.currentGroup;
         $scope.recordCollection = gon.recordCollection;
@@ -15,6 +16,12 @@ ImaginaryApplication.controller('recordCollectionCtrl', [ '$scope', function($sc
             }
         }
     };
+=======
+   $scope.init = function(){
+       console.log(gon);
+       $scope.recordCollection = gon.recordCollection;
+   };
+>>>>>>> Stashed changes
 }]);
 
 

@@ -3,6 +3,5 @@ class Restart < ActiveRecord::Migration
     drop_table :essays
     drop_table :images
     drop_table :projects
-    drop_table :records
   end
 end
