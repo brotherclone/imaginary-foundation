@@ -1,3 +1,5 @@
-== README
+{<img src="https://travis-ci.org/brotherclone/earthlyframes.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/brotherclone/imaginary-foundation]
+
+== The Imaginary Foundation
 
 Imaginary Foundation is a portfolio-ish site for Gabriel Walsh.

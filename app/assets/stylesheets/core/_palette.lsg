@@ -1,0 +1,5 @@
+#Palette
+
+@colors {
+  $background-color
+}
