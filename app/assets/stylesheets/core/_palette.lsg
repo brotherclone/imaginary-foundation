@@ -1,5 +1,7 @@
 #Palette
-
+```
+Based on "van den Hof" by Colour Lover user RedDragon.
+```
 @colors {
-  $background-color
+  $white $black $grey $red
 }
