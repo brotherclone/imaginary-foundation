@@ -1,11 +1,15 @@
-%nav{:class=>'nav nocollapse'}
-  .one.fourth
-  .three.fourths
-    %a{:href=>home_path}
-      %h1 Imaginary Foundation
-    %a{:href=>about_path}
-      %h1 About
-    %a{:href=>projects_path}
-      %h1 Projects
-    %a{:href=>essays_path}
-      %h1 Essays
+%header.navigation{:role => 'banner'}
+  .navigation-wrapper
+    %a.logo{:href => home_path}
+      %img{:alt => 'Imaginary Foundation Logo', :src => 'https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder.png'}/
+    %a#js-mobile-menu.navigation-menu-button{:href => 'javascript:void(0)'} Menu
+    %nav{:role => 'navigation'}
+      %ul#js-navigation-menu.navigation-menu.show
+        %li.nav-link
+          %a{:href => home_path} Imaginary Foundation
+        %li.nav-link
+          %a{:href => about_path} About
+        %li.nav-link
+          %a{:href => projects_path} Projects
+        %li.nav-link
+          %a{:href => essays_path} Essays

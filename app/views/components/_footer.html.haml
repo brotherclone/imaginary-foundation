@@ -1,5 +1,12 @@
-%footer
-  %a{:href=> privacy_path} Privacy, Terms, Etc.
-  %a{:href=> related_sites_path} Related Sites
-  %a{:href => contact_path} Contact Info
-  %span{:class=>'copyright'}=this_year
+%footer.footer{:role => 'contentinfo'}
+.footer-logo
+  %img{:alt => 'Logo image', :src => 'https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder.png'}/
+%ul
+  %li
+    %a{:href=> privacy_path} Privacy, Terms, Etc.
+  %li
+    %a{:href=> related_sites_path} Related Sites
+  %li
+    %a{:href => contact_path} Contact Info
+    %span{:class=>'copyright'}
+    =this_year

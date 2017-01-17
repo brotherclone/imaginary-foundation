@@ -1,5 +1,6 @@
-#Palette
+# Palette
 
 @colors {
-  $background-color
+  $background-color $eight-bit-ocean $zluta $cadet-blue $luv $bye-baby
 }
+

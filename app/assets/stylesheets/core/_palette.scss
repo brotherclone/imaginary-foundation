@@ -1,4 +1,17 @@
 $background-color: #fff;
+
 body{
   background-color: $background-color;
 }
+
+$eight-bit-ocean: rgb(37, 155, 178);
+$zluta: rgb(209, 202, 33);
+$cadet-blue: rgb(96, 116, 163);
+$luv: rgb(247, 4, 85);
+$bye-baby: rgb(12, 40, 39);
+
+$white: $background-color;
+$cyan: $eight-bit-ocean;
+$blue: $cadet-blue;
+$red: $luv;
+$black: $bye-baby;
