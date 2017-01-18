@@ -18,7 +18,7 @@
 
   // Nav menu
   .navigation-wrapper {
-    //@include clearfix;
+    @include clearfix;
     position: relative;
   }
 

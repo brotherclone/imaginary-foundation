@@ -1,8 +1,9 @@
 
 $font-name: "orpheuspro",sans-serif;
 
-@import "bourbon";
-@import "neat";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
 
 @import 'core/layout';
 @import 'core/palette';

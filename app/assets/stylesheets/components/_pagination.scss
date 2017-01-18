@@ -34,9 +34,9 @@
         display: inline;
       }
 
-      //@include media($large-screen) {
-      //  display: inline;
-      //}
+      @include media($large-screen) {
+        display: inline;
+      }
     }
 
     li a {
@@ -45,7 +45,7 @@
       border: $pagination-border;
       color: $pagination-color;
       outline: none;
-      //padding: ($base-spacing / 4) ($gutter / 2);
+      padding: ($base-spacing / 4) ($gutter / 2);
       text-decoration: none;
       transition: all 0.2s ease-in-out;
 

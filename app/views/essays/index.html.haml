@@ -1,19 +1,19 @@
-%h1 Listing essays
-
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-
-  %tbody
-    - @essays.each do |essay|
-      %tr
-        %td= link_to 'Show', essay
-        %td= link_to 'Edit', edit_essay_path(essay)
-        %td= link_to 'Destroy', essay, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Essay', new_essay_path
+.cards
+  .card
+    .card-image
+    .card-header
+      %h4 First Card
+    .card-copy
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+  .card
+    .card-image
+    .card-header
+      %h4 Another Card
+    .card-copy
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+  .card
+    .card-image
+    .card-header
+      %h4 The Last Card
+    .card-copy
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
