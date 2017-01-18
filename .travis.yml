@@ -12,6 +12,5 @@ install:
   - bundle install
 
 script:
-  - RAILS_ENV=test bundle exec rake db:create db:migrate
   - bundle exec rake db:test:prepare
   - bundle exec rake spec:travis
