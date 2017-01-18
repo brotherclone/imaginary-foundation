@@ -24,6 +24,7 @@ gem 'livingstyleguide'
 gem 'discogs-wrapper'
 gem 'gon'
 gem 'angularjs-rails'
+gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
