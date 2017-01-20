@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :goodwords
+
   resources :essays
 
   resources :projects
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
   get 'about' => 'about#index'
   get 'privacy' => 'privacy#index'
   get 'contact' => 'contact#index'
-  get 'related_sites' => 'related_sites#index'
+  get 'related-sites' => 'related_sites#index'
+  get 'whats-the-good-word' => 'goodwords#whats-the-good-word'
 
 end

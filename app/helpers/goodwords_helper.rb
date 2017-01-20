@@ -1,0 +1,2 @@
+module GoodwordsHelper
+end

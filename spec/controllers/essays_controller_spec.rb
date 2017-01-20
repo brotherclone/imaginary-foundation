@@ -52,13 +52,6 @@ RSpec.describe EssaysController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new essay as @essay" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:essay)).to be_a_new(Essay)
-    end
-  end
-
   describe "GET #edit" do
     it "assigns the requested essay as @essay" do
       essay = Essay.create! valid_attributes

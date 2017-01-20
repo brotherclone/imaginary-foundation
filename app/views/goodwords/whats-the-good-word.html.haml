@@ -1,0 +1,18 @@
+// Enter some text
+// slide a slider
+// see candidate words appear
+// candidate words can not be be previous words
+// mark them as good or bad
+
+.good-word-container{:ng => {:controller=> 'goodWordCtrl', :init=>'init()'}}
+  .good-creation
+    %h1 What's the good word?
+    %textarea{:ng=>{:model=>'goodInput'},:class=>'', :id=>'goodWordInput'}
+    %input{:ng=>{:model=>'goodWillInput'},:class=>'', :id=>'goodWill'}
+    %input{:ng=>{:model=>'goodInputURL'},:class=>'', :id=>'goodWillURL'}
+    %button{:ng=>{:click=>'selectCandidates(goodInput)'}} Submit
+  .good-display
+    .word{:ng=>{:repeat=>'candidate in candidates track by $index'}}
+      %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} N
+      %span {{candidate.word}}
+      %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} Y
