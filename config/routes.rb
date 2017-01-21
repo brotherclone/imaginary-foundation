@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   get 'privacy' => 'privacy#index'
   get 'contact' => 'contact#index'
   get 'related-sites' => 'related_sites#index'
-  get 'whats-the-good-word' => 'goodwords#whats-the-good-word'
+  get 'whats_the_good_word' => 'goodwords#whats-the-good-word'
 
 end

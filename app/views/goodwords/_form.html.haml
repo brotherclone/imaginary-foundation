@@ -1,0 +1,10 @@
+= form_for @goodword do |f|
+  - if @goodword.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@goodword.errors.count, "error")} prohibited this goodword from being saved:"
+      %ul
+        - @goodword.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

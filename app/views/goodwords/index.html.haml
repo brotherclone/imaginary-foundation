@@ -6,10 +6,13 @@
       %th
       %th
       %th
+      %th
 
   %tbody
     - @goodwords.each do |goodword|
       %tr
+        %th
+          =goodword.word
         %td= link_to 'Show', goodword
         %td= link_to 'Edit', edit_goodword_path(goodword)
         %td= link_to 'Destroy', goodword, :method => :delete, :data => { :confirm => 'Are you sure?' }

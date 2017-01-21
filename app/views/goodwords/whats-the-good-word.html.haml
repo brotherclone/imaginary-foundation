@@ -7,10 +7,11 @@
 .good-word-container{:ng => {:controller=> 'goodWordCtrl', :init=>'init()'}}
   .good-creation
     %h1 What's the good word?
-    %textarea{:ng=>{:model=>'goodInput'},:class=>'', :id=>'goodWordInput'}
-    %input{:ng=>{:model=>'goodWillInput'},:class=>'', :id=>'goodWill'}
-    %input{:ng=>{:model=>'goodInputURL'},:class=>'', :id=>'goodWillURL'}
-    %button{:ng=>{:click=>'selectCandidates(goodInput)'}} Submit
+    %form{:ng=>{:model=>'goodWordForm'}}
+      %textarea{:ng=>{:model=>'goodWordForm.goodInput'},:class=>'', :id=>'goodWordInput'}
+      %input{:ng=>{:model=>'goodWordForm.goodWillInput'},:class=>'', :id=>'goodWill'}
+      %input{:ng=>{:model=>'goodWordForm.goodInputURL'},:class=>'', :id=>'goodWillURL'}
+      %button{:ng=>{:click=>'selectCandidates(goodWordForm.goodInput)'}} Submit
   .good-display
     .word{:ng=>{:repeat=>'candidate in candidates track by $index'}}
       %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} N
