@@ -1,22 +1,23 @@
-%h1 Listing goodwords
-
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-      %th
-
-  %tbody
-    - @goodwords.each do |goodword|
-      %tr
-        %th
-          =goodword.word
-        %td= link_to 'Show', goodword
-        %td= link_to 'Edit', edit_goodword_path(goodword)
-        %td= link_to 'Destroy', goodword, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Goodword', new_goodword_path
+= include_gon
+.good-word-container{:ng => {:controller=> 'goodWordCtrl', :init=>'init()'}}
+  .good-header
+    %h1 What's the good word?
+    %button{:ng =>{:if=>'!editMode', :click => 'toggleMode()'}} Add Words
+    %button{:ng =>{:if=>'editMode', :click => 'toggleMode()'}} Close
+  .good-listing{:ng =>{:if=>'!editMode'}}
+    %span{:ng=>{:repeat=>'word in currentWords'}} {{word}}
+  .good-editor{:ng =>{:if=>'editMode'}}
+    .good-creation
+      %form{:ng=>{:model=>'goodWordForm'}}
+        %label{:for=>'goodWordInput'} Paste Source Text Here.
+        %textarea{:ng=>{:model=>'goodWordForm.goodInput', :required=>'true'},:class=>'', :id=>'goodWordInput', :name=>'goodWordInput'}
+        .errors{:ng=>{:messages=>'goodWordForm.goodWordInput.$error'}}
+          .error{:ng=>{:message=>'required'}} Source Text is required.
+        %label{:for=>'goodWordInput'} Add source URL (optional).
+        %input{:ng=>{:model=>'goodWordForm.goodInputURL'},:class=>'', :id=>'goodWillURL'}
+        %button{:ng=>{:click=>'selectCandidates(goodWordForm.goodInput)'}} Submit
+    .good-display
+      .word{:ng=>{:repeat=>'candidate in candidates'}}
+        %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} N
+        %span {{candidate.word}}
+        %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} Y

@@ -1,16 +1,24 @@
 .good-word-container{
   @include outer-container;
-  .good-creation{
-    @include span-columns(4);
-    @include shift(1);
+  .good-header{
+    display: flex;
     h1{
       @include page-heading($red);
     }
   }
-  .good-display{
-    @include span-columns(6);
-    .word{
+  .good-listing{
 
+  }
+  .good-editor{
+    .good-creation{
+      @include span-columns(4);
+      @include shift(1);
+    }
+    .good-display{
+      @include span-columns(6);
+      .word{
+
+      }
     }
   }
 }

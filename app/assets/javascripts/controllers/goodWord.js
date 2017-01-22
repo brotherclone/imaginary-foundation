@@ -1,17 +1,21 @@
 ImaginaryApplication.controller('goodWordCtrl', [ '$scope', '$http', function($scope, $http){
     $scope.init = function(){
+        $scope.checkList = $scope.createCurrentList(gon.goodwords);
+        $scope.editMode = false;
         $scope.clearForm();
     };
     $scope.selectCandidates = function(copy){
         words = copy.split(' ');
         $scope.candidates = [];
         for(var i=0; i<words.length; i++){
-            var item = {
-                isDecided: false,
-                word: words[i],
-                fromURL: $scope.goodWordForm.goodInputURL
-            };
-            $scope.candidates.push(item);
+            if($scope.currentWords.indexOf(words[i])==-1){
+                var item = {
+                    isDecided: false,
+                    word: words[i],
+                    fromURL: $scope.goodWordForm.goodInputURL
+                };
+                $scope.candidates.push(item);
+            }
         }
     };
     $scope.chooseCandidate = function(word, choose){
@@ -40,5 +44,14 @@ ImaginaryApplication.controller('goodWordCtrl', [ '$scope', '$http', function($s
     };
     $scope.clearForm = function(){
         $scope.goodWordForm ={};
+    };
+    $scope.createCurrentList = function(currentData){
+        $scope.currentWords = [];
+      for(var i=0; i<currentData.length; i++){
+          $scope.currentWords.push(currentData[i].word);
+      }
+    };
+    $scope.toggleMode = function(){
+      $scope.editMode = !$scope.editMode;
     };
 }]);

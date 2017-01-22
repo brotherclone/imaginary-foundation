@@ -17,6 +17,7 @@ class RecordsController < InheritedResources::Base
   end
   
   private
+
     def record_params
       params.require(:record).permit(:records, :page,:sort,:sort_order,:per_page)
     end

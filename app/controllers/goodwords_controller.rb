@@ -3,6 +3,7 @@ class GoodwordsController < InheritedResources::Base
 
   def index
     @goodwords = Goodword.all
+    gon.watch.goodwords =  @goodwords
   end
 
   def show
@@ -56,6 +57,7 @@ class GoodwordsController < InheritedResources::Base
   end
 
   private
+
   def set_goodword
     @goodword = Goodword.find(params[:id])
   end
