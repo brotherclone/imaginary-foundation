@@ -16,8 +16,30 @@
     }
     .good-display{
       @include span-columns(6);
+      display: flex;
+      flex-wrap: wrap;
       .word{
-
+        .display-word{
+          min-height: 40px;
+          border-top: 1px solid transparentize($black, 0.8);
+          border-bottom: 1px solid transparentize($black, 0.8);
+        }
+        .good{
+          border-top: 1px solid transparentize($black, 0.8);
+          border-bottom: 1px solid transparentize($black, 0.8);
+          border-right: 1px solid transparentize($black, 0.8);
+          border-radius: 0 0.5rem 0.5rem 0;
+          background-color: $blue;
+          color: $white;
+        }
+        .bad{
+          border-radius: 0.5rem 0 0 0.5rem;
+          border-top: 1px solid transparentize($black, 0.8);
+          border-bottom: 1px solid transparentize($black, 0.8);
+          border-left: 1px solid transparentize($black, 0.8);
+          background-color: $red;
+          color: $white;
+        }
       }
     }
   }

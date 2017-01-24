@@ -47,9 +47,11 @@ ImaginaryApplication.controller('goodWordCtrl', [ '$scope', '$http', function($s
     };
     $scope.createCurrentList = function(currentData){
         $scope.currentWords = [];
-      for(var i=0; i<currentData.length; i++){
-          $scope.currentWords.push(currentData[i].word);
-      }
+        for(var i=0; i<currentData.length; i++){
+            if(currentData[i].word.good){
+                $scope.currentWords.push(currentData[i].word);
+            }
+        }
     };
     $scope.toggleMode = function(){
       $scope.editMode = !$scope.editMode;

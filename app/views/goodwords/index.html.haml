@@ -18,6 +18,6 @@
         %button{:ng=>{:click=>'selectCandidates(goodWordForm.goodInput)'}} Submit
     .good-display
       .word{:ng=>{:repeat=>'candidate in candidates'}}
-        %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} N
-        %span {{candidate.word}}
-        %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}} Y
+        %button{:ng=>{:click=>'chooseCandidate(candidate, false)'}, :class=>'bad'} N
+        %span{:class=>'display-word'} {{candidate.word}}
+        %button{:ng=>{:click=>'chooseCandidate(candidate, true)'}, :class=>'good'} Y
