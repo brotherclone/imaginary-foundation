@@ -1,3 +1,0 @@
-@scss application.scss
-@title Imaginary Style Guide
-@import stylesheets/**/*.lsg
