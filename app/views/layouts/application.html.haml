@@ -9,6 +9,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{:ng =>{:app=>'ImaginaryApplication'}}
-    = render :partial => 'components/navigation'
-    = yield
+    .main-outer.wrapper-for-content-outside-of-footer
+      .main-inner
+        = render :partial => 'components/navigation'
+        = yield
     = render :partial => 'components/footer'

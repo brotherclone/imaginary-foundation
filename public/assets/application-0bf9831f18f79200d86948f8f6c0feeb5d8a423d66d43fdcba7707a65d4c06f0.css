@@ -1,0 +1,696 @@
+/* line 4, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_buttons.scss */
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 150ms ease;
+  transition: background-color 150ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_buttons.scss */
+button:hover, button:focus, [type='button']:hover, [type='button']:focus, [type='reset']:hover, [type='reset']:focus, [type='submit']:hover, [type='submit']:focus {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 28, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 32, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_buttons.scss */
+button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+input,
+select,
+textarea {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* line 28, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  -webkit-transition: border-color 150ms ease;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 40, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
+  border-color: #b1b1b1;
+}
+/* line 44, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
+  border-color: #1565c0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  outline: none;
+}
+/* line 50, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 54, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
+  border: 1px solid #ddd;
+}
+/* line 59, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type='color']::-webkit-input-placeholder, [type='date']::-webkit-input-placeholder, [type='datetime']::-webkit-input-placeholder, [type='datetime-local']::-webkit-input-placeholder, [type='email']::-webkit-input-placeholder, [type='month']::-webkit-input-placeholder, [type='number']::-webkit-input-placeholder, [type='password']::-webkit-input-placeholder, [type='search']::-webkit-input-placeholder, [type='tel']::-webkit-input-placeholder, [type='text']::-webkit-input-placeholder, [type='time']::-webkit-input-placeholder, [type='url']::-webkit-input-placeholder, [type='week']::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #858585;
+}
+[type='color']::-moz-placeholder, [type='date']::-moz-placeholder, [type='datetime']::-moz-placeholder, [type='datetime-local']::-moz-placeholder, [type='email']::-moz-placeholder, [type='month']::-moz-placeholder, [type='number']::-moz-placeholder, [type='password']::-moz-placeholder, [type='search']::-moz-placeholder, [type='tel']::-moz-placeholder, [type='text']::-moz-placeholder, [type='time']::-moz-placeholder, [type='url']::-moz-placeholder, [type='week']::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder {
+  color: #858585;
+}
+[type='color']:-ms-input-placeholder, [type='date']:-ms-input-placeholder, [type='datetime']:-ms-input-placeholder, [type='datetime-local']:-ms-input-placeholder, [type='email']:-ms-input-placeholder, [type='month']:-ms-input-placeholder, [type='number']:-ms-input-placeholder, [type='password']:-ms-input-placeholder, [type='search']:-ms-input-placeholder, [type='tel']:-ms-input-placeholder, [type='text']:-ms-input-placeholder, [type='time']:-ms-input-placeholder, [type='url']:-ms-input-placeholder, [type='week']:-ms-input-placeholder, input:not([type]):-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #858585;
+}
+[type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
+  color: #858585;
+}
+
+/* line 64, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 68, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 74, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 79, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_layout.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_layout.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_layout.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin: 0;
+}
+
+/* line 12, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_lists.scss */
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* line 17, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_lists.scss */
+dd {
+  margin: 0;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_media.scss */
+figure {
+  margin: 0;
+}
+
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_media.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+body {
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 24, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #1565c0;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease;
+  transition: color 150ms ease;
+}
+/* line 29, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #104c90;
+}
+
+/* line 36, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.cards .card {
+  -ms-flex-preferred-size: 20em;
+      flex-basis: 20em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 1em;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.cards .card-image {
+  height: 15em;
+  background: whitesmoke;
+  overflow: hidden;
+}
+/* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.cards .card-image img {
+  width: 100%;
+}
+
+/* line 2, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_palette.scss */
+body {
+  background-color: #fff;
+}
+
+/* line 6, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+* {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 16px;
+  color: #0c2827;
+}
+
+/* line 13, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h2 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+/* line 27, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h3 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h4 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h5 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 58, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.page-heading {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0c2827;
+  margin-bottom: 0;
+}
+
+/* line 62, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright {
+  font-family: "Arial", sans-serif !important;
+}
+/* line 64, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright:before {
+  content: '\00a9';
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation .navigation-menu-button {
+  display: block;
+  float: right;
+  margin: 0;
+  padding-top: 0.5em;
+}
+@media screen and (min-width: 600px) {
+  /* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation .navigation-menu-button {
+    display: none;
+  }
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation .navigation-wrapper {
+  position: relative;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 25, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation .logo {
+  float: left;
+}
+@media screen and (min-width: 600px) {
+  /* line 25, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation .logo {
+    float: none;
+    text-align: center;
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 25, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation .logo {
+    float: left;
+  }
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation .logo img {
+  max-height: 2em;
+  padding-right: 1em;
+}
+/* line 44, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation nav {
+  float: none;
+}
+@media screen and (min-width: 600px) {
+  /* line 44, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation nav {
+    float: left;
+    text-align: center;
+    line-height: 1.5em;
+    padding-top: 0.3em;
+  }
+}
+/* line 55, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation ul.navigation-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  /* line 55, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation ul.navigation-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* line 69, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation ul.navigation-menu.show {
+  display: block;
+}
+/* line 75, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation ul li.nav-link {
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  /* line 75, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    text-decoration: none;
+    width: auto;
+  }
+}
+/* line 88, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+.navigation li.nav-link a {
+  display: inline-block;
+}
+@media screen and (min-width: 900px) {
+  /* line 88, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  .navigation li.nav-link a {
+    padding-right: 1em;
+  }
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
+
+/* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.footer, .wrapper-for-content-outside-of-footer:after {
+  height: 12em;
+}
+@media screen and (min-width: 900px) {
+  /* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  .footer, .wrapper-for-content-outside-of-footer:after {
+    height: 4em;
+  }
+}
+
+/* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.footer .footer-logo {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  .footer .footer-logo {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.footer .footer-logo img {
+  height: 2.2em;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.footer ul {
+  margin: 0;
+  padding-left: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  .footer ul {
+    float: left;
+    padding-top: 0.3em;
+  }
+}
+/* line 41, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.footer ul li {
+  line-height: 1.5em;
+  padding-right: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 41, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  .footer ul li {
+    display: inline;
+    text-align: left;
+  }
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination {
+  text-align: center;
+}
+/* line 17, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul li {
+  display: inline;
+  list-style: none;
+}
+/* line 28, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul ul li {
+  display: none;
+}
+/* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul ul li:nth-child(1), .pagination ul ul li:nth-child(2), .pagination ul ul li:nth-child(3) {
+  display: inline;
+}
+@media screen and (min-width: 900px) {
+  /* line 28, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+  .pagination ul ul li {
+    display: inline;
+  }
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul li a {
+  background: #f7f7f7;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  color: #333;
+  outline: none;
+  padding: 0.375em 0.809em;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul li a:hover, .pagination ul li a:focus {
+  background: white;
+  color: #1565c0;
+}
+/* line 58, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pagination.scss */
+.pagination ul li a:active {
+  background: #f7f7f7;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.good-word-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-header h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f70455;
+  margin-bottom: 0;
+}
+/* line 13, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-editor .good-creation {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+}
+/* line 89, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-creation:last-child {
+  margin-right: 0;
+}
+/* line 17, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-editor .good-display {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 89, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-display:last-child {
+  margin-right: 0;
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-editor .good-display .word .display-word {
+  min-height: 40px;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+}
+/* line 27, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-editor .good-display .word .good {
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-right: 1px solid rgba(12, 40, 39, 0.2);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #6074a3;
+  color: #fff;
+}
+/* line 35, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/goodwords.scss */
+.good-word-container .good-editor .good-display .word .bad {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-left: 1px solid rgba(12, 40, 39, 0.2);
+  background-color: #f70455;
+  color: #fff;
+}
