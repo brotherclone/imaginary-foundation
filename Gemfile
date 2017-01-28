@@ -19,12 +19,12 @@ gem 'compass-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'bourbon'
 gem 'neat'
-gem 'bitters'
 gem 'livingstyleguide'
 gem 'discogs-wrapper'
 gem 'gon'
 gem 'angularjs-rails'
 gem 'figaro'
+
 
 group :development, :test do
   gem 'rspec-rails'

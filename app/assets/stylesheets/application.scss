@@ -3,11 +3,11 @@ $font-name: "orpheuspro",sans-serif;
 
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import "base/base";
 
 @import 'core/layout';
 @import 'core/palette';
 @import 'core/typography';
+@import 'core/icons';
 
 @import "components/navigation";
 @import "components/footer";

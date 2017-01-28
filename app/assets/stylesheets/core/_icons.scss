@@ -1,0 +1,11 @@
+@mixin if-icon{
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.24rem;
+  color: $black;
+}
+
+i{
+  @include if-icon();
+}

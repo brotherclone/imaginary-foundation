@@ -1,0 +1,43 @@
+# Icons
+
+
+'''
+<i class="icon-book"></i>
+'''
+
+@font-example 32px "icomoon" {
+\f007
+\f091
+\f03a
+\f0a3
+\f0a4
+\f078
+\f0a2
+\f084
+\f046
+\f05f
+\f04e
+\f07f
+\f060
+\f089
+\f008
+\f02c
+\f08f
+\f05e
+\f081
+\26a1
+\e942
+\e951
+\e96c
+\e977
+\e978
+\ea54
+\ea55
+\ea56
+\ea5b
+\ea91
+\ea92
+\ea96
+\eaa9
+\eac9
+}
