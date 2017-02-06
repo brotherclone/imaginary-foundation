@@ -1,0 +1,83 @@
+
+@mixin if-btn($color: $black,
+              $bg-color: transparent,
+              $border-color: transparent,
+              $active-color: $black,
+              $active-bg-color: transparent,
+              $active-border-color: transparent,
+              $on-color: $blue,
+              $on-bg-color: transparent,
+              $on-border-color: $blue
+            ){
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: $color;
+  background-color: $bg-color;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid $border-color;
+  touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  @include transition($transition-string: .75s ease-in-out);
+  &:hover, &:active{
+    color: $active-color;
+    background-color: $active-bg-color;
+    border-color: $active-border-color;
+  }
+  &.is-on, &.current{
+    color: $on-color;
+    background-color: $on-bg-color;
+    border-color: $on-border-color;
+  }
+}
+
+
+.if-button{
+  @include if-btn($border-color: $black,
+                  $active-color: lighten($black,25%),
+                  $active-bg-color: transparent,
+                  $active-border-color: lighten($black,25%),
+                  $on-color:$white,
+                  $on-bg-color: $cyan);
+  &.primary{
+    @include if-btn($color:$white,
+                    $bg-color:$blue,
+                    $active-color: $white,
+                    $active-bg-color: darken($blue, 20%),
+                    $on-color: $white,
+                    $on-bg-color: darken($blue, 30%));
+  }
+  &.secondary{
+    @include if-btn($color:lighten($black,20%),
+                    $active-border-color:lighten($black,20%),
+                    $on-color: $blue,
+                    $on-border-color: $blue);
+  }
+  &.yikes{
+    @include if-btn($color:$white,
+                    $bg-color:$red,
+                    $active-color: $white,
+                    $active-bg-color: darken($red, 10%),
+                    $on-color: $white,
+                    $on-bg-color: darken($red, 15%));
+  }
+  &.wunderbar{
+    @include if-btn($color:$white,
+                    $bg-color:$green,
+                    $active-color: $white,
+                    $active-bg-color: darken($green, 10%),
+                    $on-color: $white,
+                    $on-bg-color: darken($green, 20%));
+  }
+}
+

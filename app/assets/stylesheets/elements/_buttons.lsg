@@ -1,0 +1,21 @@
+# Buttons
+
+```
+<button class="if-button">Default Button</button>
+```
+
+```
+<button class="if-button primary">Primary</button>
+```
+
+```
+<button class="if-button secondary">Secondary</button>
+```
+
+```
+<button class="if-button yikes">Yikes</button>
+```
+
+```
+<button class="if-button wunderbar">Wunderbar</button>
+```

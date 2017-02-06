@@ -1,0 +1,168 @@
+$icon-font: 'icomoon';
+
+@font-face {
+  font-family: $icon-font;
+  src:url('/assets/icomoon.eot');
+  src:url('/assets/icomoon.eot?#iefix') format('embedded-opentype'),
+  url('/assets/icomoon.woff') format('woff'),
+  url('/assets/icomoon.ttf') format('truetype'),
+  url('/assets/icomoon.svg#icomoon') format('svg');
+}
+
+@mixin if-icon{
+  font-family: $icon-font !important;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.24rem;
+  color: $black;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+i{
+  @include if-icon();
+}
+
+.icon-book:before {
+  content: "\f007";
+}
+
+
+.icon-bug:before {
+  content: "\f091";
+}
+
+
+.icon-check:before {
+  content: "\f03a";
+}
+
+.icon-chevron-down:before {
+  content: "\f0a3";
+}
+
+.icon-chevron-left:before {
+  content: "\f0a4";
+}
+
+.icon-chevron-right:before {
+  content: "\f078";
+}
+
+.icon-chevron-up:before {
+  content: "\f0a2";
+}
+
+.icon-circle-slash:before {
+  content: "\f084";
+}
+
+.icon-clock:before {
+  content: "\f046";
+}
+
+.icon-code:before {
+  content: "\f05f";
+}
+
+.icon-eye:before {
+  content: "\f04e";
+}
+
+.icon-link-external:before {
+  content: "\f07f";
+}
+
+.icon-location:before {
+  content: "\f060";
+}
+
+.icon-microscope:before {
+  content: "\f089";
+}
+
+.icon-octoface:before {
+  content: "\f008";
+}
+
+.icon-question:before {
+  content: "\f02c";
+}
+
+.icon-stop:before {
+  content: "\f08f";
+}
+
+.icon-three-bars:before {
+  content: "\f05e";
+}
+
+.icon-x:before {
+  content: "\f081";
+}
+
+.icon-zap:before {
+  content: "\26a1";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+.icon-bell:before {
+  content: "\e951";
+}
+
+.icon-bubbles:before {
+  content: "\e96c";
+}
+
+.icon-quotes-left:before {
+  content: "\e977";
+}
+
+.icon-quotes-right:before {
+  content: "\e978";
+}
+
+.icon-radio-checked:before {
+  content: "\ea54";
+}
+
+.icon-radio-checked2:before {
+  content: "\ea55";
+}
+
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}
+
+.icon-filter:before {
+  content: "\ea5b";
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-behance2:before {
+  content: "\eaa9";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
