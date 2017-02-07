@@ -1,19 +1,26 @@
 
 $font-name: "orpheuspro",sans-serif;
-// Third Party Libraries
+
+
+//Third Party
 @import "bourbon/bourbon";
 @import "neat/neat";
-//Core Styles
+
+//Core Styling
+@import 'core/animation';
 @import 'core/layout';
 @import 'core/palette';
 @import 'core/typography';
-@import 'core/icons';
-//Components
+
+// Components
 @import "components/navigation";
 @import "components/footer";
 @import "components/pagination";
-//Views
+
+// Elements
+@import 'elements/icons';
+@import "elements/buttons";
+
+// Layouts
 @import "resume";
 @import "goodwords";
-
-

@@ -1,0 +1,8 @@
+$default-timing: 1s;
+$default-transition: linear;
+
+@mixin transition ($element: all, $transition-string: $default-timing $default-transition){
+  -webkit-transition: $element $transition-string;
+  -o-transition: $element $transition-string;
+  transition: $element $transition-string;
+}

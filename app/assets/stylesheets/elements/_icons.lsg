@@ -1,7 +1,4 @@
 # Icons
-@header{
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/ae898a3379/ImaginaryFoundation/style.css">
-}
 
 ```
 <i class="icon-book"></i>
