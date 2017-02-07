@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :galleries
+
+  resources :images
+
   resources :goodwords
 
   resources :essays

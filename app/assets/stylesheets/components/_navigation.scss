@@ -1,0 +1,38 @@
+header.navigation{
+  .navigation-wrapper{
+    a.navigation-menu-button{
+      display:none;
+      float:right;
+      i.hamburger{
+        font-size: 3rem;
+      }
+    }
+    ul.navigation-menu{
+      list-style: none;
+      padding:0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      &.show{
+
+      }
+      li.nav-link{
+        flex-grow: 2;
+        a{
+          font-size: 1.75rem;
+          @include imaginary-hover-focus();
+        }
+      }
+      li.logo-link{
+        flex-grow:1;
+        a{
+          img{
+            max-width: 3rem;
+            max-height: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

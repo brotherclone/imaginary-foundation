@@ -1,10 +1,13 @@
-%header.navigation{:role => 'banner'}
+%header.navigation{:role => 'banner', :ng => {:controller=>'navigationCtrl', :init=>'init()'}}
   .navigation-wrapper
-    %a.logo{:href => home_path}
-      %img{:src=>'http://placehold.it/50/50'}/
-    %a#js-mobile-menu.navigation-menu-button{:href => 'javascript:void(0)'} Menu
+    %a#navigation-menu-button.navigation-menu-button{:ng => {:click=>'openMobileNav()'}}
+      %i{:class=>'if-icon icon-three-bars hamburger'}
+      Menu
     %nav{:role => 'navigation'}
-      %ul#js-navigation-menu.navigation-menu.show
+      %ul#navigation-menu.navigation-menu.show
+        %li.logo-link
+          %a.logo{:href => home_path,:alt=>'', :tabindex=>'0'}
+            %img{:src=>'http://placehold.it/50/50'}/
         %li.nav-link
           %a{:href => home_path} Imaginary Foundation
         %li.nav-link

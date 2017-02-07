@@ -3,6 +3,25 @@ $default-font-size: 16px;
 
 $special-characters: 'Arial', sans-serif !important;
 
+@mixin imaginary-hover-focus($hovercolor:$blue, $focuscolor:$blue){
+  text-decoration: none;
+  &.hover{
+    color: $hovercolor;
+    text-decoration: underline;
+  }
+  &.focus{
+    color: $focuscolor;
+  }
+}
+
+@mixin page-heading($color: $black){
+  font-family: $default-font;
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color;
+  margin-bottom: 0;
+};
+
 * {
   font-family: $default-font;
   font-size: $default-font-size;
@@ -46,14 +65,9 @@ h5{
   margin-bottom: 0.5rem;
 }
 
-
-@mixin page-heading($color: $black){
-  font-family: $default-font;
-  font-size: 3rem;
-  font-weight: 600;
-  color: $color;
-  margin-bottom: 0;
-};
+a{
+  @include imaginary-hover-focus();
+}
 
 .page-heading{
   @include page-heading();
@@ -61,7 +75,9 @@ h5{
 
 .copyright{
   font-family: $special-characters;
+  color: $white;
   &:before{
     content: '\00a9';
   }
 }
+

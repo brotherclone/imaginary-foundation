@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170120142443) do
+ActiveRecord::Schema.define(version: 20170201224116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,11 @@ ActiveRecord::Schema.define(version: 20170120142443) do
     t.datetime "updated_at"
   end
 
+  create_table "galleries", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "goodwords", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -62,7 +67,40 @@ ActiveRecord::Schema.define(version: 20170120142443) do
     t.string   "fromURL"
   end
 
+  create_table "images", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "gallery_id"
+    t.integer  "project_id"
+    t.integer  "essay_id"
+  end
+
+  add_index "images", ["essay_id"], name: "index_images_on_essay_id", using: :btree
+  add_index "images", ["gallery_id"], name: "index_images_on_gallery_id", using: :btree
+  add_index "images", ["project_id"], name: "index_images_on_project_id", using: :btree
+
   create_table "projects", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "topic_id"
+    t.integer  "essays_id"
+    t.integer  "topics_id"
+    t.integer  "project_id"
+    t.integer  "essay_id"
+  end
+
+  add_index "tags", ["essay_id"], name: "index_tags_on_essay_id", using: :btree
+  add_index "tags", ["project_id"], name: "index_tags_on_project_id", using: :btree
+  add_index "tags", ["topic_id"], name: "index_tags_on_topic_id", using: :btree
+
+  create_table "topics", force: true do |t|
+    t.string   "title"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
