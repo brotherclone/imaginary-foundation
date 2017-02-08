@@ -34,6 +34,9 @@ h1{
   font-size: 5rem;
   font-weight: 800;
   margin-bottom: 0;
+  &.huge{
+    font-size: 8rem;
+  }
 }
 
 h2{
@@ -81,3 +84,26 @@ a{
   }
 }
 
+@mixin noun(){
+
+}
+
+.person{
+  @include noun();
+}
+
+.place{
+  @include noun();
+}
+
+.thing{
+  @include noun();
+}
+
+.duration{
+  @include noun();
+}
+
+.organization{
+  @include noun();
+}

@@ -41,7 +41,6 @@
   }
 }
 
-
 .if-button{
   @include if-btn($border-color: $black,
                   $active-color: lighten($black,25%),

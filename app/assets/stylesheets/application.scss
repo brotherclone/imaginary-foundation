@@ -22,5 +22,14 @@ $font-name: "orpheuspro",sans-serif;
 @import "elements/buttons";
 
 // Layouts
-@import "resume";
-@import "goodwords";
+@import "layouts/about";
+@import "layouts/contact";
+@import "layouts/essays";
+@import "layouts/goodwords";
+@import "layouts/home";
+@import "layouts/privacy";
+@import "layouts/projects";
+@import "layouts/records";
+@import "layouts/related_sites";
+@import "layouts/resume";
+
