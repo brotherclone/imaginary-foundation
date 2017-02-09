@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201224116) do
+ActiveRecord::Schema.define(version: 20170209210036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,9 @@ ActiveRecord::Schema.define(version: 20170201224116) do
   create_table "essays", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.text     "body"
+    t.text     "description"
   end
 
   create_table "galleries", force: true do |t|
@@ -73,6 +76,7 @@ ActiveRecord::Schema.define(version: 20170201224116) do
     t.integer  "gallery_id"
     t.integer  "project_id"
     t.integer  "essay_id"
+    t.string   "image_file"
   end
 
   add_index "images", ["essay_id"], name: "index_images_on_essay_id", using: :btree
@@ -82,6 +86,10 @@ ActiveRecord::Schema.define(version: 20170201224116) do
   create_table "projects", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.text     "body"
+    t.string   "external_url"
+    t.text     "description"
   end
 
 end

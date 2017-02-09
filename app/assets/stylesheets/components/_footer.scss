@@ -13,10 +13,12 @@ html, body {
 footer.footer {
   width: 100%;
   background-color:$black;
+  height: 300px;
     .footer-logo{
       width:100%;
       display: flex;
       justify-content: center;
+      padding-top: 2rem;
       img{
        width: 2rem;
        height: 2rem;
@@ -25,7 +27,7 @@ footer.footer {
   ul{
     list-style: none;
     padding:0;
-    margin:0;
+    margin:4rem 0 0 0;
     display: flex;
     justify-content: space-around;
     color: $white;
