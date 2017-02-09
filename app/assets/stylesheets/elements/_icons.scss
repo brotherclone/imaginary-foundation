@@ -1,5 +1,4 @@
 $icon-font: 'icomoon';
-
 @font-face {
   font-family: $icon-font;
   src:url('/assets/icomoon.eot');
@@ -8,7 +7,6 @@ $icon-font: 'icomoon';
   url('/assets/icomoon.ttf') format('truetype'),
   url('/assets/icomoon.svg#icomoon') format('svg');
 }
-
 @mixin if-icon{
   font-family: $icon-font !important;
   font-size: 1.5rem;

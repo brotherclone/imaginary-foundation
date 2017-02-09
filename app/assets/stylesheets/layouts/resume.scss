@@ -1,15 +1,63 @@
 .resume{
+  @include outer-container;
+  .candidate{
+    text-align: right;
+  }
+
   .heading{
 
   }
   .contact{
+    text-align: right;
     .contact-link{
 
     }
   }
   .experience{
-    .title{
-
+    .position{
+      margin: 4rem 0 2rem 0;
+      .synopsis{
+        display: flex;
+        justify-content: space-between;
+        .title{
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+        }
+        .organization{
+          margin: 0;
+          padding: 0;
+          align-self: center;
+        }
+        .address{
+          display: flex;
+          span{
+            margin-right: 0.5rem;
+            align-self: center;
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+        .duration{
+          align-self: center;
+          span:first-child{
+            &:after{
+              content: ' - ';
+            }
+          }
+        }
+      }
+      .description{
+        margin-top: 1rem;
+      }
     }
   }
+  .skills{
+    .listing{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  margin-bottom: 3rem;
 }

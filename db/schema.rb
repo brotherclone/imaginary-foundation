@@ -84,25 +84,4 @@ ActiveRecord::Schema.define(version: 20170201224116) do
     t.datetime "updated_at"
   end
 
-  create_table "tags", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "topic_id"
-    t.integer  "essays_id"
-    t.integer  "topics_id"
-    t.integer  "project_id"
-    t.integer  "essay_id"
-  end
-
-  add_index "tags", ["essay_id"], name: "index_tags_on_essay_id", using: :btree
-  add_index "tags", ["project_id"], name: "index_tags_on_project_id", using: :btree
-  add_index "tags", ["topic_id"], name: "index_tags_on_topic_id", using: :btree
-
-  create_table "topics", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
