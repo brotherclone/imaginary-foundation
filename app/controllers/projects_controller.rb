@@ -7,6 +7,7 @@ class ProjectsController < InheritedResources::Base
   end
 
   def show
+    gon.watch.project =  @project
     respond_to do |format|
       format.html { render :show}
       format.json { render :json => @project}

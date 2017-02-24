@@ -1,2 +1,9 @@
--@essays.each do |e|
-  =e.title
+= include_gon
+.projects{ :ng => {:controller=>'projectIndexCtrl', :init=>'init()'}}
+  .header
+    %h1 Projects
+    %hr
+  .body
+    .project-card{ :ng => {:repeat=>'project in projects'}}
+      .title
+        %a{:href=>projects_path+'/{{project.id}}'} {{project.title}}

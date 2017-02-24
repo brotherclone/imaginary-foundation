@@ -1,5 +1,7 @@
-=@project.title
-=@project.description
-=@project.body
-=@project.external_url
-=@project.image.nil? ? 'no image' : @project.image.image_file
+= include_gon
+.project{ :ng => {:controller=>'projectCtrl', :init=>'init()'}}
+  .header
+    %h1 {{project.title}}
+    %hr
+  .body
+    {{project.body}}

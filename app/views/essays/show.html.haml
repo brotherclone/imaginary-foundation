@@ -1,0 +1,7 @@
+= include_gon
+.essay{ :ng => {:controller=>'essayCtrl', :init=>'init()'}}
+  .header
+    %h1 {{essay.title}}
+    %hr
+  .body
+    {{essay.body}}

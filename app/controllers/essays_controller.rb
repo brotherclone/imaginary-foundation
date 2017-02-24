@@ -8,11 +8,9 @@ class EssaysController < InheritedResources::Base
   end
 
   def show
+    gon.watch.essay =  @essay
     respond_to do |format|
-      format.html {
-        render :show
-        gon.watch.essay =  @essay
-      }
+      format.html { render :show }
       format.json { render :json => @essay}
     end
   end
