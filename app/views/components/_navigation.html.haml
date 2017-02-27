@@ -1,10 +1,11 @@
 %header.navigation{:role => 'banner', :ng => {:controller=>'navigationCtrl', :init=>'init()'}}
   .navigation-wrapper
-    %a#navigation-menu-button.navigation-menu-button{:ng => {:click=>'openMobileNav()'}}
+    %a.navigation-menu-button{:ng => {:click=>'toggleMobileNav()',:if=>'!mobileNavOpen'}}
       %i{:class=>'if-icon icon-three-bars hamburger'}
-      Menu
+    %a.navigation-menu-button{:ng => {:click=>'toggleMobileNav()',:if=>'mobileNavOpen'}}
+      %i{:class=>'if-icon icon-x hamburger'}
     %nav{:role => 'navigation'}
-      %ul#navigation-menu.navigation-menu.show
+      %ul.navigation-menu
         %li.logo-link
           %a.logo{:href => home_path,:alt=>'', :tabindex=>'0'}
             %img{:src=>'http://placehold.it/50/50'}/

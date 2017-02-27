@@ -1,3 +1,5 @@
+
+
 header.navigation{
   .navigation-wrapper{
     a.navigation-menu-button{
@@ -6,17 +8,30 @@ header.navigation{
       i.hamburger{
         font-size: 3rem;
       }
+      @include media($tablet) {
+        display: inline-flex;
+      }
     }
     ul.navigation-menu{
+      @include media($tablet) {
+        display: none;
+        &.open{
+          display: flex;
+          flex-direction: column;
+          li.nav-link{
+            text-align: right;
+          }
+          li.logo-link{
+            display: none;
+          }
+        }
+      }
       list-style: none;
       padding:0;
       margin: 0;
       display: flex;
       justify-content: space-between;
       flex-wrap: nowrap;
-      &.show{
-
-      }
       li.nav-link{
         flex-grow: 2;
         a{

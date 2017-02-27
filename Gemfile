@@ -18,7 +18,7 @@ gem 'autoprefixer-rails'
 gem 'compass-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'bourbon'
-gem 'neat'
+gem 'neat', '>= 2.0.0'
 gem 'livingstyleguide'
 gem 'discogs-wrapper'
 gem 'gon'

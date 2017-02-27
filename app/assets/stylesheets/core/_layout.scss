@@ -1,44 +1,21 @@
+
+$small-phone: new-breakpoint(max-width 320px 4);
+$phone: new-breakpoint(max-width 375px 4);
+$large-phone: new-breakpoint(max-width 414px 4);
+
+$small-tablet: new-breakpoint(max-width 768px 12);
+$tablet: new-breakpoint(max-width 1024px 12);
+$large-tablet:new-breakpoint(max-width 1366px 12);
+
+$small-monitor:  new-breakpoint(max-width 800px 12);
+$monitor: new-breakpoint(max-width 1920px 12);
+$large-monitor:  new-breakpoint(max-width 3840px 16);
+
+
 .main-outer{
   @include outer-container(100%);
   .main-inner{
     @include span-columns(12);
-  }
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .card {
-    flex-basis: 20em;
-    flex-grow: 1;
-    margin: 0 1em;
-  }
-  .card-image {
-    height: 15em;
-    background: whitesmoke;
-    overflow: hidden;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.grid {
-  $grid-gutter: 0.1rem;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 - $grid-gutter;
-  .grid-box-wrap {
-    flex-basis: 20rem;
-    flex-grow: 1;
-    flex-shrink: 0;
-    overflow: hidden;
-    padding: 0 $grid-gutter ($grid-gutter * 2);
-  }
-  .grid-box {
-    background: whitesmoke;
-    text-align: center;
   }
 }
 
