@@ -6,3 +6,32 @@ $default-transition: linear;
   -o-transition: $element $transition-string;
   transition: $element $transition-string;
 }
+
+@mixin animation ($name, $duration: $default-timing, $timing-function: $default-transition, $delay: 0) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: $timing-function;
+  -webkit-animation-name: $name;
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-timing-function: $timing-function;
+  -moz-animation-name: $name;
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-timing-function: $timing-function;
+  -o-animation-name: $name;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-name: $name;
+}
+
+
+@mixin animation-infinite-loop(){
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}

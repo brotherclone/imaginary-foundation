@@ -1,0 +1,27 @@
+@mixin radial-gradient($from, $to) {
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+}
+
+
+@keyframes shift {
+  from {background-color: $red;}
+  to {background-color: $blue;}
+}
+
+.bizarre-light{
+  @include radial-gradient(transparentize($yellow, .2),transparentize($green, .8));
+  background-color: $red;
+  @include animation(shift, 5s);
+  @include animation-infinite-loop();
+}
+.texture-example{
+  width: 100%;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
