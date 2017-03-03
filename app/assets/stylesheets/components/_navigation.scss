@@ -1,6 +1,7 @@
 
 
 header.navigation{
+  @include outer-container;
   .navigation-wrapper{
     a.navigation-menu-button{
       display:none;

@@ -3,17 +3,30 @@ body{
   background-color: $background-color;
 }
 
+//Primary
 $eight-bit-ocean: rgb(37, 155, 178);
 $zluta: rgb(209, 202, 33);
 $cadet-blue: rgb(96, 116, 163);
 $luv: rgb(247, 4, 85);
 $bye-baby: rgb(12, 40, 39);
-$kermit: rgb(88, 193, 51);
 
+//Extended
+$kermit: rgb(88, 193, 51);
+$failed-action-figure: rgb(230,94,62);
+$grape-milk: rgb(123,93,140);
+
+//Grey, Gray? Scale
 $white: $background-color;
-$cyan: $eight-bit-ocean;
-$blue: $cadet-blue;
-$red: $luv;
+$light-grey: rgb(191,191,191); $light-gray: $light-grey; //It's not a proper gray?
+$grey:  rgb(128,128,128); $gray: $grey;
+$dark-grey: rgb(64,64,64); $dark-gray: $dark-grey;
 $black: $bye-baby;
-$green: $kermit;
+
+//Chromatic
+$red: $luv;
+$orange: $failed-action-figure;
 $yellow: $zluta;
+$green: $kermit;
+$blue: $cadet-blue;
+$indigo: $eight-bit-ocean; $cyan: $indigo;
+$violet: $grape-milk; $purple: $violet;

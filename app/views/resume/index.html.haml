@@ -33,11 +33,11 @@
         %h3{:class=>'title'}
           Senior UX Architect
         %h4{:class=>'organization'}
-          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization', :class=> 'address'}
+          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
             %span{:itemprop => 'name'}
               %a{:href => 'http://www.adobe.com', :itemprop => 'url'}
                 Adobe
-        %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'address'}
+        %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress'}
           %span{:itemprop => 'streetAddress'}7930 Jones Branch Dr,  5th Floor
           = succeed ',' do
             %span{:itemprop => 'addressLocality'}McLean
@@ -53,7 +53,7 @@
         %h3{:class=>'title'}
           Adjunct Faculty
         %h4{:class=>'organization'}
-          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization', :class=> 'address'}
+          %span{:itemscope => true, :itemtype =>'http://schema.org/Organization'}
             %span{:itemprop => 'name'}
               %a{:href => 'http://advanced.jhu.edu/academics/graduate-degree-programs/communication/', :itemprop => 'url'}
                 Johns Hopkins University
@@ -159,8 +159,7 @@
         %h4{:class=>'organization'}
           %span{:itemscope => true, :itemtype => 'http://schema.org/Organization'}
             %span{:itemprop => 'name'}
-              %a{:itemprop => 'name'}
-                Code Owl Productions
+              Code Owl Productions
         %span{:itemprop => 'address', :itemscope => true, :itemtype => 'http://schema.org/PostalAddress', :class=> 'address'}
           %span{:itemprop =>'streetAddress'}23700 Bennett Chase Dr.
           = succeed ',' do
@@ -275,37 +274,38 @@
     %h2{:class=>'heading'}
       Skills
     .listing
-      %ul{:class => 'skills'}
+      %ul{:class => 'skill-group'}
         %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}HTML
         %li{:itemscope => 'http://schema.org/Code'}
-          %span{:itemprop => 'programmingLanguage'}CSS
+          %span{:itemprop => 'programmingLanguage'}CSS /
+          %span{:itemprop => 'programmingLanguage'}LESS /
+          %span{:itemprop => 'programmingLanguage'}SASS
         %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}Javascript /
           %span{:itemprop => 'programmingLanguage'}jQuery
         %li{:itemscope => 'http://schema.org/Code'}
-          %span{:itemprop => 'programmingLanguage'}LESS
-        %li{:itemscope => 'http://schema.org/Code'}
-          %span{:itemprop => 'programmingLanguage'}SASS
-        %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}PHP
         %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}Ruby/Rails
-      %ul{:class => 'skills'}
         %li{:itemscope => 'http://schema.org/Code'}
-          %span{:itemprop => 'programmingLanguage'}MySQL
+          %span{:itemprop => 'programmingLanguage'}Python
+      %ul{:class => 'skill-group'}
         %li{:itemscope => 'http://schema.org/Code'}
-          %span{:itemprop => 'programmingLanguage'}ActionScript
+          %span{:itemprop => 'programmingLanguage'}MySQL /
+          %span{:itemprop => 'programmingLanguage'}PostgreSQL
         %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}Node JS
         %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'programmingLanguage'}Angular
         %li{:itemscope => 'http://schema.org/Code'}
+          %span{:itemprop => 'programmingLanguage'}Swift
+        %li{:itemscope => 'http://schema.org/Code'}
           %span{:itemprop => 'name'}Arduino
           &amp;
           %span{:itemscope => 'http://schema.org/Thing'}
             %span{:itemprop => 'name'}Open-source Hardware
-      %ul{:class => 'skills'}
+      %ul{:class => 'skill-group'}
         %li{:itemscope => 'http://schema.org/SoftwareApplication'}
           %span{:itemprop => 'name'}MAX/DSP
         %li{:itemscope => 'http://schema.org/SoftwareApplication'}
