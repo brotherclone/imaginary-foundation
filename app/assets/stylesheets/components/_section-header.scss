@@ -1,0 +1,15 @@
+.section-header {
+  width: 100%;
+  @extend .bizarre-light;
+  margin-top: -3rem;
+  background-image: url( image-path("head.png") );
+  min-height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  background-position: right 16px top 0;
+  h1{
+    margin-left: 1.875rem;
+    color: $white;
+  }
+}

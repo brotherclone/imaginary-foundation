@@ -1,12 +1,14 @@
 
 
 header.navigation{
+  border-top: 0.5px solid transparentize($black,0.9);
+  border-bottom: 1px solid transparentize($black,0.9);
   .navigation-wrapper{
     a.navigation-menu-button{
       display:none;
       float:right;
       i.hamburger{
-        font-size: 3rem;
+        font-size: 2rem;
       }
       @include media($tablet) {
         display: inline-flex;
@@ -30,21 +32,22 @@ header.navigation{
       padding:0;
       margin: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       flex-wrap: nowrap;
       li.nav-link{
-        flex-grow: 2;
+        margin: 0 1rem 0 1rem;
         a{
-          font-size: 1.75rem;
+          font-size: 1rem;
           @include imaginary-hover-focus();
         }
       }
       li.logo-link{
-        flex-grow:1;
+        margin-right: 0.5rem;
         a{
           img{
-            max-width: 3rem;
-            max-height: 3rem;
+            margin-top: 0.3125rem;
+            max-width: 1rem;
+            max-height: 1rem;
           }
         }
       }

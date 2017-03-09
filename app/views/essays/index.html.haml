@@ -1,9 +1,8 @@
 = include_gon
 .essays{ :ng => {:controller=>'essayIndexCtrl', :init=>'init()'}}
-  .header
-    %h1 Essays
-    %hr
+  = render :partial => 'components/section_header'
   .body
     .essay-card{ :ng => {:repeat=>'essay in essays'}}
       .title
-        %a{:href=>essays_path+'/{{essay.id}}'}{{essay.title}}
+        %a{:href=>essays_path+'/{{essay.id}}'}
+          {{essay.title}}

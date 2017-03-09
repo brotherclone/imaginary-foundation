@@ -1,0 +1,1046 @@
+/* line 4, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 15, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.main-outer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.main-outer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 17, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.main-outer .main-inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.main-outer .main-inner:last-child {
+  margin-right: 0;
+}
+
+/* line 24, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 2, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_palette.scss */
+body {
+  background-color: #fff;
+}
+
+@-webkit-keyframes shift {
+  from {
+    background-color: #f70455;
+  }
+  to {
+    background-color: #6074a3;
+  }
+}
+
+@keyframes shift {
+  from {
+    background-color: #f70455;
+  }
+  to {
+    background-color: #6074a3;
+  }
+}
+/* line 16, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.bizarre-light, .related-sites .test-head {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(209, 202, 33, 0.8)), color-stop(100%, rgba(88, 193, 51, 0.2)));
+  background: -webkit-radial-gradient(center, circle cover, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background: -webkit-radial-gradient(circle cover at center, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background: radial-gradient(circle cover at center, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background-color: #f70455;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: shift;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: shift;
+  -o-animation-delay: 0;
+  -o-animation-duration: 5s;
+  -o-animation-timing-function: linear;
+  -o-animation-name: shift;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-name: shift;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/* line 22, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.texture-example {
+  width: 100%;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+/* line 25, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+* {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 16px;
+  color: #0c2827;
+}
+
+/* line 32, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+/* line 37, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1.huge {
+  font-size: 6rem;
+}
+/* line 38, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1.huge span {
+  font-size: 6rem;
+}
+
+/* line 45, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h2 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+/* line 52, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h3 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 59, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h4 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* line 67, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h5 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 74, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+a {
+  text-decoration: none;
+}
+/* line 8, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+a.hover {
+  color: #6074a3;
+  text-decoration: underline;
+}
+/* line 12, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+a.focus {
+  color: #6074a3;
+}
+
+/* line 78, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.page-heading {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0c2827;
+  margin-bottom: 0;
+}
+
+/* line 82, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright {
+  font-family: "Arial", sans-serif !important;
+  color: #fff;
+}
+/* line 85, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright:before {
+  content: '\00a9';
+}
+
+/* line 5, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper a.navigation-menu-button {
+  display: none;
+  float: right;
+}
+/* line 8, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper a.navigation-menu-button i.hamburger {
+  font-size: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  /* line 5, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper a.navigation-menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+/* line 15, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+@media screen and (max-width: 1024px) {
+  /* line 15, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu {
+    display: none;
+  }
+  /* line 18, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 21, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open li.nav-link {
+    text-align: right;
+  }
+  /* line 24, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open li.logo-link {
+    display: none;
+  }
+}
+/* line 35, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+/* line 37, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a {
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+/* line 8, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a.hover {
+  color: #6074a3;
+  text-decoration: underline;
+}
+/* line 12, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a.focus {
+  color: #6074a3;
+}
+/* line 42, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.logo-link {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/* line 45, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.logo-link a img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 6, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
+
+/* line 13, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer {
+  width: 100%;
+  background-color: #0c2827;
+  height: 300px;
+}
+/* line 17, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer .footer-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+/* line 22, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer .footer-logo img {
+  width: 2rem;
+  height: 2rem;
+}
+/* line 27, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 4rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+/* line 34, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer ul li {
+  color: #fff;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 8, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+footer.footer ul li a.hover {
+  color: #6074a3;
+  text-decoration: underline;
+}
+/* line 12, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+footer.footer ul li a.focus {
+  color: #6074a3;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/assets/icomoon.eot");
+  src: url("/assets/icomoon.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon.woff") format("woff"), url("/assets/icomoon.ttf") format("truetype"), url("/assets/icomoon.svg#icomoon") format("svg");
+}
+/* line 26, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+i {
+  font-family: "icomoon" !important;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.24rem;
+  color: #0c2827;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 30, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-book:before {
+  content: "\f007";
+}
+
+/* line 35, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bug:before {
+  content: "\f091";
+}
+
+/* line 40, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-check:before {
+  content: "\f03a";
+}
+
+/* line 44, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-down:before {
+  content: "\f0a3";
+}
+
+/* line 48, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-left:before {
+  content: "\f0a4";
+}
+
+/* line 52, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-right:before {
+  content: "\f078";
+}
+
+/* line 56, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-up:before {
+  content: "\f0a2";
+}
+
+/* line 60, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-circle-slash:before {
+  content: "\f084";
+}
+
+/* line 64, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-clock:before {
+  content: "\f046";
+}
+
+/* line 68, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-code:before {
+  content: "\f05f";
+}
+
+/* line 72, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-eye:before {
+  content: "\f04e";
+}
+
+/* line 76, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-link-external:before {
+  content: "\f07f";
+}
+
+/* line 80, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-location:before {
+  content: "\f060";
+}
+
+/* line 84, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-microscope:before {
+  content: "\f089";
+}
+
+/* line 88, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-octoface:before {
+  content: "\f008";
+}
+
+/* line 92, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-question:before {
+  content: "\f02c";
+}
+
+/* line 96, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-stop:before {
+  content: "\f08f";
+}
+
+/* line 100, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-three-bars:before {
+  content: "\f05e";
+}
+
+/* line 104, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-x:before {
+  content: "\f081";
+}
+
+/* line 108, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-zap:before {
+  content: "\26a1";
+}
+
+/* line 112, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-phone:before {
+  content: "\e942";
+}
+
+/* line 116, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bell:before {
+  content: "\e951";
+}
+
+/* line 120, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bubbles:before {
+  content: "\e96c";
+}
+
+/* line 124, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-quotes-left:before {
+  content: "\e977";
+}
+
+/* line 128, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-quotes-right:before {
+  content: "\e978";
+}
+
+/* line 132, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-checked:before {
+  content: "\ea54";
+}
+
+/* line 136, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-checked2:before {
+  content: "\ea55";
+}
+
+/* line 140, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}
+
+/* line 144, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-filter:before {
+  content: "\ea5b";
+}
+
+/* line 148, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+/* line 152, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/* line 156, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+/* line 160, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-behance2:before {
+  content: "\eaa9";
+}
+
+/* line 164, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+/* line 43, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #0c2827;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #0c2827;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 31, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button:hover, .if-button:active {
+  color: #298a87;
+  background-color: transparent;
+  border-color: #298a87;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.is-on, .if-button.current {
+  color: #fff;
+  background-color: #259bb2;
+  border-color: #6074a3;
+}
+/* line 50, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #6074a3;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 31, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary:hover, .if-button.primary:active {
+  color: #fff;
+  background-color: #3a4663;
+  border-color: transparent;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary.is-on, .if-button.primary.current {
+  color: #fff;
+  background-color: #272f43;
+  border-color: #6074a3;
+}
+/* line 58, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #247674;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 31, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary:hover, .if-button.secondary:active {
+  color: #0c2827;
+  background-color: transparent;
+  border-color: #247674;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary.is-on, .if-button.secondary.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 64, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #f70455;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 31, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes:hover, .if-button.yikes:active {
+  color: #fff;
+  background-color: #c50344;
+  border-color: transparent;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes.is-on, .if-button.yikes.current {
+  color: #fff;
+  background-color: #ac033b;
+  border-color: #6074a3;
+}
+/* line 72, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #58c133;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 31, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar:hover, .if-button.wunderbar:active {
+  color: #fff;
+  background-color: #469928;
+  border-color: transparent;
+}
+/* line 36, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar.is-on, .if-button.wunderbar.current {
+  color: #fff;
+  background-color: #33701e;
+  border-color: #6074a3;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/about.scss */
+.about {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.about::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/contact.scss */
+.contact {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.contact::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essays {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.essays::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/galleries.scss */
+.galleries {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.galleries::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.good-word-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 5, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-header h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f70455;
+  margin-bottom: 0;
+}
+/* line 13, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-creation {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+}
+/* line 89, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-creation:last-child {
+  margin-right: 0;
+}
+/* line 17, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 89, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-display:last-child {
+  margin-right: 0;
+}
+/* line 22, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .display-word {
+  min-height: 40px;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+}
+/* line 27, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .good {
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-right: 1px solid rgba(12, 40, 39, 0.2);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #6074a3;
+  color: #fff;
+}
+/* line 35, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .bad {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-left: 1px solid rgba(12, 40, 39, 0.2);
+  background-color: #f70455;
+  color: #fff;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/home.scss */
+.home {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.home::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/images.scss */
+.images {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.images::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/privacy.scss */
+.privacy {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.privacy::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/project.scss */
+.project {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.project::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.projects {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.projects::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.records::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/related_sites.scss */
+.related-sites {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.related-sites::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/related_sites.scss */
+.related-sites .test-head {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.related-sites .test-head::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+/* line 20, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.resume::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .candidate {
+  text-align: right;
+}
+/* line 10, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .contact {
+  text-align: right;
+}
+/* line 17, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position {
+  margin: 4rem 0 2rem 0;
+}
+/* line 19, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 22, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+/* line 27, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .organization {
+  margin: 0;
+  padding: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/* line 32, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 34, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .address span {
+  margin-right: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/* line 37, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .address span:last-child {
+  margin-right: 0;
+}
+/* line 42, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .duration {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/* line 45, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .duration span:first-child:after {
+  content: ' - ';
+}
+/* line 51, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .description {
+  margin-top: 1rem;
+}
+/* line 57, /Users/gabrielwalsh/Sites/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .skills .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

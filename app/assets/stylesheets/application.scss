@@ -17,6 +17,7 @@ $font-name: "orpheuspro",sans-serif;
 @import "components/navigation";
 @import "components/footer";
 @import "components/pagination";
+@import "components/section-header";
 
 // Elements
 @import 'elements/icons';
@@ -37,4 +38,3 @@ $font-name: "orpheuspro",sans-serif;
 @import "layouts/records";
 @import "layouts/related_sites";
 @import "layouts/resume";
-

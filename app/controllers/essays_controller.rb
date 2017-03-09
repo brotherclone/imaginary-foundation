@@ -5,6 +5,7 @@ class EssaysController < InheritedResources::Base
   def index
     @essays = Essay.all
     gon.watch.essays =  @essays
+    @page_title = 'Essays'
   end
 
   def show
