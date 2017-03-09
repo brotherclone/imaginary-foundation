@@ -30,3 +30,21 @@
 ```
 <a href="#">A hyperlink</a>
 ```
+
+### Nouns
+```
+<span class="person">Mr. Nobody</span>
+<span class="place">Neverland</span>
+<span class="thing">McGuffin</span>
+<span class="duration">1975</span>
+<span class="organization">The Imaginary Foundation</span>
+```
+
+### Nouns Professional
+```
+<span class="person-professional">Mr. Nobody</span>
+<span class="place-professional">Neverland</span>
+<span class="thing-professional">McGuffin</span>
+<span class="duration-professional">1975</span>
+<span class="organization-professional">The Imaginary Foundation</span>
+```

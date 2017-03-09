@@ -87,28 +87,55 @@ a{
   }
 }
 
-
-
-@mixin noun(){
-
+@mixin noun($color: $blue, $respectful: false){
+  @if $respectful{
+    @if $color == $red{
+      color: desaturate($color, 85%);
+    }@else{
+      color: desaturate($color, 40%);
+    }
+  }@else {
+    color: $color;
+  }
 }
 
+
 .person{
-  @include noun();
+  @include noun($red);
 }
 
 .place{
-  @include noun();
+  @include noun($cyan);
 }
 
 .thing{
-  @include noun();
+  @include noun($green);
 }
 
-.duration{
-  @include noun();
+.duration, .date{
+  @include noun($blue);
 }
 
-.organization{
-  @include noun();
+.organization-professional{
+  @include noun($purple, true);
+}
+
+.person-professional{
+  @include noun($red, true);
+}
+
+.place-professional{
+  @include noun($cyan, true);
+}
+
+.thing-professional{
+  @include noun($green, true);
+}
+
+.duration-professional, .date-professional{
+  @include noun($blue, true);
+}
+
+.organization-professional{
+  @include noun($purple, true);
 }

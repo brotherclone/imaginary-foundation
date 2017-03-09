@@ -1,8 +1,7 @@
-
-
 header.navigation{
   border-top: 0.5px solid transparentize($black,0.9);
   border-bottom: 1px solid transparentize($black,0.9);
+  @include outer-container;
   .navigation-wrapper{
     a.navigation-menu-button{
       display:none;

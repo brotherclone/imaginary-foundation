@@ -1,12 +1,13 @@
-%footer.footer{:role => 'contentinfo'}
-  .footer-logo
-    %img{:src=>'http://placehold.it/50/50', :alt=>''}/
-  %ul
-    %li
-      %a{:href=> privacy_path} Privacy, Terms, Etc.
-    %li
-      %a{:href=> related_sites_path} Related Sites
-    %li
-      %a{:href => contact_path} Contact Info
-      %span{:class=>'copyright'}
-      =this_year
+%footer.imaginary-footer
+  .footer-inner
+    .footer-logo
+      %img{:src=>'http://placehold.it/50/50', :alt=>''}/
+    %ul
+      %li
+        %a{:href=> privacy_path} Privacy, Terms, Etc.
+      %li
+        %a{:href=> related_sites_path} Related Sites
+      %li
+        %a{:href => contact_path} Contact Info
+        %span{:class=>'copyright'}
+        =this_year

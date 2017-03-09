@@ -2,15 +2,25 @@
   @include outer-container;
   .candidate{
     text-align: right;
+    span{
+      @extend .person;
+    }
   }
-
   .heading{
 
   }
   .contact{
     text-align: right;
-    .contact-link{
-
+    .contact-info{
+      span{
+        @extend .place;
+      }
+      .contact-link{
+        @extend .thing;
+        a{
+          @extend .thing;
+        }
+      }
     }
   }
   .experience{
@@ -20,18 +30,29 @@
         display: flex;
         justify-content: space-between;
         .title{
+          @extend .person;
           font-size: 2rem;
           margin: 0;
           padding: 0;
         }
+
         .organization{
           margin: 0;
           padding: 0;
           align-self: center;
+          span:first-child{
+            span{
+              @extend .organization;
+              a{
+                @extend .organization;
+              }
+            }
+          }
         }
         .address{
           display: flex;
           span{
+            @extend .place;
             margin-right: 0.5rem;
             align-self: center;
             &:last-child{
@@ -40,6 +61,9 @@
           }
         }
         .duration{
+          span{
+            @extend .duration;
+          }
           align-self: center;
           span:first-child{
             &:after{
@@ -53,10 +77,46 @@
       }
     }
   }
-  .skills{
-    .listing{
-      display: flex;
-      justify-content: space-between;
+  .institution{
+    span{
+      @extend .organization;
+      a{
+        @extend .organization;
+      }
+    }
+  }
+  .degree{
+    span:nth-child(1){
+      @extend .thing;
+    }
+    span:nth-child(2){
+      @extend .date;
+    }
+  }
+  .honors{
+    h4{
+      @extend .thing;
+      font-size: 2rem;
+    }
+    ul{
+      li{
+        @extend .thing;
+        span{
+          @extend .thing;
+        }
+      }
+    }
+  }
+  .listing{
+    display: flex;
+    justify-content: space-between;
+    .skill-group{
+      li{
+        @extend .thing;
+        span{
+          @extend .thing;
+        }
+      }
     }
   }
   margin-bottom: 3rem;
