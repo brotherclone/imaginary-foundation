@@ -171,6 +171,10 @@ GEM
       has_scope (~> 0.6.0.rc)
       railties (>= 3.2, < 5)
       responders
+    inline_svg (0.11.1)
+      activesupport (>= 4.0)
+      loofah (>= 2.0)
+      nokogiri (~> 1.6)
     io-like (0.3.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -200,6 +204,8 @@ GEM
       sass
       thor
       tilt
+    loofah (2.0.3)
+      nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -361,6 +367,7 @@ DEPENDENCIES
   figaro
   gon
   haml-rails
+  inline_svg
   jbuilder (~> 2.0)
   jquery-rails
   livingstyleguide

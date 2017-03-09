@@ -1,3 +1,9 @@
+@keyframes footerlogo {
+  from {color: $white; opacity: 0.05; fill: $white;}
+  to {color: $indigo; opacity: 0.75; fill: $indigo;}
+}
+
+
 .wrapper-for-content-outside-of-footer {
   min-height: 100%;
   height: auto !important;
@@ -21,9 +27,12 @@ footer.imaginary-footer {
       display: flex;
       justify-content: center;
       padding-top: 2rem;
-      img{
-        width: 2rem;
-        height: 2rem;
+      .if-logo, svg{
+        color: transparentize($white,0.2);
+        fill: $white;
+        width: 10rem;
+        @include animation(footerlogo, 20s);
+        @include animation-infinite-loop();
       }
     }
     ul{

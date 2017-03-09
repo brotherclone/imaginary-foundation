@@ -1,0 +1,50 @@
+# Typography
+
+<script src="https://use.typekit.net/nrm1nne.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+@font-example 16px "orpheuspro",sans-serif
+
+@font-example 16px "Arial",sans-serif
+
+## Headings
+```
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+```
+### Page Heading
+```
+<h1 class="page-heading">Page Heading</h1>
+```
+
+## Symbols
+```
+<span class="copyright"></span>
+```
+
+## Links
+```
+<a href="#">A hyperlink</a>
+```
+
+### Nouns
+```
+<span class="person">Mr. Nobody</span>
+<span class="place">Neverland</span>
+<span class="thing">McGuffin</span>
+<span class="duration">1975</span>
+<span class="organization">The Imaginary Foundation</span>
+```
+
+### Nouns Professional
+```
+<span class="person-professional">Mr. Nobody</span>
+<span class="place-professional">Neverland</span>
+<span class="thing-professional">McGuffin</span>
+<span class="duration-professional">1975</span>
+<span class="organization-professional">The Imaginary Foundation</span>
+```

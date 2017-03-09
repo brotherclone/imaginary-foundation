@@ -1,0 +1,21 @@
+# Palette
+
+## Primary
+@colors{
+    $eight-bit-ocean $zluta $cadet-blue $luv $bye-baby $background-color
+}
+
+## Extended
+@colors{
+    $kermit $failed-action-figure $grape-milk
+}
+
+## Chromatic
+@colors {
+    $red $orange $yellow $green $blue $indigo $violet
+}
+
+## Grey Scale
+@colors {
+    $white $light-grey $grey $dark-grey $black
+}

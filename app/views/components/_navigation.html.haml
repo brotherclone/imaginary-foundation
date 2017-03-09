@@ -8,7 +8,7 @@
       %ul.navigation-menu
         %li.logo-link
           %a.logo{:href => home_path,:alt=>'', :tabindex=>'0'}
-            %img{:src=>'http://placehold.it/50/50'}/
+            = inline_svg 'if.svg', class: 'if-logo', :title => 'Imaginary Foundation', :aria => true
         %li.nav-link
           %a{:href => home_path} Imaginary Foundation
         %li.nav-link

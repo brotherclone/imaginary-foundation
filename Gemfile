@@ -24,6 +24,7 @@ gem 'discogs-wrapper'
 gem 'gon'
 gem 'angularjs-rails'
 gem 'figaro'
+gem 'inline_svg'
 
 
 group :development, :test do

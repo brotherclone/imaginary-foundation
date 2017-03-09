@@ -1,7 +1,7 @@
 %footer.imaginary-footer
   .footer-inner
     .footer-logo
-      %img{:src=>'http://placehold.it/50/50', :alt=>''}/
+      = inline_svg 'if.svg', class: 'if-logo', :title => 'Imaginary Foundation', :aria => true
     %ul
       %li
         %a{:href=> privacy_path} Privacy, Terms, Etc.
