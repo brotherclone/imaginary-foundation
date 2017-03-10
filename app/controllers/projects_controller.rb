@@ -4,6 +4,7 @@ class ProjectsController < InheritedResources::Base
   def index
     @projects = Project.all
     gon.watch.projects =  @projects
+    @page_title = 'Projects'
   end
 
   def show

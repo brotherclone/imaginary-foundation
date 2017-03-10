@@ -1,16 +1,35 @@
+$sm: 520px;
+$md: 768px;
+$lg: 1024px;
+$xlg: 1920px;
 
-$small-phone: new-breakpoint(max-width 320px 4);
-$phone: new-breakpoint(max-width 375px 4);
-$large-phone: new-breakpoint(max-width 414px 4);
-
-$small-tablet: new-breakpoint(max-width 768px 12);
-$tablet: new-breakpoint(max-width 1024px 12);
-$large-tablet:new-breakpoint(max-width 1366px 12);
-
-$small-monitor:  new-breakpoint(max-width 800px 12);
-$monitor: new-breakpoint(max-width 1920px 12);
-$large-monitor:  new-breakpoint(max-width 3840px 16);
-
+@mixin respond-to($media) {
+  @if $media == oldphone {
+    @media only screen and (max-width: $sm) {
+      @content;
+    }
+  }
+  @else if $media == newphone {
+    @media only screen and (min-width: $sm + 1) and (max-width: $md - 1) {
+      @content;
+    }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $md + 1) and (max-width: $lg - 1) {
+      @content;
+    }
+  }
+  @else if $media == monitor {
+    @media only screen and (min-width: $lg + 1) and (max-width: $xlg - 1) {
+      @content;
+    }
+  }
+  @else if $media == tv {
+    @media only screen and (min-width: $xlg) {
+      @content;
+    }
+  }
+}
 
 .main-outer{
   @include outer-container(100%);
@@ -18,7 +37,6 @@ $large-monitor:  new-breakpoint(max-width 3840px 16);
     @include span-columns(12);
   }
 }
-
 
 // Ng-cloak
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

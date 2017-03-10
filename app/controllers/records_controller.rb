@@ -10,6 +10,7 @@ class RecordsController < InheritedResources::Base
     for p in 0..@init_records.pagination.pages
       gon.watch.recordCollection = getRecords(p)
     end
+    @page_title = 'My Record Collection'
   end
 
   def getRecords(page)

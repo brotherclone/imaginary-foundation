@@ -1,3 +1,15 @@
+@mixin box-shadow($x: 0, $y: 0.052rem, $blur: 0.25rem, $color: transparentize($grey, 0.6), $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $x $y $blur $color;
+    -moz-box-shadow:inset $x $y $blur $color;
+    box-shadow:inset $x $y $blur $color;
+  } @else {
+    -webkit-box-shadow: $x $y$blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+  }
+}
+
 @mixin radial-gradient($from, $to) {
   background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
@@ -7,6 +19,17 @@
   background: radial-gradient(center, circle cover, $from 0%, $to 100%);
 }
 
+@mixin example-tile($size: 100px, $has-border: false){
+  @if $has-border == true{
+    border: 1px solid $grey;
+  }
+  height:$size;
+  width: $size;
+}
+
+.texture-example{
+  @include example-tile($has-border: true);
+}
 
 @keyframes shift {
   from {background-color: $red;}
@@ -19,9 +42,15 @@
   @include animation(shift, 5s);
   @include animation-infinite-loop();
 }
-.texture-example{
-  width: 100%;
-  min-width: 2rem;
-  min-height: 2rem;
+
+.drop-shadow{
+  @include box-shadow();
 }
 
+.foot-lights-shadow{
+  @include box-shadow(0, -0.5rem, 1rem, transparentize($light-grey, 0.75), false);
+}
+
+.inner-shadow{
+  @include box-shadow(-0.5rem, -0.5rem, 0.25rem, transparentize($light-grey, 0.85), true);
+}

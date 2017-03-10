@@ -1,0 +1,18 @@
+@mixin cards(){
+  margin: 2rem 0 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  .card{
+    text-align: center;
+    vertical-align: middle;
+    flex-grow: 1;
+    border: 1px solid;
+    height: 400px;
+    width: 25%;
+    min-width: 250px;
+    background-color: $indigo;
+    color: $white;
+  }
+}

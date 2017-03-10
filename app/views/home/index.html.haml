@@ -1,2 +1,6 @@
 = include_gon
 .home
+  .cards
+    - 20.times do |c|
+      .card
+        = 'This is a card.' + c.to_s

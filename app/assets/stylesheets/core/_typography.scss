@@ -5,11 +5,11 @@ $special-characters: 'Arial', sans-serif !important;
 
 @mixin imaginary-hover-focus($hovercolor:$blue, $focuscolor:$blue){
   text-decoration: none;
-  &.hover{
+  &:hover{
     color: $hovercolor;
-    text-decoration: underline;
+    text-decoration: none;
   }
-  &.focus{
+  &:focus{
     color: $focuscolor;
   }
 }

@@ -1,15 +1,44 @@
 .section-header {
+  @include respond-to(oldphone)  {
+    margin-top: -0.5rem;
+    h1 {
+      margin-left: 0.25rem !important;
+      font-size: 1.75rem !important;
+    }
+  }
+  @include respond-to(newphone)  {
+    margin-top: -0.5rem;
+    h1 {
+      margin-left: 0.25rem !important;
+      font-size: 2rem !important;
+    }
+  }
+  @include respond-to(tablet) {
+    margin-top: -0.5rem;
+    h1 {
+      margin-left: 0.5rem !important;
+      font-size: 3rem !important;
+    }
+  }
+  @include respond-to(monitor) {
+    margin-top: -0.825rem;
+    h1 {
+      margin-left: 0.5rem !important;
+      font-size: 3.5rem !important;
+    }
+  }
   width: 100%;
   @extend .bizarre-light;
-  margin-top: -3rem;
   background-image: url( image-path("head.png") );
-  min-height: 2rem;
+  font-size: 3rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: saturation;
   background-position: right 16px top 0;
-  h1{
-    margin-left: 1.875rem;
+  margin-top: -2rem;
+  h1 {
     color: $white;
+    margin-left: 1.875rem;
+    font-size: 4rem;
   }
 }

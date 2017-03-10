@@ -9,21 +9,32 @@ header.navigation{
       i.hamburger{
         font-size: 2rem;
       }
-      @include media($tablet) {
+      @include respond-to(oldphone) {
         display: inline-flex;
       }
     }
     ul.navigation-menu{
-      @include media($tablet) {
+      @include respond-to(oldphone) {
         display: none;
-        &.open{
+        align-items: flex-start;
+        &.open {
           display: flex;
           flex-direction: column;
-          li.nav-link{
+          li.nav-link {
             text-align: right;
           }
-          li.logo-link{
-            display: none;
+          li.logo-link {
+            position: absolute;
+            top: 1.25rem;
+            right: 3rem;
+            a {
+              .if-logo, svg {
+                color: $blue;
+                fill: $blue;
+                opacity: 0.25;
+                height: 5rem;
+              }
+            }
           }
         }
       }
@@ -38,7 +49,7 @@ header.navigation{
         margin: 0 1rem 0 1rem;
         a{
           font-size: 1rem;
-          @include imaginary-hover-focus();
+          @include imaginary-hover-focus($red, $orange);
         }
       }
       li.logo-link{

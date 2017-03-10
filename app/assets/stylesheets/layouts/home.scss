@@ -1,3 +1,6 @@
 .home{
   @include outer-container;
+  .cards{
+    @include cards();
+  }
 }
