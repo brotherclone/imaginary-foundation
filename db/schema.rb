@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170209210036) do
+ActiveRecord::Schema.define(version: 20170313140757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,25 +92,13 @@ ActiveRecord::Schema.define(version: 20170209210036) do
     t.text     "description"
   end
 
-  create_table "tags", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "topic_id"
-    t.integer  "essays_id"
-    t.integer  "topics_id"
-    t.integer  "project_id"
+  create_table "pull_quotes", force: true do |t|
+    t.text     "quote"
     t.integer  "essay_id"
-  end
-
-  add_index "tags", ["essay_id"], name: "index_tags_on_essay_id", using: :btree
-  add_index "tags", ["project_id"], name: "index_tags_on_project_id", using: :btree
-  add_index "tags", ["topic_id"], name: "index_tags_on_topic_id", using: :btree
-
-  create_table "topics", force: true do |t|
-    t.string   "title"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "pull_quotes", ["essay_id"], name: "index_pull_quotes_on_essay_id", using: :btree
 
 end

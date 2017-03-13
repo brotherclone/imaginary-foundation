@@ -1,0 +1,1 @@
+json.array! @pull_quotes, partial: 'pull_quotes/pull_quote', as: :pull_quote

@@ -1,0 +1,1 @@
+json.partial! "pull_quotes/pull_quote", pull_quote: @pull_quote

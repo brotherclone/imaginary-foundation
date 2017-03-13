@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :pull_quotes
+
   resources :galleries
 
   resources :images

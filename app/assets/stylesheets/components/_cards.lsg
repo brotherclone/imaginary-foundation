@@ -1,0 +1,15 @@
+# Cards
+
+```
+<div class="example-cards">
+    <div class="card">
+        <div class="card-inner" style="background-image: url('https://placehold.it/600/600');">
+            <h2>title</h2>
+        </div>
+    </div>
+    <div class="card">
+       <div class="card-inner" style="background-image: url('https://placehold.it/600/600');">
+            <h2>title</h2>
+        </div>
+    </div>
+</div>

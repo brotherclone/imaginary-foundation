@@ -1,0 +1,16 @@
+.pull-quote{
+  display: flex;
+  width: 25%;
+  align-content: center;
+  i.open{
+    @extend .icon-quotes-left;
+    flex-grow: 1;
+  }
+  h3{
+    flex-grow: 3;
+  }
+  i.close{
+    @extend .icon-quotes-right;
+    flex-grow: 1;
+  }
+}
