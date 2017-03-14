@@ -1,3 +1,4 @@
-.section-header
+- @h = get_header_image.to_s
+.section-header{:style=>'background-image: url('+ asset_path(@h) +');'}
   %h1
     = @page_title

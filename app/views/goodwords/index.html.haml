@@ -1,7 +1,6 @@
 = include_gon
 .good-word-container{:ng => {:controller=> 'goodWordCtrl', :init=>'init()'}}
-  .good-header
-    %h1 What's the good word?
+  = render :partial => 'components/section_header'
     %button{:ng =>{:if=>'!editMode', :click => 'toggleMode()'}} Add Words
     %button{:ng =>{:if=>'editMode', :click => 'toggleMode()'}} Close
   .good-listing{:ng =>{:if=>'!editMode'}}

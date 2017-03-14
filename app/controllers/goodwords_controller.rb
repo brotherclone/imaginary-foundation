@@ -1,4 +1,5 @@
 class GoodwordsController < InheritedResources::Base
+  include NavigationHelper
   before_action :set_goodword, only:[:show, :edit, :update, :destroy]
 
   def index

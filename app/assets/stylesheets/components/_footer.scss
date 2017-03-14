@@ -51,13 +51,15 @@ footer.imaginary-footer {
       li, a{
         color: $white;
         font-size: 1rem;
-        @include imaginary-hover-focus();
         @include respond-to(newphone)  {
           font-size: 0.95rem;
         }
         @include respond-to(oldphone)  {
           font-size: 0.75rem;
         }
+      }
+      a{
+        @include imaginary-hover-focus();
       }
     }
   }

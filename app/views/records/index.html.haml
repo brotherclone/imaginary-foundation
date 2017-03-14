@@ -1,5 +1,6 @@
 = include_gon
 .records{ :ng => {:controller=>'recordCollectionCtrl', :init=>'init()'}}
+  = render :partial => 'components/section_header'
   .pages {{recordCollection[currentGroup].pagination.page}}/{{recordCollection[currentGroup].pagination.pages}}
   .record-collection
     .record{:ng=>{:repeat => 'release in recordCollection[currentGroup].releases'}}

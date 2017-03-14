@@ -1,4 +1,5 @@
 class ProjectsController < InheritedResources::Base
+  include NavigationHelper
   before_action :set_project, only:[:show, :edit, :update, :destroy]
 
   def index

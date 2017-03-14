@@ -1,4 +1,5 @@
 class RecordsController < InheritedResources::Base
+  include NavigationHelper
   helper_method :getRecords
 
   def index

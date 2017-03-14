@@ -1,5 +1,5 @@
 class EssaysController < InheritedResources::Base
-
+  include NavigationHelper
   before_action :set_essay, only:[:show, :edit, :update, :destroy]
 
   def index

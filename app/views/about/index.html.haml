@@ -1,4 +1,3 @@
+
 .about
-  .header
-    %h1 About
-    %hr
+  = render :partial => 'components/section_header', :locals => {:img =>get_header_image, :img_two => @header_image}

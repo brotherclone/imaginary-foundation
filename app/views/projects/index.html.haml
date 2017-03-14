@@ -1,8 +1,6 @@
 = include_gon
 .projects{ :ng => {:controller=>'projectIndexCtrl', :init=>'init()'}}
-  .header
-    %h1 Projects
-    %hr
+  = render :partial => 'components/section_header'
   .body
     .project-card{ :ng => {:repeat=>'project in projects'}}
       .title
