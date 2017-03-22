@@ -1,3 +1,61 @@
-.essays{
+.essays, .essay{
   @include outer-container;
+}
+
+.essay{
+  .header{
+    display: flex;
+    justify-content: flex-end;
+    h1{
+      font-size: 4rem;
+      color: $cyan;
+    }
+    hr{
+
+    }
+    .sharing{
+      display: flex;
+      .share-button{
+        margin: 0 1rem 0 1rem;
+        &.share-facebook{
+          @include if-btn($color:$white,
+                          $bg-color:$blue,
+                          $active-color: $white,
+                          $active-bg-color: darken($blue, 20%),
+                          $on-color: $white,
+                          $on-bg-color: darken($blue, 30%));
+          i{
+            @extend .icon-facebook2;
+          }
+        }
+        &.share-linkedin{
+          @include if-btn($color:$white,
+                          $bg-color:$blue,
+                          $active-color: $white,
+                          $active-bg-color: darken($blue, 20%),
+                          $on-color: $white,
+                          $on-bg-color: darken($blue, 30%));
+          i{
+            @extend .icon-linkedin;
+          }
+        }
+        &.share-twitter{
+          @include if-btn($color:$white,
+                          $bg-color:$blue,
+                          $active-color: $white,
+                          $active-bg-color: darken($blue, 20%),
+                          $on-color: $white,
+                          $on-bg-color: darken($blue, 30%));
+          i{
+            @extend .icon-twitter;
+          }
+        }
+      }
+    }
+  }
+  .body{
+    font-size: 1.18rem;
+    font-kerning: auto;
+    line-height: 1.88rem;
+  }
 }

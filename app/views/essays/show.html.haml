@@ -2,6 +2,16 @@
 .essay{ :ng => {:controller=>'essayCtrl', :init=>'init()'}}
   .header
     %h1 {{essay.title}}
+    .sharing
+      %button{:class=>'share-button share-facebook', :sharing_link=>'true', :sharing_platform => 'facebook', :sharing_url => request.fullpath, :sharing_title=> @essay.title, :sharing_description=> @essay.description}
+        %span{:class=>'screen-reader'} Share this on FaceBook.
+        %i{:role=>'presentation'}
+      %button{:class=>'share-button share-twitter', :sharing_link=>'true', :sharing_platform => 'twitter', :sharing_url => request.fullpath, :sharing_title=> @essay.title, :sharing_description=> @essay.description}
+        %span{:class=>'screen-reader'} Share this on Twitter.
+        %i{:role=>'presentation'}
+      %button{:class=>'share-button share-linkedin', :sharing_link=>'true', :sharing_platform => 'linkedin', :sharing_url => request.fullpath, :sharing_title=> @essay.title, :sharing_description=> @essay.description}
+        %span{:class=>'screen-reader'} Share this on LinkedIn.
+        %i{:role=>'presentation'}
     %hr
   .body
     {{essay.body}}

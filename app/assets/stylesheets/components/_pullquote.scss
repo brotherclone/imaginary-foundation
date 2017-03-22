@@ -8,9 +8,11 @@
   }
   h3{
     flex-grow: 3;
+    font-size: 2rem;
   }
   i.close{
     @extend .icon-quotes-right;
     flex-grow: 1;
+    align-self: flex-end;
   }
 }
