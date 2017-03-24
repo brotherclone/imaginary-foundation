@@ -35,11 +35,17 @@
     color: $active-color;
     background-color: $active-bg-color;
     border-color: $active-border-color;
+    span,i{
+      color: $active-color;
+    }
   }
   &.is-on, &.current{
     color: $on-color;
     background-color: $on-bg-color;
     border-color: $on-border-color;
+  }
+  span,i{
+    color: $color;
   }
 }
 

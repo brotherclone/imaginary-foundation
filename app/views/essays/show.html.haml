@@ -12,9 +12,8 @@
       %button{:class=>'share-button share-linkedin', :sharing_link=>'true', :sharing_platform => 'linkedin', :sharing_url => request.fullpath, :sharing_title=> @essay.title, :sharing_description=> @essay.description}
         %span{:class=>'screen-reader'} Share this on LinkedIn.
         %i{:role=>'presentation'}
-    %hr
-  .body
-    {{essay.body}}
+  %hr
+  .body{:ng=>{:bind=>{:html => 'essay.html'}}}
     .pull-quote
       %i{:class=>'open', :role=>'presentation'}
       %h3 This is a pull quote

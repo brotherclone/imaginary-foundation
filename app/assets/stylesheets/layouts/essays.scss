@@ -1,57 +1,61 @@
 .essays, .essay{
   @include outer-container;
 }
-
 .essay{
   .header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-content: center;
     h1{
       font-size: 4rem;
       color: $cyan;
-    }
-    hr{
-
+      margin-bottom: -1rem;
+      @include respond-to(oldphone) {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
     }
     .sharing{
       display: flex;
+      align-self: flex-end;
       .share-button{
-        margin: 0 1rem 0 1rem;
+        max-height: 50px;
+        max-width: 50px;
+        padding:0 !important;
         &.share-facebook{
-          @include if-btn($color:$white,
-                          $bg-color:$blue,
+          @include if-btn($color:$cyan,
+                          $bg-color:transparent,
                           $active-color: $white,
-                          $active-bg-color: darken($blue, 20%),
-                          $on-color: $white,
-                          $on-bg-color: darken($blue, 30%));
+                          $active-bg-color: $cyan);
+          margin-right: 0.5rem;
           i{
             @extend .icon-facebook2;
           }
         }
         &.share-linkedin{
-          @include if-btn($color:$white,
-                          $bg-color:$blue,
+          @include if-btn($color:$cyan,
+                          $bg-color:transparent,
                           $active-color: $white,
-                          $active-bg-color: darken($blue, 20%),
-                          $on-color: $white,
-                          $on-bg-color: darken($blue, 30%));
+                          $active-bg-color: $cyan);
+          margin-left: 0.5rem;
           i{
             @extend .icon-linkedin;
           }
         }
         &.share-twitter{
-          @include if-btn($color:$white,
-                          $bg-color:$blue,
+          @include if-btn($color:$cyan,
+                          $bg-color:transparent,
                           $active-color: $white,
-                          $active-bg-color: darken($blue, 20%),
-                          $on-color: $white,
-                          $on-bg-color: darken($blue, 30%));
+                          $active-bg-color: $cyan);
           i{
             @extend .icon-twitter;
           }
         }
       }
     }
+  }
+  hr{
+    opacity: 0.25;
   }
   .body{
     font-size: 1.18rem;
