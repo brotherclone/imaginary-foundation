@@ -14,7 +14,6 @@
         %i{:role=>'presentation'}
   %hr
   .body{:ng=>{:bind=>{:html => 'essay.html'}}}
-    .pull-quote
-      %i{:class=>'open', :role=>'presentation'}
-      %h3 This is a pull quote
-      %i{:class=>'close', :role=>'presentation'}
+  %hr
+    %div{:pull_quote=>true, :quote=>'test'}
+    %div{:pull=>{:quote=>true}, :quote=>'test'}
