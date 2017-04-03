@@ -1,4 +1,7 @@
 = include_gon
+
+
+
 .essay{ :ng => {:controller=>'essayCtrl', :init=>'init()'}}
   .header
     %h1 {{essay.title}}
@@ -13,7 +16,8 @@
         %span{:class=>'screen-reader'} Share this on LinkedIn.
         %i{:role=>'presentation'}
   %hr
-  .body{:ng=>{:bind=>{:html => 'essay.html'}}}
+  .body
+    = @clean.html_safe
   %hr
     %div{:pull_quote=>true, :quote=>'test'}
     %div{:pull=>{:quote=>true}, :quote=>'test'}
