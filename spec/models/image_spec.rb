@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Image, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'should belong to an essay' do
+    should belong_to(:essay)
+  end
+  it 'should belong to a project' do
+    should belong_to(:project)
+  end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170313140757) do
+ActiveRecord::Schema.define(version: 20170404150116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,7 +60,16 @@ ActiveRecord::Schema.define(version: 20170313140757) do
   create_table "galleries", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
   end
+
+  create_table "gallery_images", force: true do |t|
+    t.integer "galleries_id"
+    t.integer "images_id"
+  end
+
+  add_index "gallery_images", ["galleries_id"], name: "index_gallery_images_on_galleries_id", using: :btree
+  add_index "gallery_images", ["images_id"], name: "index_gallery_images_on_images_id", using: :btree
 
   create_table "goodwords", force: true do |t|
     t.datetime "created_at"

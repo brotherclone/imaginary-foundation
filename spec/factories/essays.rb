@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :essay do
-    title {Faker::Lorem.words(6)}
-    description {Faker::Lorem.words(20)}
-    body {Faker::Lorem.paragraphs(5)}
+    title {Faker::Lorem.words(6).to_s}
+    description {Faker::Lorem.words(20).to_s}
+    body {Faker::Lorem.paragraphs(5).to_s}
     image {}
     gallery {}
   end
