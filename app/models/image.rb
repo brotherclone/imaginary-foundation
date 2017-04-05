@@ -3,5 +3,5 @@ class Image < ActiveRecord::Base
   has_many :gallery_images
   belongs_to :project
   belongs_to :essay
-
+  belongs_to :promo_card
 end

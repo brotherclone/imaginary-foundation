@@ -1,0 +1,1 @@
+json.partial! "promo_cards/promo_card", promo_card: @promo_card

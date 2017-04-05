@@ -1,0 +1,19 @@
+%h1 Listing promo_cards
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @promo_cards.each do |promo_card|
+      %tr
+        %td= link_to 'Show', promo_card
+        %td= link_to 'Edit', edit_promo_card_path(promo_card)
+        %td= link_to 'Destroy', promo_card, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Promo card', new_promo_card_path

@@ -1,0 +1,1 @@
+json.array! @promo_cards, partial: 'promo_cards/promo_card', as: :promo_card
