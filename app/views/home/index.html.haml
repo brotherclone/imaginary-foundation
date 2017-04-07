@@ -9,9 +9,12 @@
         -item = Essay.find(c.essay_id)
         -path = projects_path(c.essay_id)
       - if c.image_id
-        -image = Image.find(c.image_id)
-      -if item
+        -i= Image.find(c.image_id)
+        -image = i.image_file
+      - else
+        - image = 'https://placehold.it/600/600'
+      -if item && path && image
         .card{:ng=>{:click=>'selectCard("'+path+'")'}}
-          .card-inner{:style => 'background-image: url("https://placehold.it/600/600");'}
+          .card-inner{:style => 'background-image: url("' + image.to_s + '");'}
             %h2
               = item.description

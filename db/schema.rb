@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405183910) do
+ActiveRecord::Schema.define(version: 20170407155007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,12 +64,12 @@ ActiveRecord::Schema.define(version: 20170405183910) do
   end
 
   create_table "gallery_images", force: true do |t|
-    t.integer "galleries_id"
-    t.integer "images_id"
+    t.integer "gallery_id"
+    t.integer "image_id"
   end
 
-  add_index "gallery_images", ["galleries_id"], name: "index_gallery_images_on_galleries_id", using: :btree
-  add_index "gallery_images", ["images_id"], name: "index_gallery_images_on_images_id", using: :btree
+  add_index "gallery_images", ["gallery_id"], name: "index_gallery_images_on_gallery_id", using: :btree
+  add_index "gallery_images", ["image_id"], name: "index_gallery_images_on_image_id", using: :btree
 
   create_table "goodwords", force: true do |t|
     t.datetime "created_at"
@@ -82,15 +82,17 @@ ActiveRecord::Schema.define(version: 20170405183910) do
   create_table "images", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "gallery_id"
     t.integer  "project_id"
     t.integer  "essay_id"
     t.string   "image_file"
     t.integer  "promo_card_id"
+    t.string   "title"
+    t.text     "caption"
+    t.string   "credit"
+    t.string   "credit_link"
   end
 
   add_index "images", ["essay_id"], name: "index_images_on_essay_id", using: :btree
-  add_index "images", ["gallery_id"], name: "index_images_on_gallery_id", using: :btree
   add_index "images", ["project_id"], name: "index_images_on_project_id", using: :btree
   add_index "images", ["promo_card_id"], name: "index_images_on_promo_card_id", using: :btree
 

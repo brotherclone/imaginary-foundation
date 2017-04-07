@@ -4,11 +4,11 @@ ActiveAdmin.register PromoCard do
     f.inputs do
       f.input :project_id, :label => 'Project', :as => :select, :collection => Project.all.map{|p| ["#{p.title}", p.id]}
       f.input :essay_id, :label => 'Essay', :as => :select, :collection => Essay.all.map{|e| ["#{e.title}", e.id]}
-      f.inputs 'Image', for: [:image, f.object.image || Image.new] do |image_form|
-        image_form.input :image_file, :as=> :file
-        image_form.input :image_file_cache, :as=> :hidden
-      end
+      f.input :image_id, :label => 'Card Image', :as => :select, :collection => Image.all.map{|i| ["#{i.name}", i.id]}
     end
     f.actions
-  end
+    end
 end
+
+
+
