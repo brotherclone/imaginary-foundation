@@ -2,11 +2,7 @@ Rails.application.routes.draw do
 
   resources :promo_cards
 
-  resources :gallery_images
-
   resources :pull_quotes
-
-  resources :galleries
 
   resources :images
 
