@@ -1,7 +1,12 @@
-.essays, .essay{
+.essays{
   @include outer-container;
+  .cards{
+    @include cards();
+  }
 }
+
 .essay{
+  @include outer-container;
   .header{
     display: flex;
     justify-content: space-between;

@@ -139,3 +139,18 @@ a{
 .organization-professional{
   @include noun($purple, true);
 }
+
+@keyframes fairy-tale {
+  from {color: $orange;}
+  to {color: $purple;}
+}
+
+.once-upon-a-time{
+  font-size: 4rem;
+  font-weight: 800;
+  font-variant: small-caps;
+  color: $orange;
+  @include animation(fairy-tale, 5s);
+  @include animation-infinite-loop();
+  line-height: 4rem;
+}

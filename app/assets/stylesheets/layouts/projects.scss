@@ -1,3 +1,70 @@
 .projects{
   @include outer-container;
+  .cards{
+    @include cards();
+  }
+}
+
+.project{
+  @include outer-container;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    h1{
+      font-size: 4rem;
+      color: $green;
+      margin-bottom: -1rem;
+      @include respond-to(oldphone) {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+    }
+    .sharing{
+      display: flex;
+      align-self: flex-end;
+      .share-button{
+        max-height: 50px;
+        max-width: 50px;
+        padding:0 !important;
+        &.share-facebook{
+          @include if-btn($color:$green,
+          $bg-color:transparent,
+          $active-color: $white,
+          $active-bg-color: $green);
+          margin-right: 0.5rem;
+          i{
+            @extend .icon-facebook2;
+          }
+        }
+        &.share-linkedin{
+          @include if-btn($color:$green,
+          $bg-color:transparent,
+          $active-color: $white,
+          $active-bg-color: $green);
+          margin-left: 0.5rem;
+          i{
+            @extend .icon-linkedin;
+          }
+        }
+        &.share-twitter{
+          @include if-btn($color:$green,
+          $bg-color:transparent,
+          $active-color: $white,
+          $active-bg-color: $green);
+          i{
+            @extend .icon-twitter;
+          }
+        }
+      }
+    }
+  }
+  hr{
+    opacity: 0.25;
+  }
+  .body{
+    font-size: 1.18rem;
+    font-kerning: auto;
+    line-height: 1.88rem;
+  }
 }

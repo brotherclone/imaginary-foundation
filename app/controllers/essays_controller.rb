@@ -4,6 +4,17 @@ class EssaysController < InheritedResources::Base
 
   def index
     @essays = Essay.all
+    promo_cards = PromoCard.where(essay_id: true)
+    @essay_cards = {}
+    @essays.each do |e|
+      promo_cards.each do |p|
+        if e.id == p.essay_id
+          temp =  Image.find(p.image_id)
+          card_name = 'card'+e.id.to_s
+          @essay_cards[ card_name ] = temp.image_file.to_s
+        end
+      end
+    end
     gon.watch.essays =  @essays
     @page_title = 'Essays'
   end

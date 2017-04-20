@@ -2,6 +2,16 @@
 .project{ :ng => {:controller=>'projectCtrl', :init=>'init()'}}
   .header
     %h1 {{project.title}}
-    %hr
+    .sharing
+      %button{:class=>'share-button share-facebook', :sharing_link=>'true', :sharing_platform => 'facebook', :sharing_url => request.fullpath, :sharing_title=> @project.title, :sharing_description=> @project.description}
+        %span{:class=>'screen-reader'} Share this on FaceBook.
+        %i{:role=>'presentation'}
+      %button{:class=>'share-button share-twitter', :sharing_link=>'true', :sharing_platform => 'twitter', :sharing_url => request.fullpath, :sharing_title=> @project.title, :sharing_description=> @project.description}
+        %span{:class=>'screen-reader'} Share this on Twitter.
+        %i{:role=>'presentation'}
+      %button{:class=>'share-button share-linkedin', :sharing_link=>'true', :sharing_platform => 'linkedin', :sharing_url => request.fullpath, :sharing_title=> @project.title, :sharing_description=> @project.description}
+        %span{:class=>'screen-reader'} Share this on LinkedIn.
+        %i{:role=>'presentation'}
+  %hr
   .body
-    {{project.body}}
+    =@project.body.html_safe

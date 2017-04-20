@@ -6,6 +6,17 @@ class ProjectsController < InheritedResources::Base
     @projects = Project.all
     gon.watch.projects =  @projects
     @page_title = 'Projects'
+    promo_cards = PromoCard.where(project_id: true)
+    @project_cards = {}
+    @projects.each do |e|
+      promo_cards.each do |p|
+        if e.id == p.project_id
+          temp =  Image.find(p.image_id)
+          card_name = 'card'+e.id.to_s
+          @project_cards[ card_name ] = temp.image_file.to_s
+        end
+      end
+    end
   end
 
   def show

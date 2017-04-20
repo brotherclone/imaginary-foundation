@@ -2,7 +2,9 @@
 .essays{ :ng => {:controller=>'essayIndexCtrl', :init=>'init()'}}
   = render :partial => 'components/section_header'
   .body
-    .essay-card{ :ng => {:repeat=>'essay in essays'}}
-      .title
-        %a{:href=>essays_path+'/{{essay.id}}'}
-          {{essay.title}}
+    .cards
+      -@essays.each do |e|
+        .card{:ng=>{:click=>"selectCard('#{essays_path(e.id)}')"}}
+          .card-inner{:style => 'background-image: url("' + @essay_cards['card'+e.id.to_s] + '");'}
+            %h2
+              = e[:description]

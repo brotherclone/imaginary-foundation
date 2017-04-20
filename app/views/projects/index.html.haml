@@ -2,6 +2,9 @@
 .projects{ :ng => {:controller=>'projectIndexCtrl', :init=>'init()'}}
   = render :partial => 'components/section_header'
   .body
-    .project-card{ :ng => {:repeat=>'project in projects'}}
-      .title
-        %a{:href=>projects_path+'/{{project.id}}'} {{project.title}}
+    .cards
+      -@projects.each do |e|
+        .card{:ng=>{:click=>"selectCard('#{projects_path(e.id)}')"}}
+          .card-inner{:style => 'background-image: url("' + @project_cards['card'+e.id.to_s] + '");'}
+            %h2
+              = e[:description]
