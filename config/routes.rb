@@ -24,7 +24,6 @@ Rails.application.routes.draw do
   get 'privacy' => 'privacy#index'
   get 'contact' => 'contact#index'
   get 'related-sites' => 'related_sites#index'
-  get 'style-guide', :to => redirect('/assets/styleguide.html')
 
 
 end

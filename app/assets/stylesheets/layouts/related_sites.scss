@@ -1,3 +1,7 @@
 .related-sites{
   @include outer-container;
+  .test-head{
+    @include outer-container;
+    @extend .bizarre-light;
+  }
 }

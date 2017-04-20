@@ -25,7 +25,6 @@ gem 'gon'
 gem 'angularjs-rails'
 gem 'figaro'
 gem 'inline_svg'
-gem 'octokit', '~> 4.0'
 
 
 group :development, :test do
@@ -42,7 +41,6 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'thin'
-  gem 'seed_dump' #  $ rake db:seed:dump
 end
 
 group :doc do
