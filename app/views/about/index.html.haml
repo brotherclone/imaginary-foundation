@@ -1,3 +1,29 @@
 
 .about
   = render :partial => 'components/section_header', :locals => {:img =>get_header_image, :img_two => @header_image}
+  .about-opening
+    %span{:class=> 'once-upon-a-time'} The
+    %p
+      Their flower was, in this moment, a fingered purpose. Nowhere is it disputed that a streamy nancy's title comes with it the thought that the tertial parade is a steel. Absorbed browns show us how selects can be bathtubs. A fulgent garlic without armchairs is truly a hail of hulky turnovers.
+    %p
+      Operations are embowed heliums. A chanceful committee is a sycamore of the mind. One cannot separate fears from denser grades. An excused week without windows is truly a Friday of noisette leafs.
+  .about-main
+    %h2 On M. Walsh
+    %p
+      More about
+      %a{:href=> resume_url}
+        Gabriel Walsh
+    %h2 Style Guide
+    %p
+      The Imaginary Foundation
+      %a{:href=>'#'} style guide
+      is
+      %a{:href=> '/style-guide'}
+        here.
+    %h2
+      Issues
+    %ol
+      -@issues.each do |x|
+        %li
+          %a{:href=> x.html_url}
+            = x.title

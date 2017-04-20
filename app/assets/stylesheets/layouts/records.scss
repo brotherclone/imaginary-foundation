@@ -1,3 +1,11 @@
 .records{
   @include outer-container;
+  .pagination{
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
 }

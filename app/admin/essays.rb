@@ -5,7 +5,7 @@ ActiveAdmin.register Essay do
       f.input :title
       f.input :description
       f.input :body, :input_html => {:class => 'tinymce'}, :label => 'Essay'
-      f.input :image_id, :label => 'Main Image', :as => :select, :collection => Image.all.map{|i| ["#{i.name}", i.id]}
+      f.input :image_id, :label => 'Main Image', :as => :select, :collection => Image.all.map{|i| ["#{i.title}", i.id]}
     end
     f.actions
   end
