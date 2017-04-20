@@ -7,11 +7,9 @@
       %img{:ng=>{:src => '{{release.basic_information.thumb}}'}}
       %span {{release.basic_information.title}}
       %span {{release.basic_information.artists[0].name}}
-
   .pagination
     %ul
       %li
-        %a{:ng=>{:click=> 'paginate(false)'}} Prev
+        %button{:ng=>{:click=> 'paginate(false)'}, :class=>'if-button primary'} Prev
       %li
-        %a{:ng=>{:click=> 'paginate(true)'}} Next
-
+        %button{:ng=>{:click=> 'paginate(true)'}, :class=>'if-button primary'} Next
