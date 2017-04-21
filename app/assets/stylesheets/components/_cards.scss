@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+  &:hover{
+    cursor: pointer;
+  }
   .card{
     text-align: center;
     vertical-align: middle;

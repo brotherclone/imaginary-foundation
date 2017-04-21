@@ -1,3 +1,7 @@
 .privacy{
   @include outer-container;
+  h2{
+    font-size: 2rem;
+    margin-top: 0;
+  }
 }

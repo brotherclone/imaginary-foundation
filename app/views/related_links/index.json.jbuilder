@@ -1,0 +1,1 @@
+json.array! @related_links, partial: 'related_links/related_link', as: :related_link

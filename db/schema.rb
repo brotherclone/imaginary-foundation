@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170420192205) do
+ActiveRecord::Schema.define(version: 20170421123734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -113,5 +113,17 @@ ActiveRecord::Schema.define(version: 20170420192205) do
   end
 
   add_index "pull_quotes", ["essay_id"], name: "index_pull_quotes_on_essay_id", using: :btree
+
+  create_table "related_links", force: true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.integer  "project_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "projects_id"
+  end
+
+  add_index "related_links", ["project_id"], name: "index_related_links_on_project_id", using: :btree
+  add_index "related_links", ["projects_id"], name: "index_related_links_on_projects_id", using: :btree
 
 end

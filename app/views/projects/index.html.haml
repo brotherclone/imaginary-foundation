@@ -4,7 +4,7 @@
   .body
     .cards
       -@projects.each do |e|
-        .card{:ng=>{:click=>"selectCard('#{projects_path(e.id)}')"}}
+        .card{:ng=>{:click=>"selectCard('#{projects_path}/#{e.id}')"}}
           .card-inner{:style => 'background-image: url("' + @project_cards['card'+e.id.to_s] + '");'}
             %h2
               = e[:description]

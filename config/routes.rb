@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :related_links
+
   resources :promo_cards
 
   resources :pull_quotes

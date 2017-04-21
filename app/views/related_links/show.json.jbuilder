@@ -1,0 +1,1 @@
+json.partial! "related_links/related_link", related_link: @related_link

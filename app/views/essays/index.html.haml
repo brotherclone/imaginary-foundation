@@ -4,7 +4,7 @@
   .body
     .cards
       -@essays.each do |e|
-        .card{:ng=>{:click=>"selectCard('#{essays_path(e.id)}')"}}
+        .card{:ng=>{:click=>"selectCard('#{essays_path}/#{e.id}')"}}
           .card-inner{:style => 'background-image: url("' + @essay_cards['card'+e.id.to_s] + '");'}
             %h2
               = e[:description]
