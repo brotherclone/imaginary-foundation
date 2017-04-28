@@ -96,6 +96,7 @@
   .honors{
     h4{
       @extend .thing;
+      color: $black;
       font-size: 2rem;
     }
     ul{

@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "RelatedLinks", type: :request do
-  describe 'should have a path'do
-    it 'has a path' do
+  describe "GET /related_links" do
+    it "works! (now write some real specs)" do
       get related_links_path
       expect(response).to have_http_status(200)
     end

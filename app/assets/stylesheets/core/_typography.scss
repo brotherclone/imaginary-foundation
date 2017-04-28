@@ -4,7 +4,6 @@ $default-font-size: 16px;
 $special-characters: 'Arial', sans-serif !important;
 
 @mixin imaginary-hover-focus($hovercolor:$blue, $focuscolor:$blue){
-  text-decoration: none;
   &:hover{
     color: $hovercolor;
     text-decoration: none;
@@ -137,7 +136,7 @@ a{
 }
 
 .organization-professional{
-  @include noun($purple, true);
+  @include noun($orange, true);
 }
 
 @keyframes fairy-tale {
@@ -146,11 +145,11 @@ a{
 }
 
 .once-upon-a-time{
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 800;
-  font-variant: small-caps;
   color: $orange;
   @include animation(fairy-tale, 5s);
   @include animation-infinite-loop();
   line-height: 4rem;
+  margin-right: 1px;
 }

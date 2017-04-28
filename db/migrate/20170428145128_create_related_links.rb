@@ -1,14 +1,11 @@
 class CreateRelatedLinks < ActiveRecord::Migration
   def change
+    drop_table :related_links
     create_table :related_links do |t|
-      t.string :title
       t.string :url
-      t.belongs_to :project, index: true
+      t.string :title
+      t.belongs_to :project
       t.timestamps
     end
-    add_reference :related_links, :projects, index: true
   end
 end
-
-
-

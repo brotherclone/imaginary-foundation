@@ -1,20 +1,31 @@
 class RelatedLinksController < InheritedResources::Base
   before_action :set_related_link, only:[:show, :edit, :update, :destroy]
-
   def index
     @related_links = RelatedLink.all
+    gon.watch.related_links =  @related_links
   end
+
   def show
+    gon.watch.related_link =  @related_link
     respond_to do |format|
       format.html { render :show}
       format.json { render :json => @related_link}
     end
   end
+
+  def edit
+
+  end
+
+  def new
+    @related_link = RelatedLink.new
+  end
+
   def create
     @related_link = RelatedLink.new(related_link_params)
     respond_to do |format|
       if @related_link.save
-        format.html { redirect_to @related_link, notice: 'RelatedLink was successfully created.' }
+        format.html { redirect_to @related_link, notice: 'Related Link was successfully created.' }
         format.json { render :show, status: :created, location: @related_link }
       else
         format.html { render :new }
@@ -24,10 +35,10 @@ class RelatedLinksController < InheritedResources::Base
   end
 
   def update
-    @mage = RelatedLink.find(params[:id])
+    @related_link = RelatedLink.find(params[:id])
     respond_to do |format|
       if @related_link.save
-        format.html { redirect_to @related_link, notice: 'RelatedLink added.' }
+        format.html { redirect_to @related_link, notice: 'Related Link added.' }
         format.json { render :show, status: :created, location: @related_link }
       else
         format.html { render :new }
@@ -39,16 +50,16 @@ class RelatedLinksController < InheritedResources::Base
   def destroy
     RelatedLink.find(params[:id]).destroy
     respond_to do |format|
-      format.html { redirect_to related_links_path, notice: 'RelatedLink was successfully destroyed.' }
+      format.html { redirect_to related_links_path, notice: 'Related Link was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
   private
-  def set_related_link
-    @related_link = RelatedLink.find(params[:id])
-  end
-  def related_link_params
-    params.require(:related_link).permit(:title, :url, :project_id)
-  end
+    def set_related_link
+      @related_link = RelatedLink.find(params[:id])
+    end
+    def related_link_params
+      params.require(:related_link).permit()
+    end
 end
 
