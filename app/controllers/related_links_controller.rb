@@ -2,13 +2,13 @@ class RelatedLinksController < InheritedResources::Base
   before_action :set_related_link, only:[:show, :edit, :update, :destroy]
   def index
     @related_links = RelatedLink.all
+    @page_title = 'Related Sites'
     gon.watch.related_links =  @related_links
   end
 
   def show
-    gon.watch.related_link =  @related_link
     respond_to do |format|
-      format.html { render :show}
+      format.html { redirect_to @related_link.url}
       format.json { render :json => @related_link}
     end
   end

@@ -1,11 +1,41 @@
 .records{
   @include outer-container;
+  .record-collection{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .record{
+      display: flex;
+      flex-direction: column;
+      img{
+        @extend .drop-shadow;
+        height: 200px;
+        width: 200px;
+      }
+      .title,.artist{
+        white-space: nowrap;
+        width: 200px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+      }
+      .title{
+        @extend .thing;
+      }
+      .artist{
+        @extend .person;
+      }
+    }
+  }
   .pagination{
-       ul{
-          list-style: none;
-          display: flex;
-          justify-content: space-between;
-          padding: 0;
-        }
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    .pages{
+      color: $purple;
+    }
+      button{
+        @include if-btn();
+      }
     }
 }

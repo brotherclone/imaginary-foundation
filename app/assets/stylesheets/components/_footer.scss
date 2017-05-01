@@ -20,6 +20,7 @@ footer.imaginary-footer {
     width: 100%;
     background-color:$black;
     height: 300px;
+    margin-top: 3rem;
   .footer-inner{
     @include outer-container;
     .footer-logo{

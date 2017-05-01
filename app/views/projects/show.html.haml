@@ -14,4 +14,11 @@
         %i{:role=>'presentation'}
   %hr
   .body
-    =@project.body.html_safe
+    - my_links = RelatedLink.where(project_id: @project.id)
+    - if my_links.length
+      .related-links
+        %h3 Related Links
+        - my_links.each do |l|
+          %a{:href=> l.url}
+            =l.title
+      =@project.body.html_safe

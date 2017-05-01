@@ -16,3 +16,6 @@ PromoCard.create!([
 PullQuote.create!([
                       {quote: "<pre style=\"word-wrap: break-word; white-space: pre-wrap;\">The peccant cloakroom comes from a sexist Tuesday.</pre>", essay_id: 1}
                   ])
+RelatedLink.create!([
+                      {project_id:1, url: "http://www.google.com", title:"A Link"}
+                    ])

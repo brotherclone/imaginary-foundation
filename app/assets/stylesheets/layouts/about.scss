@@ -1,4 +1,27 @@
 
 .about{
   @include outer-container;
+  .about-opening{
+    //@include respond-to(tv){
+    //  margin: 0 #{map-get($paragraph-starts,xlg)} 0 #{map-get($paragraph-starts,xlg)};
+    //}
+    //@include respond-to(monitor){
+    //  margin: 0 #{map-get($paragraph-starts,lg)} 0 #{map-get($paragraph-starts,lg)};
+    //}
+    //@include respond-to(newphone){
+    //  margin: 0 #{map-get($paragraph-starts,md)} 0 #{map-get($paragraph-starts,md)};
+    //}
+    //@include respond-to(oldphone){
+    //  margin: 0 #{map-get($paragraph-starts,sm)} 0 #{map-get($paragraph-starts,sm)};
+    //}
+  }
+  .about-main{
+    h2{
+      font-size: 2rem;
+    }
+
+    ol,ul{
+      padding-left: 1rem;
+    }
+  }
 }

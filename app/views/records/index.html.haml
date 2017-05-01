@@ -1,15 +1,13 @@
 = include_gon
 .records{ :ng => {:controller=>'recordCollectionCtrl', :init=>'init()'}}
   = render :partial => 'components/section_header'
-  .pages {{recordCollection[currentGroup].pagination.page}}/{{recordCollection[currentGroup].pagination.pages}}
   .record-collection
-    .record{:ng=>{:repeat => 'release in recordCollection[currentGroup].releases'}}
+    .record{:ng=>{:repeat => 'release in recordCollection[currentGroup].releases | orderBy:basic_information.title'}}
       %img{:ng=>{:src => '{{release.basic_information.thumb}}'}}
-      %span {{release.basic_information.title}}
-      %span {{release.basic_information.artists[0].name}}
+      %span{:class=>'title'} {{release.basic_information.title}}
+      %span{:class=>'artist'} {{release.basic_information.artists[0].name}}
   .pagination
-    %ul
-      %li
-        %button{:ng=>{:click=> 'paginate(false)'}, :class=>'if-button primary'} Prev
-      %li
-        %button{:ng=>{:click=> 'paginate(true)'}, :class=>'if-button primary'} Next
+    %button{:ng=>{:click=> 'paginate(false)'}} Prev
+    .pages
+      {{recordCollection[currentGroup].pagination.page}}/{{recordCollection[currentGroup].pagination.pages}}
+    %button{:ng=>{:click=> 'paginate(true)'}} Next

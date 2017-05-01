@@ -150,6 +150,6 @@ a{
   color: $orange;
   @include animation(fairy-tale, 5s);
   @include animation-infinite-loop();
-  line-height: 4rem;
+  line-height: 1rem;
   margin-right: 1px;
 }
