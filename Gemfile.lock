@@ -18,7 +18,7 @@ GIT
       sprockets (< 4.1)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.1.9)
       actionpack (= 4.1.9)
