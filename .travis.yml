@@ -4,6 +4,7 @@ rvm:
 sudo: false
 
 before_install:
+  - bundle config git.allow_insecure true
   - gem install bundler
 
 install:
