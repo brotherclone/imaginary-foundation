@@ -1,0 +1,6 @@
+# Accessibility
+
+
+```
+<span class="screen-reader">This text should only appear for Screen Readers.</span>
+```

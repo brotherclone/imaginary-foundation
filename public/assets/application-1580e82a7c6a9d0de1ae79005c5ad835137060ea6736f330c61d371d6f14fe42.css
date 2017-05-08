@@ -1,0 +1,2154 @@
+/* line 4, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_accessibility.scss */
+.screen-reader {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+/* line 40, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.main-outer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.main-outer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+.main-outer .main-inner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.main-outer .main-inner:last-child {
+  margin-right: 0;
+}
+
+/* line 48, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_layout.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 2, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_palette.scss */
+body {
+  background-color: #fff;
+}
+
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.texture-example {
+  border: 1px solid gray;
+  height: 100px;
+  width: 100px;
+}
+
+@-webkit-keyframes shift {
+  from {
+    background-color: #f70455;
+  }
+  to {
+    background-color: #6074a3;
+  }
+}
+
+@keyframes shift {
+  from {
+    background-color: #f70455;
+  }
+  to {
+    background-color: #6074a3;
+  }
+}
+/* line 39, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.bizarre-light, .section-header, .related-sites .test-head {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(209, 202, 33, 0.8)), color-stop(100%, rgba(88, 193, 51, 0.2)));
+  background: -webkit-radial-gradient(center, circle cover, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background: -webkit-radial-gradient(circle cover at center, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background: radial-gradient(circle cover at center, rgba(209, 202, 33, 0.8) 0%, rgba(88, 193, 51, 0.2) 100%);
+  background-color: #f70455;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: shift;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: shift;
+  -o-animation-delay: 0;
+  -o-animation-duration: 5s;
+  -o-animation-timing-function: linear;
+  -o-animation-name: shift;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-name: shift;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/* line 46, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.drop-shadow, .project .related-links, .records .record-collection .record img {
+  box-shadow: 0 0.052rem 0.25rem rgba(128, 128, 128, 0.4);
+}
+
+/* line 50, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.foot-lights-shadow {
+  box-shadow: 0 -0.5rem 1rem rgba(191, 191, 191, 0.25);
+}
+
+/* line 54, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_textures.scss */
+.inner-shadow {
+  box-shadow: inset -0.5rem -0.5rem 0.25rem rgba(191, 191, 191, 0.15);
+}
+
+/* line 24, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+* {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 16px;
+  color: #0c2827;
+}
+
+/* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+/* line 36, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1.huge {
+  font-size: 6rem;
+}
+/* line 37, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h1.huge span {
+  font-size: 6rem;
+}
+
+/* line 44, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h2 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+/* line 51, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h3 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 58, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h4 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* line 66, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+h5 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+a:hover {
+  color: #6074a3;
+  text-decoration: none;
+}
+/* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+a:focus {
+  color: #6074a3;
+}
+
+/* line 77, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.page-heading {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0c2827;
+  margin-bottom: 0;
+}
+
+/* line 81, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright {
+  font-family: "Arial", sans-serif !important;
+  color: #fff;
+}
+/* line 84, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.copyright:before {
+  content: '\00a9';
+}
+
+/* line 102, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.person, .records .record-collection .record .artist, .resume .candidate span {
+  color: #f70455;
+}
+
+/* line 106, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.place, .resume .contact .contact-info span, .resume .experience .position .synopsis .address > span {
+  color: #259bb2;
+}
+
+/* line 110, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.thing, .records .record-collection .record .title {
+  color: #58c133;
+}
+
+/* line 114, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.duration, .resume .experience .position .synopsis .duration > span, .date, .resume .degree span:nth-child(2) {
+  color: #6074a3;
+}
+
+/* line 118, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.organization-professional {
+  color: #757575;
+}
+
+/* line 122, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.person-professional {
+  color: #8c6f79;
+}
+
+/* line 126, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.place-professional {
+  color: #507e87;
+}
+
+/* line 130, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.thing-professional {
+  color: #6f9064;
+}
+
+/* line 134, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.duration-professional, .date-professional {
+  color: #828282;
+}
+
+/* line 138, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.organization-professional {
+  color: #ba796a;
+}
+
+@-webkit-keyframes fairy-tale {
+  from {
+    color: #e65e3e;
+  }
+  to {
+    color: #7b5d8c;
+  }
+}
+
+@keyframes fairy-tale {
+  from {
+    color: #e65e3e;
+  }
+  to {
+    color: #7b5d8c;
+  }
+}
+/* line 147, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+.once-upon-a-time {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e65e3e;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: fairy-tale;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: fairy-tale;
+  -o-animation-delay: 0;
+  -o-animation-duration: 5s;
+  -o-animation-timing-function: linear;
+  -o-animation-name: fairy-tale;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-name: fairy-tale;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  line-height: 1rem;
+  margin-right: 1px;
+}
+
+/* line 35, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.example-cards {
+  margin: 2rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.example-cards:hover {
+  cursor: pointer;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.example-cards .card {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  min-width: 320px;
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.example-cards .card .card-inner {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  box-shadow: 0 -0.5rem 1rem rgba(191, 191, 191, 0.25);
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.example-cards .card .card-inner h2 {
+  position: relative;
+  top: 300px;
+  background-color: #0c2827;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation {
+  border-top: 0.5px solid rgba(12, 40, 39, 0.1);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+header.navigation::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 6, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper a.navigation-menu-button {
+  display: none;
+  float: right;
+}
+/* line 9, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper a.navigation-menu-button i.hamburger {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 520px) {
+  /* line 6, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper a.navigation-menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 520px) {
+  /* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu {
+    display: none;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open li.nav-link {
+    text-align: right;
+  }
+  /* line 26, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open li.logo-link {
+    position: absolute;
+    top: 1.25rem;
+    right: 3rem;
+  }
+  /* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+  header.navigation .navigation-wrapper ul.navigation-menu.open li.logo-link a .if-logo, header.navigation .navigation-wrapper ul.navigation-menu.open li.logo-link a svg {
+    color: #6074a3;
+    fill: #6074a3;
+    opacity: 0.25;
+    height: 5rem;
+  }
+}
+/* line 48, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link {
+  margin: 0 1rem 0 1rem;
+}
+/* line 50, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a {
+  font-size: 1rem;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a:hover {
+  color: #f70455;
+  text-decoration: none;
+}
+/* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.nav-link a:focus {
+  color: #e65e3e;
+}
+/* line 55, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.logo-link {
+  margin-right: 0.5rem;
+}
+/* line 58, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_navigation.scss */
+header.navigation .navigation-wrapper ul.navigation-menu li.logo-link a .if-logo, header.navigation .navigation-wrapper ul.navigation-menu li.logo-link a svg {
+  color: #f70455;
+  fill: #f70455;
+  height: 2rem;
+}
+
+@-webkit-keyframes footerlogo {
+  from {
+    color: #fff;
+    opacity: 0.05;
+    fill: #fff;
+  }
+  to {
+    color: #259bb2;
+    opacity: 0.75;
+    fill: #259bb2;
+  }
+}
+
+@keyframes footerlogo {
+  from {
+    color: #fff;
+    opacity: 0.05;
+    fill: #fff;
+  }
+  to {
+    color: #259bb2;
+    opacity: 0.75;
+    fill: #259bb2;
+  }
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 12, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 15, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
+
+/* line 19, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer {
+  width: 100%;
+  background-color: #0c2827;
+  height: 300px;
+  margin-top: 3rem;
+}
+/* line 24, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer .footer-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+footer.imaginary-footer .footer-inner::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 26, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer .footer-inner .footer-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+/* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer .footer-inner .footer-logo .if-logo, footer.imaginary-footer .footer-inner .footer-logo svg {
+  color: rgba(255, 255, 255, 0.8);
+  fill: #fff;
+  width: 10rem;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: footerlogo;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 20s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: footerlogo;
+  -o-animation-delay: 0;
+  -o-animation-duration: 20s;
+  -o-animation-timing-function: linear;
+  -o-animation-name: footerlogo;
+  animation-delay: 0;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-name: footerlogo;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@media only screen and (min-width: 520px (+1)) and (max-width: 768px (-1)) {
+  /* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  footer.imaginary-footer .footer-inner .footer-logo .if-logo, footer.imaginary-footer .footer-inner .footer-logo svg {
+    width: 8rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  /* line 31, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  footer.imaginary-footer .footer-inner .footer-logo .if-logo, footer.imaginary-footer .footer-inner .footer-logo svg {
+    width: 6rem;
+  }
+}
+/* line 45, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer .footer-inner ul {
+  list-style: none;
+  padding: 0;
+  margin: 4rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+/* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+footer.imaginary-footer .footer-inner ul li, footer.imaginary-footer .footer-inner ul a {
+  color: #fff;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 520px (+1)) and (max-width: 768px (-1)) {
+  /* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  footer.imaginary-footer .footer-inner ul li, footer.imaginary-footer .footer-inner ul a {
+    font-size: 0.95rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  /* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_footer.scss */
+  footer.imaginary-footer .footer-inner ul li, footer.imaginary-footer .footer-inner ul a {
+    font-size: 0.75rem;
+  }
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+footer.imaginary-footer .footer-inner ul a:hover {
+  color: #6074a3;
+  text-decoration: none;
+}
+/* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/core/_typography.scss */
+footer.imaginary-footer .footer-inner ul a:focus {
+  color: #6074a3;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pullquote.scss */
+.pull-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pullquote.scss */
+.pull-quote i.open {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/* line 9, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pullquote.scss */
+.pull-quote h3 {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  font-size: 2rem;
+}
+/* line 13, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_pullquote.scss */
+.pull-quote i.close {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+.section-header {
+  width: 100%;
+  font-size: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  background-position: right 16px top 0;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 520px) {
+  /* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header {
+    margin-top: -0.5rem;
+  }
+  /* line 4, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header h1 {
+    margin-left: 0.25rem !important;
+    font-size: 1.75rem !important;
+  }
+}
+@media only screen and (min-width: 520px (+1)) and (max-width: 768px (-1)) {
+  /* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header {
+    margin-top: -0.5rem;
+  }
+  /* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header h1 {
+    margin-left: 0.25rem !important;
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (768px (+1)) and (1024px (-1)) {
+  /* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header {
+    margin-top: -0.5rem;
+  }
+  /* line 18, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header h1 {
+    margin-left: 0.5rem !important;
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (1024px (+1)) and (1920px (-1)) {
+  /* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header {
+    margin-top: -0.825rem;
+  }
+  /* line 25, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+  .section-header h1 {
+    margin-left: 0.5rem !important;
+    font-size: 3.5rem !important;
+  }
+}
+/* line 39, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_section-header.scss */
+.section-header h1 {
+  color: #fff;
+  margin-left: 1.875rem;
+  font-size: 4rem;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/assets/icomoon.eot");
+  src: url("/assets/icomoon.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon.woff") format("woff"), url("/assets/icomoon.ttf") format("truetype"), url("/assets/icomoon.svg#icomoon") format("svg");
+}
+/* line 26, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+i {
+  font-family: "icomoon" !important;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.24rem;
+  color: #0c2827;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-book:before {
+  content: "\f007";
+}
+
+/* line 35, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bug:before {
+  content: "\f091";
+}
+
+/* line 40, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-check:before {
+  content: "\f03a";
+}
+
+/* line 44, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-down:before {
+  content: "\f0a3";
+}
+
+/* line 48, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-left:before {
+  content: "\f0a4";
+}
+
+/* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-right:before {
+  content: "\f078";
+}
+
+/* line 56, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-chevron-up:before {
+  content: "\f0a2";
+}
+
+/* line 60, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-circle-slash:before {
+  content: "\f084";
+}
+
+/* line 64, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-clock:before {
+  content: "\f046";
+}
+
+/* line 68, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-code:before {
+  content: "\f05f";
+}
+
+/* line 72, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-eye:before {
+  content: "\f04e";
+}
+
+/* line 76, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-link-external:before {
+  content: "\f07f";
+}
+
+/* line 80, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-location:before {
+  content: "\f060";
+}
+
+/* line 84, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-microscope:before {
+  content: "\f089";
+}
+
+/* line 88, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-octoface:before {
+  content: "\f008";
+}
+
+/* line 92, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-question:before {
+  content: "\f02c";
+}
+
+/* line 96, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-stop:before {
+  content: "\f08f";
+}
+
+/* line 100, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-three-bars:before {
+  content: "\f05e";
+}
+
+/* line 104, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-x:before {
+  content: "\f081";
+}
+
+/* line 108, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-zap:before {
+  content: "\26a1";
+}
+
+/* line 112, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-phone:before {
+  content: "\e942";
+}
+
+/* line 116, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bell:before {
+  content: "\e951";
+}
+
+/* line 120, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-bubbles:before {
+  content: "\e96c";
+}
+
+/* line 124, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-quotes-left:before, .pull-quote i.open:before {
+  content: "\e977";
+}
+
+/* line 128, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-quotes-right:before, .pull-quote i.close:before {
+  content: "\e978";
+}
+
+/* line 132, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-checked:before {
+  content: "\ea54";
+}
+
+/* line 136, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-checked2:before {
+  content: "\ea55";
+}
+
+/* line 140, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}
+
+/* line 144, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-filter:before {
+  content: "\ea5b";
+}
+
+/* line 148, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-facebook2:before, .essay .header .sharing .share-button.share-facebook i:before, .project .header .sharing .share-button.share-facebook i:before {
+  content: "\ea91";
+}
+
+/* line 152, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/* line 156, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-twitter:before, .essay .header .sharing .share-button.share-twitter i:before, .project .header .sharing .share-button.share-twitter i:before {
+  content: "\ea96";
+}
+
+/* line 160, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-behance2:before {
+  content: "\eaa9";
+}
+
+/* line 164, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_icons.scss */
+.icon-linkedin:before, .essay .header .sharing .share-button.share-linkedin i:before, .project .header .sharing .share-button.share-linkedin i:before {
+  content: "\eac9";
+}
+
+/* line 52, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #0c2827;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #0c2827;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button:hover, .if-button:active {
+  color: #298a87;
+  background-color: transparent;
+  border-color: #298a87;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button:hover span, .if-button:hover i, .if-button:active span, .if-button:active i {
+  color: #298a87;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.is-on, .if-button.current {
+  color: #fff;
+  background-color: #259bb2;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button span, .if-button i {
+  color: #0c2827;
+}
+/* line 59, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #6074a3;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary:hover, .if-button.primary:active {
+  color: #fff;
+  background-color: #3a4663;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary:hover span, .if-button.primary:hover i, .if-button.primary:active span, .if-button.primary:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary.is-on, .if-button.primary.current {
+  color: #fff;
+  background-color: #272f43;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.primary span, .if-button.primary i {
+  color: #fff;
+}
+/* line 67, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #247674;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary:hover, .if-button.secondary:active {
+  color: #0c2827;
+  background-color: transparent;
+  border-color: #247674;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary:hover span, .if-button.secondary:hover i, .if-button.secondary:active span, .if-button.secondary:active i {
+  color: #0c2827;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary.is-on, .if-button.secondary.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.secondary span, .if-button.secondary i {
+  color: #247674;
+}
+/* line 73, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #f70455;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes:hover, .if-button.yikes:active {
+  color: #fff;
+  background-color: #c50344;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes:hover span, .if-button.yikes:hover i, .if-button.yikes:active span, .if-button.yikes:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes.is-on, .if-button.yikes.current {
+  color: #fff;
+  background-color: #ac033b;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.yikes span, .if-button.yikes i {
+  color: #fff;
+}
+/* line 81, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #fff;
+  background-color: #58c133;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar:hover, .if-button.wunderbar:active {
+  color: #fff;
+  background-color: #469928;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar:hover span, .if-button.wunderbar:hover i, .if-button.wunderbar:active span, .if-button.wunderbar:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar.is-on, .if-button.wunderbar.current {
+  color: #fff;
+  background-color: #33701e;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.if-button.wunderbar span, .if-button.wunderbar i {
+  color: #fff;
+}
+
+/* line 2, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/about.scss */
+.about {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.about::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 19, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/about.scss */
+.about .about-main h2 {
+  font-size: 2rem;
+}
+/* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/about.scss */
+.about .about-main ol, .about .about-main ul {
+  padding-left: 1rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/contact.scss */
+.contact {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.contact::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essays {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.essays::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essays .cards {
+  margin: 2rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.essays .cards:hover {
+  cursor: pointer;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.essays .cards .card {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  min-width: 320px;
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.essays .cards .card .card-inner {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  box-shadow: 0 -0.5rem 1rem rgba(191, 191, 191, 0.25);
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.essays .cards .card .card-inner h2 {
+  position: relative;
+  top: 300px;
+  background-color: #0c2827;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.essay::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header h1 {
+  font-size: 4rem;
+  color: #259bb2;
+  margin-bottom: -1rem;
+}
+@media only screen and (max-width: 520px) {
+  /* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+  .essay .header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+/* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header .sharing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/* line 26, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header .sharing .share-button {
+  max-height: 50px;
+  max-width: 50px;
+  padding: 0 !important;
+}
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header .sharing .share-button.share-facebook {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #259bb2;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  margin-right: 0.5rem;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-facebook:hover, .essay .header .sharing .share-button.share-facebook:active {
+  color: #fff;
+  background-color: #259bb2;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-facebook:hover span, .essay .header .sharing .share-button.share-facebook:hover i, .essay .header .sharing .share-button.share-facebook:active span, .essay .header .sharing .share-button.share-facebook:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-facebook.is-on, .essay .header .sharing .share-button.share-facebook.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-facebook span, .essay .header .sharing .share-button.share-facebook i {
+  color: #259bb2;
+}
+/* line 40, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header .sharing .share-button.share-linkedin {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #259bb2;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  margin-left: 0.5rem;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-linkedin:hover, .essay .header .sharing .share-button.share-linkedin:active {
+  color: #fff;
+  background-color: #259bb2;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-linkedin:hover span, .essay .header .sharing .share-button.share-linkedin:hover i, .essay .header .sharing .share-button.share-linkedin:active span, .essay .header .sharing .share-button.share-linkedin:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-linkedin.is-on, .essay .header .sharing .share-button.share-linkedin.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-linkedin span, .essay .header .sharing .share-button.share-linkedin i {
+  color: #259bb2;
+}
+/* line 50, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .header .sharing .share-button.share-twitter {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #259bb2;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-twitter:hover, .essay .header .sharing .share-button.share-twitter:active {
+  color: #fff;
+  background-color: #259bb2;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-twitter:hover span, .essay .header .sharing .share-button.share-twitter:hover i, .essay .header .sharing .share-button.share-twitter:active span, .essay .header .sharing .share-button.share-twitter:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-twitter.is-on, .essay .header .sharing .share-button.share-twitter.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.essay .header .sharing .share-button.share-twitter span, .essay .header .sharing .share-button.share-twitter i {
+  color: #259bb2;
+}
+/* line 62, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay hr {
+  opacity: 0.25;
+}
+/* line 65, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/essays.scss */
+.essay .body {
+  font-size: 1.18rem;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  line-height: 1.88rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/galleries.scss */
+.galleries {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.galleries::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.good-word-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 5, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-header h1 {
+  font-family: "orpheuspro", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f70455;
+  margin-bottom: 0;
+}
+/* line 13, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-creation {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+}
+/* line 89, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-creation:last-child {
+  margin-right: 0;
+}
+/* line 17, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 89, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.good-word-container .good-editor .good-display:last-child {
+  margin-right: 0;
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .display-word {
+  min-height: 40px;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+}
+/* line 27, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .good {
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-right: 1px solid rgba(12, 40, 39, 0.2);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #6074a3;
+  color: #fff;
+}
+/* line 35, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/goodwords.scss */
+.good-word-container .good-editor .good-display .word .bad {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-top: 1px solid rgba(12, 40, 39, 0.2);
+  border-bottom: 1px solid rgba(12, 40, 39, 0.2);
+  border-left: 1px solid rgba(12, 40, 39, 0.2);
+  background-color: #f70455;
+  color: #fff;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/home.scss */
+.home {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.home::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/home.scss */
+.home .cards {
+  margin: 2rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.home .cards:hover {
+  cursor: pointer;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.home .cards .card {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  min-width: 320px;
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.home .cards .card .card-inner {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  box-shadow: 0 -0.5rem 1rem rgba(191, 191, 191, 0.25);
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.home .cards .card .card-inner h2 {
+  position: relative;
+  top: 300px;
+  background-color: #0c2827;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/images.scss */
+.images {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.images::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/privacy.scss */
+.privacy {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.privacy::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/privacy.scss */
+.privacy h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/project.scss */
+.project {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.project::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/project.scss */
+.project .related-links {
+  position: relative;
+  float: right;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #7b5d8c;
+  width: 230px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+}
+/* line 13, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/project.scss */
+.project .related-links h3 {
+  width: 100%;
+  color: #7b5d8c;
+  font-size: 1.5rem;
+  margin: 0 1.56rem 0.5rem 1.56rem;
+}
+/* line 19, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/project.scss */
+.project .related-links a {
+  margin-bottom: 1rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.projects {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.projects::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.projects .cards {
+  margin: 2rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.projects .cards:hover {
+  cursor: pointer;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.projects .cards .card {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  min-width: 320px;
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.projects .cards .card .card-inner {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  box-shadow: 0 -0.5rem 1rem rgba(191, 191, 191, 0.25);
+}
+/* line 22, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/components/_cards.scss */
+.projects .cards .card .card-inner h2 {
+  position: relative;
+  top: 300px;
+  background-color: #0c2827;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.project::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 10, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header h1 {
+  font-size: 4rem;
+  color: #58c133;
+  margin-bottom: -1rem;
+}
+@media only screen and (max-width: 520px) {
+  /* line 14, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+  .project .header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+/* line 23, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header .sharing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/* line 26, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header .sharing .share-button {
+  max-height: 50px;
+  max-width: 50px;
+  padding: 0 !important;
+}
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header .sharing .share-button.share-facebook {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #58c133;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  margin-right: 0.5rem;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-facebook:hover, .project .header .sharing .share-button.share-facebook:active {
+  color: #fff;
+  background-color: #58c133;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-facebook:hover span, .project .header .sharing .share-button.share-facebook:hover i, .project .header .sharing .share-button.share-facebook:active span, .project .header .sharing .share-button.share-facebook:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-facebook.is-on, .project .header .sharing .share-button.share-facebook.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-facebook span, .project .header .sharing .share-button.share-facebook i {
+  color: #58c133;
+}
+/* line 40, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header .sharing .share-button.share-linkedin {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #58c133;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  margin-left: 0.5rem;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-linkedin:hover, .project .header .sharing .share-button.share-linkedin:active {
+  color: #fff;
+  background-color: #58c133;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-linkedin:hover span, .project .header .sharing .share-button.share-linkedin:hover i, .project .header .sharing .share-button.share-linkedin:active span, .project .header .sharing .share-button.share-linkedin:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-linkedin.is-on, .project .header .sharing .share-button.share-linkedin.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-linkedin span, .project .header .sharing .share-button.share-linkedin i {
+  color: #58c133;
+}
+/* line 50, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .header .sharing .share-button.share-twitter {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #58c133;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-twitter:hover, .project .header .sharing .share-button.share-twitter:active {
+  color: #fff;
+  background-color: #58c133;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-twitter:hover span, .project .header .sharing .share-button.share-twitter:hover i, .project .header .sharing .share-button.share-twitter:active span, .project .header .sharing .share-button.share-twitter:active i {
+  color: #fff;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-twitter.is-on, .project .header .sharing .share-button.share-twitter.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.project .header .sharing .share-button.share-twitter span, .project .header .sharing .share-button.share-twitter i {
+  color: #58c133;
+}
+/* line 62, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project hr {
+  opacity: 0.25;
+}
+/* line 65, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/projects.scss */
+.project .body {
+  font-size: 1.18rem;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  line-height: 1.88rem;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.records::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .record-collection {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .record-collection .record {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 11, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .record-collection .record img {
+  height: 200px;
+  width: 200px;
+}
+/* line 16, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .record-collection .record .title, .records .record-collection .record .artist {
+  white-space: nowrap;
+  width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .pagination {
+  margin: 2rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .pagination .pages {
+  color: #7b5d8c;
+}
+/* line 37, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/records.scss */
+.records .pagination button {
+  padding: 0.5rem 1.25rem 0.35rem 1.25rem;
+  color: #0c2827;
+  background-color: transparent;
+  font-size: 1.25rem;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/* line 34, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.records .pagination button:hover, .records .pagination button:active {
+  color: #0c2827;
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.records .pagination button:hover span, .records .pagination button:hover i, .records .pagination button:active span, .records .pagination button:active i {
+  color: #0c2827;
+}
+/* line 42, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.records .pagination button.is-on, .records .pagination button.current {
+  color: #6074a3;
+  background-color: transparent;
+  border-color: #6074a3;
+}
+/* line 47, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/elements/_buttons.scss */
+.records .pagination button span, .records .pagination button i {
+  color: #0c2827;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/related_sites.scss */
+.related-sites {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.related-sites::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 3, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/related_sites.scss */
+.related-sites .test-head {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.related-sites .test-head::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 1, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+/* line 20, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/neat/mixins/_clearfix.scss */
+.resume::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 4, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume h2 {
+  font-size: 2.75rem;
+}
+/* line 7, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .candidate {
+  line-height: 3.5rem;
+}
+/* line 8, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .candidate span {
+  font-size: 3.5rem;
+}
+/* line 21, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .overview {
+  max-width: 70%;
+}
+/* line 25, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position {
+  margin: 2rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 28, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .logo {
+  padding-right: 2rem;
+}
+/* line 30, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .logo img {
+  height: 50px;
+  width: 50px;
+}
+/* line 35, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 38, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .title {
+  font-size: 2rem;
+  color: #f70455;
+}
+/* line 43, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .organization a, .resume .experience .position .synopsis .institution span a, .resume .institution .experience .position .synopsis span a, .resume .institution span .experience .position .synopsis a a {
+  font-size: 1.5rem;
+  color: #6074a3;
+}
+/* line 55, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .duration > span:first-child:after, .resume .experience .position .synopsis .duration > span > span:first-child:after {
+  content: ' - ';
+}
+/* line 60, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .experience .position .synopsis .description {
+  max-width: 60%;
+}
+/* line 80, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .honors h4 {
+  color: #0c2827;
+  font-size: 2rem;
+}
+/* line 85, /Users/gawalsh/Sites/RubymineProjects/imaginary-foundation/app/assets/stylesheets/layouts/resume.scss */
+.resume .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

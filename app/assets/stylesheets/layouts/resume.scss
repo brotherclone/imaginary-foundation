@@ -1,80 +1,92 @@
+
 .resume{
   @include outer-container;
-  .candidate{
-    text-align: right;
-    span{
-      @extend .person;
+  margin-left: 2rem;
+  @include respond-to(tablet) {
+    margin-left: 4rem;
+  }
+  @include respond-to(oldphone) {
+    margin-left: 0;
+  }
+  h2{
+    font-size: 2.75rem;
+    @include respond-to(oldphone) {
+      font-size: 1.875rem;
     }
   }
-  .heading{
-
+  .candidate{
+    span{
+      font-size: 3.5rem;
+      @extend .person;
+    }
+    line-height: 3.5rem;
+    @include respond-to(oldphone) {
+      span{
+        font-size: 3rem;
+      }
+      line-height: 3rem;
+    }
   }
   .contact{
-    text-align: right;
     .contact-info{
       span{
         @extend .place;
       }
-      .contact-link{
-        @extend .thing;
-        a{
-          @extend .thing;
-        }
-      }
+    }
+  }
+  .overview{
+    max-width: 65%;
+    @include respond-to(oldphone) {
+      max-width: 90%;
     }
   }
   .experience{
     .position{
-      margin: 4rem 0 2rem 0;
-      .synopsis{
-        display: flex;
-        justify-content: space-between;
-        .title{
-          @extend .person;
-          font-size: 2rem;
-          margin: 0;
-          padding: 0;
+      margin: 2rem 0 2rem 0;
+      display: flex;
+        .logo{
+          padding-right: 2rem;
+          img{
+            height: 50px;
+            width: 50px;
+            @include box-shadow();
+          }
+          @include respond-to(oldphone) {
+            display: none;
+          }
         }
+        .synopsis{
+          display: flex;
+          flex-direction: column;
+          .title{
+            font-size: 2rem;
+            color: $red;
+          }
+          .organization{
+            a{
+              font-size: 1.5rem;
+              color: $blue;
+            }
 
-        .organization{
-          margin: 0;
-          padding: 0;
-          align-self: center;
-          span:first-child{
-            span{
-              @extend .organization;
-              a{
-                @extend .organization;
+          }
+          .address > span{
+            @extend .place;
+          }
+          .duration > span{
+            @extend .duration;
+            &:first-child{
+              &:after{
+                content: ' - ';
               }
             }
           }
-        }
-        .address{
-          display: flex;
-          span{
-            @extend .place;
-            margin-right: 0.5rem;
-            align-self: center;
-            &:last-child{
-              margin-right: 0;
+          .description{
+            max-width: 60%;
+            @include respond-to(oldphone) {
+              max-width: 95%;
             }
           }
         }
-        .duration{
-          span{
-            @extend .duration;
-          }
-          align-self: center;
-          span:first-child{
-            &:after{
-              content: ' - ';
-            }
-          }
-        }
-      }
-      .description{
-        margin-top: 1rem;
-      }
     }
   }
   .institution{
@@ -86,37 +98,23 @@
     }
   }
   .degree{
-    span:nth-child(1){
-      @extend .thing;
-    }
     span:nth-child(2){
       @extend .date;
     }
   }
   .honors{
     h4{
-      @extend .thing;
       color: $black;
       font-size: 2rem;
-    }
-    ul{
-      li{
-        @extend .thing;
-        span{
-          @extend .thing;
-        }
-      }
     }
   }
   .listing{
     display: flex;
     justify-content: space-between;
-    .skill-group{
-      li{
-        @extend .thing;
-        span{
-          @extend .thing;
-        }
+    @include respond-to(oldphone) {
+     flex-direction: column;
+      ul{
+        margin-bottom: -1rem;
       }
     }
   }

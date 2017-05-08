@@ -9,29 +9,29 @@ $paragraph-starts:( sm: 0,
                     lg: 4rem,
                     xlg: 5rem);
 
-@mixin respond-to($media) {
+@mixin respond-to($media, $trace: false) {
   @if $media == oldphone {
-    @media only screen and (max-width: #{map-get($breakpoints, sm)}) {
+    @media (max-width: #{map-get($breakpoints, sm)}) {
       @content;
     }
   }
   @else if $media == newphone {
-    @media only screen and (min-width: #{map-get($breakpoints, sm)} + 1) and (max-width: #{map-get($breakpoints, md)} - 1) {
+    @media (max-width: #{map-get($breakpoints, md)}) {
       @content;
     }
   }
   @else if $media == tablet {
-    @media only screen and (#{map-get($breakpoints, md)} + 1) and (#{map-get($breakpoints, lg)} - 1) {
+    @media (max-width: #{map-get($breakpoints, lg)}) {
       @content;
     }
   }
   @else if $media == monitor {
-    @media only screen and (#{map-get($breakpoints, lg)} + 1) and (#{map-get($breakpoints, xlg)} - 1) {
+    @media (max-width: #{map-get($breakpoints, xlg)}) {
       @content;
     }
   }
   @else if $media == tv {
-    @media only screen and (min-width: #{map-get($breakpoints, xlg)}) {
+    @media (min-width: #{map-get($breakpoints, xlg)}) {
       @content;
     }
   }
