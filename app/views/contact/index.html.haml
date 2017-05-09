@@ -1,2 +1,8 @@
 .contact
   = render :partial => 'components/section_header'
+  %p
+    For information about this
+    %em
+      Imaginary Foundation
+    please write to
+    = mail_to 'info@imaginary.foundation', 'The Archivist.', encode: 'hex'

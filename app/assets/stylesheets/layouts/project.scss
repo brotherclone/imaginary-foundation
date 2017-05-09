@@ -10,6 +10,9 @@
     width: 230px;
     padding: 1.5rem;
     margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     h3{
       width: 100%;
       color: $purple;
@@ -17,7 +20,15 @@
       margin: 0 1.56rem 0.5rem 1.56rem;
     }
     a{
-      margin-bottom: 1rem;
+      &:hover{
+        cursor: pointer;
+      }
+      i{
+        text-decoration: none;
+        &:hover{
+          cursor: pointer;
+        }
+      }
     }
   }
 }

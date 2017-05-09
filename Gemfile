@@ -26,6 +26,7 @@ gem 'angularjs-rails'
 gem 'figaro'
 gem 'inline_svg'
 gem 'octokit', '~> 4.0'
+gem 'actionview-encoded_mail_to'
 
 
 group :development, :test do
