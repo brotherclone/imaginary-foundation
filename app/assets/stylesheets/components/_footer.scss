@@ -1,65 +1,79 @@
 @keyframes footerlogo {
-  from {color: $white; opacity: 0.05; fill: $white;}
-  to {color: $indigo; opacity: 0.75; fill: $indigo;}
+  from {
+    color: $white;
+    opacity: 0.05;
+    fill: $white;
+  }
+  to {
+    color: $indigo;
+    opacity: 0.75;
+    fill: $indigo;
+  }
 }
-
 
 .wrapper-for-content-outside-of-footer {
   min-height: 100%;
   height: auto !important;
   height: 100%;
 }
+
 html, body {
   height: 100%;
 }
+
 .wrapper-for-content-outside-of-footer:after {
   content: "";
   display: block;
 }
+
 footer.imaginary-footer {
-    width: 100%;
-    background-color:$black;
-    height: 300px;
-    margin-top: 3rem;
-  .footer-inner{
+  width: 105%;
+  background-color: $black;
+  height: 300px;
+  margin-top: 3rem;
+  margin-left: -10px;
+  padding-left: 10px;
+  margin-right: -10px;
+  padding-right: 10px;
+  .footer-inner {
     @include outer-container;
-    .footer-logo{
-      width:100%;
+    .footer-logo {
+      width: 100%;
       display: flex;
       justify-content: center;
       padding-top: 2rem;
-      .if-logo, svg{
-        color: transparentize($white,0.2);
+      .if-logo, svg {
+        color: transparentize($white, 0.2);
         fill: $white;
         width: 10rem;
-        @include respond-to(newphone)  {
+        @include respond-to(newphone) {
           width: 8rem;
         }
-        @include respond-to(oldphone)  {
+        @include respond-to(oldphone) {
           width: 6rem;
         }
         @include animation(footerlogo, 20s);
         @include animation-infinite-loop();
       }
     }
-    ul{
+    ul {
       list-style: none;
-      padding:0;
-      margin:4rem 0 0 0;
+      padding: 0;
+      margin: 4rem 0 0 0;
       display: flex;
       justify-content: space-around;
       color: $white;
-      li, a{
+      li, a {
         color: $white;
         font-size: 1rem;
-        @include respond-to(newphone)  {
+        @include respond-to(newphone) {
           font-size: 0.95rem;
         }
-        @include respond-to(oldphone)  {
+        @include respond-to(oldphone) {
           font-size: 0.75rem;
         }
       }
-      a{
+      a {
         @include imaginary-hover-focus();
       }
     }

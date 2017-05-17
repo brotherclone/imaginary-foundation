@@ -1,13 +1,7 @@
 
 .resume{
   @include outer-container;
-  margin-left: 2rem;
-  @include respond-to(tablet) {
-    margin-left: 4rem;
-  }
-  @include respond-to(oldphone) {
-    margin-left: 0;
-  }
+  margin: 0 auto 0 auto;
   h2{
     font-size: 2.75rem;
     @include respond-to(oldphone) {
@@ -66,6 +60,9 @@
             a{
               font-size: 1.5rem;
               color: $blue;
+              &:hover{
+                cursor: pointer;
+              }
             }
 
           }

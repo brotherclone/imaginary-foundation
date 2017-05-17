@@ -33,6 +33,7 @@ header.navigation{
                 fill: $blue;
                 opacity: 0.25;
                 height: 5rem;
+                @include imaginary-hover-focus();
               }
             }
           }

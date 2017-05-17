@@ -4,6 +4,7 @@ $default-font-size: 16px;
 $special-characters: 'Arial', sans-serif !important;
 
 @mixin imaginary-hover-focus($hovercolor:$blue, $focuscolor:$blue){
+  text-decoration: none;
   &:hover{
     color: $hovercolor;
     text-decoration: none;
