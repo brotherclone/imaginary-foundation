@@ -1,6 +1,8 @@
 class AboutController < ApplicationController
   helper NavigationHelper
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'About', :about_path
     @page_title = 'About'
         Octokit.configure do |c|
             c.login = ENV['GITHUB_USER']

@@ -4,10 +4,10 @@
     - @promo_cards.each do |c|
       - if c.project_id
         -item = Project.find(c.project_id)
-        -path = projects_path(c.project_id)
+        -path = projects_path + "/" + c.project_id.to_s
       - elsif c.essay_id
         -item = Essay.find(c.essay_id)
-        -path = projects_path(c.essay_id)
+        -path = essay_path(c.essay_id)
       - if c.image_id
         -i= Image.find(c.image_id)
         -image = i.image_file

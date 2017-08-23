@@ -15,6 +15,7 @@ $font-name: "orpheuspro",sans-serif;
 @import 'core/typography';
 
 // Components
+@import "components/bread-crumb";
 @import "components/cards";
 @import "components/navigation";
 @import "components/footer";
@@ -39,5 +40,5 @@ $font-name: "orpheuspro",sans-serif;
 @import "layouts/project";
 @import "layouts/projects";
 @import "layouts/records";
-@import "layouts/related_sites";
+@import "layouts/related_links";
 @import "layouts/resume";

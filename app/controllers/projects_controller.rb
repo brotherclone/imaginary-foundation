@@ -1,8 +1,9 @@
 class ProjectsController < InheritedResources::Base
   include NavigationHelper
   before_action :set_project, only:[:show, :edit, :update, :destroy]
-
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'Projects', :projects_path
     @projects = Project.all
     gon.watch.projects =  @projects
     @page_title = 'Projects'
@@ -20,6 +21,8 @@ class ProjectsController < InheritedResources::Base
   end
 
   def show
+    add_breadcrumb 'Projects', :projects_path
+    add_breadcrumb @project.title, :project_path
     gon.watch.project =  @project
     respond_to do |format|
       format.html { render :show}
@@ -74,7 +77,7 @@ class ProjectsController < InheritedResources::Base
       @project = Project.find(params[:id])
     end
     def project_params
-      params.require(:project).permit(:title, :body, :description, :external_url)
+      params.require(:project).permit(:title, :body, :description, :external_url, :image_id)
     end
 end
 

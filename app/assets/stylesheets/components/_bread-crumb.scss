@@ -1,0 +1,20 @@
+.bread-crumb-wrapper{
+  @include respond-to(oldphone) {
+    display: none;
+  }
+  @include outer-container;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  .bread-crumb, a {
+    font-size: 0.85rem;
+  }
+  .bread-crumb{
+    color: $grey;
+    a{
+      color: $blue;
+      &:hover{
+        color: $indigo;
+      }
+    }
+  }
+}
