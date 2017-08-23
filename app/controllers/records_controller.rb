@@ -1,8 +1,9 @@
 class RecordsController < InheritedResources::Base
   include NavigationHelper
   helper_method :getRecords
-
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'Record Collection', :records_path
     @wrapper = Discogs::Wrapper.new('Imaginary Albums', user_token: ENV['DISCOGS_KEY'])
     @recordCollection = []
     @current_group = 1

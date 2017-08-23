@@ -1,10 +1,17 @@
 = include_gon
+= render :partial => 'components/bread_crumb'
 .projects{ :ng => {:controller=>'projectIndexCtrl', :init=>'init()'}}
   = render :partial => 'components/section_header'
   .body
     .cards
       -@projects.each do |e|
-        .card{:ng=>{:click=>"selectCard('#{projects_path}/#{e.id}')"}}
-          .card-inner{:style => 'background-image: url("' + @project_cards['card'+e.id.to_s] + '");'}
-            %h2
-              = e[:description]
+        - if @project_cards['card'+e.id.to_s]
+          .card{:ng=>{:click=>"selectCard('#{projects_path}/#{e.id}')"}}
+            .card-inner{:style => 'background-image: url("' + @project_cards['card'+e.id.to_s] + '");'}
+              %h2
+                = e[:description]
+        - else
+          .card.blanko
+            .card-inner
+              %h2
+                = e[:description]

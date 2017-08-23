@@ -1,7 +1,9 @@
+= render :partial => 'components/bread_crumb'
 .related-links
   = render :partial => 'components/section_header'
-%ul
-  -@related_links.each do |r|
-    %li
-      %a{:href=> related_links_path+'/'+r.id.to_s}
-        =r.title
+  %ul
+    -@related_links.each do |r|
+      %li
+        %a{:href=> related_links_path+'/'+r.id.to_s}
+          =r.title
+

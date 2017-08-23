@@ -1,8 +1,9 @@
 class EssaysController < InheritedResources::Base
   include NavigationHelper
   before_action :set_essay, only:[:show, :edit, :update, :destroy]
-
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'Essays', :essays_path
     @essays = Essay.all
     promo_cards = PromoCard.where(essay_id: true)
     @essay_cards = {}
@@ -20,6 +21,8 @@ class EssaysController < InheritedResources::Base
   end
 
   def show
+    add_breadcrumb 'Essays', :essays_path
+    add_breadcrumb @essay.title, :essay_path
     gon.watch.essay =  @essay
     @clean = replace_with_directive(@essay)
     respond_to do |format|
@@ -95,7 +98,7 @@ class EssaysController < InheritedResources::Base
   end
 
   def essay_params
-    params.require(:essay).permit(:title, :body, :description)
+    params.require(:essay).permit(:title, :body, :description, :image_id)
   end
 end
 

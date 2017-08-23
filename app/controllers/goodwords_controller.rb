@@ -1,13 +1,16 @@
 class GoodwordsController < InheritedResources::Base
   include NavigationHelper
   before_action :set_goodword, only:[:show, :edit, :update, :destroy]
-
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'Good Words', :goodwords_path
     @goodwords = Goodword.all
     gon.watch.goodwords =  @goodwords
   end
 
   def show
+    add_breadcrumb 'Good Words', :goodwords_path
+    add_breadcrumb @goodword.word, :goodword_path
     respond_to do |format|
       format.html { render :show}
       format.json { render :json => @goodword}

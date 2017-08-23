@@ -62,7 +62,7 @@ class PromoCardsController < InheritedResources::Base
   end
 
   def promo_card_params
-    params.require(:promo_card).permit(:essay_id, :project_id)
+    params.require(:promo_card).permit(:essay_id, :project_id, :image_id)
   end
 end
 

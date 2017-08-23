@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.9'
 gem 'pg'
+gem 'sass', '3.4.23'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
@@ -27,6 +28,7 @@ gem 'figaro'
 gem 'inline_svg'
 gem 'octokit', '~> 4.0'
 gem 'actionview-encoded_mail_to'
+gem 'breadcrumbs_on_rails'
 
 
 group :development, :test do

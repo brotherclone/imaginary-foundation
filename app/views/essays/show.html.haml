@@ -1,5 +1,5 @@
 = include_gon
-
+= render :partial => 'components/bread_crumb'
 .essay{ :ng => {:controller=>'essayCtrl', :init=>'init()'}}
   .header
     %h1 {{essay.title}}

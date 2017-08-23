@@ -1,4 +1,5 @@
 = include_gon
+= render :partial => 'components/bread_crumb'
 .good-word-container{:ng => {:controller=> 'goodWordCtrl', :init=>'init()'}}
   = render :partial => 'components/section_header'
     %button{:ng =>{:if=>'!editMode', :click => 'toggleMode()'}} Add Words

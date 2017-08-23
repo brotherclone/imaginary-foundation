@@ -1,6 +1,8 @@
 class RelatedLinksController < InheritedResources::Base
   before_action :set_related_link, only:[:show, :edit, :update, :destroy]
+  add_breadcrumb 'Home', :root_path
   def index
+    add_breadcrumb 'Related Links', :related_links_path
     @related_links = RelatedLink.all
     @page_title = 'Related Sites'
     gon.watch.related_links =  @related_links
