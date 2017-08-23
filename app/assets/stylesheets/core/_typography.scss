@@ -29,7 +29,7 @@ $special-characters: 'Arial', sans-serif !important;
 }
 
 
-h1{
+h1 {
   font-family: $default-font;
   font-size: 5rem;
   font-weight: 800;
@@ -153,4 +153,39 @@ a{
   @include animation-infinite-loop();
   line-height: 1rem;
   margin-right: 1px;
+}
+
+.reading{
+  @include respond-to(tv){
+    max-width: 40%;
+    margin: 1rem;
+  }
+  @include respond-to(monitor){
+    max-width: 50%;
+    margin: 1rem;
+  }
+  @include respond-to(newphone){
+    max-width: 80%;
+    margin: 1rem;
+  }
+  @include respond-to(oldphone){
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+h2.sane-header{
+  font-size: 1.5rem;
+  @include respond-to(tv){
+    margin: 1rem;
+  }
+  @include respond-to(monitor){
+    margin: 1rem;
+  }
+  @include respond-to(newphone){
+    margin: 1rem;
+  }
+  @include respond-to(oldphone){
+    margin: 0;
+  }
 }

@@ -1,14 +1,13 @@
 .about
   = render :partial => 'components/section_header', :locals => {:img =>get_header_image, :img_two => @header_image}
   .about-opening
-    %p
-      %span{:class=> 'once-upon-a-time'} The Imaginary Foundation
-      is forerunner in the non-existent organization (NEO) space. Through the dedication of our research and synthesis group,
+    %p{:class =>'reading'}
+      The Imaginary Foundation is forerunner in the non-existent organization (NEO) space. Through the dedication of our research and synthesis group,
       %em IF
       is sometimes able to bring together random thoughts.
     .about-main
-    %h2 On M. Walsh
-    %p
+    %h2{:class=>'sane-header'} On M. Walsh
+    %p{:class =>'reading'}
       This site houses the work and thoughts of
       %a{:href=> resume_url}
         Gabriel Walsh
@@ -16,8 +15,8 @@
       %a{:href=> records_path}
         Record Collection
       for further evidence.
-    %h2 Style Guide
-    %p
+    %h2{:class=>'sane-header'} Style Guide
+    %p{:class =>'reading'}
       %em IF
       uses a
       %a{:href=>'/style-guide'} style guide
@@ -25,9 +24,9 @@
       %a{:href=> '/style-guide'}
         here.
     - if @issues.length > 0
-      %h2
+      %h2{:class=>'sane-header'}
         Issues
-        %p
+        %p{:class =>'reading'}
           This site, of course, is a work in progress. Here are some of the current development issues:
       %ol
         -@issues.each do |x|

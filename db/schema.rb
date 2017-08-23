@@ -55,8 +55,21 @@ ActiveRecord::Schema.define(version: 20170428145128) do
     t.string   "title"
     t.text     "body"
     t.string   "description"
-    t.integer  "image_id"
   end
+
+  create_table "galleries", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
+
+  create_table "gallery_images", force: true do |t|
+    t.integer "galleries_id"
+    t.integer "images_id"
+  end
+
+  add_index "gallery_images", ["galleries_id"], name: "index_gallery_images_on_galleries_id", using: :btree
+  add_index "gallery_images", ["images_id"], name: "index_gallery_images_on_images_id", using: :btree
 
   create_table "goodwords", force: true do |t|
     t.datetime "created_at"
@@ -69,6 +82,7 @@ ActiveRecord::Schema.define(version: 20170428145128) do
   create_table "images", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "gallery_id"
     t.integer  "project_id"
     t.integer  "essay_id"
     t.string   "image_file"
@@ -80,6 +94,7 @@ ActiveRecord::Schema.define(version: 20170428145128) do
   end
 
   add_index "images", ["essay_id"], name: "index_images_on_essay_id", using: :btree
+  add_index "images", ["gallery_id"], name: "index_images_on_gallery_id", using: :btree
   add_index "images", ["project_id"], name: "index_images_on_project_id", using: :btree
   add_index "images", ["promo_card_id"], name: "index_images_on_promo_card_id", using: :btree
 
@@ -90,7 +105,6 @@ ActiveRecord::Schema.define(version: 20170428145128) do
     t.text     "body"
     t.string   "external_url"
     t.string   "description"
-    t.integer  "image_id"
   end
 
   create_table "promo_cards", force: true do |t|
@@ -118,6 +132,27 @@ ActiveRecord::Schema.define(version: 20170428145128) do
     t.string   "url"
     t.string   "title"
     t.integer  "project_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "topic_id"
+    t.integer  "essays_id"
+    t.integer  "topics_id"
+    t.integer  "project_id"
+    t.integer  "essay_id"
+  end
+
+  add_index "tags", ["essay_id"], name: "index_tags_on_essay_id", using: :btree
+  add_index "tags", ["project_id"], name: "index_tags_on_project_id", using: :btree
+  add_index "tags", ["topic_id"], name: "index_tags_on_topic_id", using: :btree
+
+  create_table "topics", force: true do |t|
+    t.string   "title"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
