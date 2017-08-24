@@ -4,6 +4,5 @@ FactoryGirl.define do
     description {Faker::Lorem.words(20).to_s}
     body {Faker::Lorem.paragraphs(5).to_s}
     image {}
-    external_url {Faker::Internet.url('imaginary.foundation', '/example')}
   end
 end

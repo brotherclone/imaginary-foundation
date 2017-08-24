@@ -77,7 +77,7 @@ class ProjectsController < InheritedResources::Base
       @project = Project.find(params[:id])
     end
     def project_params
-      params.require(:project).permit(:title, :body, :description, :external_url, :image_id)
+      params.require(:project).permit(:title, :body, :description, :image_id)
     end
 end
 
